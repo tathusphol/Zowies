@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Zowies/css/style.css">
+    <title>payment</title>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="bg-nav blur-xl fixed w-full">
+        <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
+            <a class="b-icon" href=""><img class="lg:hidden w-6"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
+                    class="hover:brightness-50 w-40 hidden lg:block"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/logo-a.png" alt=""></a>
+            <div class="space-x-4 text-gray-600 hidden lg:inline-block lg:text-md">
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="index.html">Home</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="XL_Monitor.html">XL Monitor</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mobiuz.html">Mobiuz</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mouse.html">Gaming Mice</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Pad.html">Gaming Mouse Pads</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Access.html">Accessories</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Two.html">สินค้ามือสอง</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32"
+                        src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href=""><img class="w-5 flex" src="/Zowies/img/heart.svg" alt=""></a>
+                    <span>0</span>
+                </div>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href=""><img class="w-5" src="/Zowies/img/cart.svg" alt=""></a>
+                    <span>0</span>
+                </div>
+                <a class="b-icon" href=""><span class="iconify" data-icon="codicon:account"></span></a>
+                <a class="b-icon" href=""><img class="w-5" src="/Zowies/img/search.svg" alt=""></a>
+                <img class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+
+    <div class="container flex justify-center py-36">
+        <div class="max-w-3xl space-y-4 w-full">
+            <p class="text-6xl text-center">แจ้งชำระเงิน</p>
+            <div class="border-4 p-8 space-y-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 space-x-4 text-gray-600">
+                    <div>
+                        <label for="">ชื่อ</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="name" type="text">
+                    </div>
+                    <div>
+                        <label for="">เบอร์ติดต่อ</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="tel" type="text">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="">อีเมล</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="text">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 space-x-4 text-gray-600">
+                    <div>
+                        <label for="">เลขคำสั่งซื้อ</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="numberbuy" type="text">
+                    </div>
+                    <div>
+                        <label for="">ยอดโอน</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="on" type="text">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <p>ธนาคารที่โอน</p>
+                    <div class="flex items-center">
+                        <input type="radio" name="" id="">
+                        <img class="ml-2" width="30px"
+                            src="https://www.zowieshop.com/wp-content/plugins/seed-confirm-pro/img/kbank.png" alt="">
+                        <p class="ml-2">ธนาคารกสิกรไทย สาขาเซ็นทรัลลาดพร้าว</p>
+                        <p class="ml-2">630-1-86619-0</p>
+                        <p class="ml-10">ห้วยขวาง อีสปอร์ท</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="w-5/12">
+                        <label for="">วันที่โอน</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="date" type="text">
+                    </div>
+                    <div>
+                        <label for="">เวลา</label>
+                        <div>
+                            <select class="rounded-lg py-2 px-1 shadow w-16" name="" id="first">
+
+                            </select>
+                            <select class="rounded-lg px-1 py-2 shadow w-16" name="" id="min">
+                                <option value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                                <option value="">32</option>
+                                <option value="">33</option>
+                                <option value="">34</option>
+                                <option value="">35</option>
+                                <option value="">36</option>
+                                <option value="">37</option>
+                                <option value="">38</option>
+                                <option value="">39</option>
+                                <option value="">40</option>
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+                                <option value="">46</option>
+                                <option value="">47</option>
+                                <option value="">48</option>
+                                <option value="">49</option>
+                                <option value="">50</option>
+                                <option value="">51</option>
+                                <option value="">52</option>
+                                <option value="">53</option>
+                                <option value="">54</option>
+                                <option value="">55</option>
+                                <option value="">56</option>
+                                <option value="">57</option>
+                                <option value="">58</option>
+                                <option value="">59</option>
+                                <option value="">60</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="space-y-2">
+                        <label for="">หลักฐานการโอน</label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="numberbuy" type="text">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label for="">หมายเหตุ</label>
+                    <div>
+                        <textarea class="shadow w-full" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <button class="bg-red-700 px-20 py-4 text-white b-icon duration-500">แจ้งชำระเงิน</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+
+    <footer class="bg-gray-100">
+        <div class="flex justify-center w-full border-b-2">
+            <div class="px-12 py-24 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-4 space-y-20 lg:space-y-0">
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html" >XL Monitor</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Mouse.html" >Gaming Mice</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Pad.html" >Gaming Mouse Pads</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Access.html" >Accessories</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Two.html" >สินค้ามือสอง</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Sale.html" >สินค้าราคาพิเศษ</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer Services</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payment.html" >แจ้งการโอนเงิน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="" >ติดตามสถานะการสั่งซื้อ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="" >ข่าวสาร & รีวิวสินค้า</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Support</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="" >เงื่อนไขและการรับประกัน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="" >การชำระเงิน & จัดส่งสินค้า</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="" >พูดคุยกับเราที่ Facebook</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">เกี่ยวกับ ZOWIE Shop</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href=""><img class="w-40 b-icon duration-300" src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a></div>
+                    <div><a href=""><img class="w-40 b-icon duration-300" src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a></div>
+                    <div><a href=""><img class="w-40 b-icon duration-300" src="https://www.zowieshop.com/wp-content/uploads/2020/12/jd.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center py-8 text-gray-400 text-sm">
+            <p>© 2021 <span class="border-b-2">ZOWIE Shop</span></p>
+        </div>
+    </footer>
+    <script>
+        let select1 = document.querySelector("#first");
+        let select2 = document.querySelector("#min");
+        for(let i=0; i<24; i++){
+            select1.innerHTML += `
+                <option value="hour${i+1}">${i}</option>
+            `
+        }
+        for(let i=0; i<60; i++){
+            select2.innerHTML += `
+                <option value="min${i+1}">${i}</option>
+            `
+        }
+    </script>
+</body>
+
+</html>

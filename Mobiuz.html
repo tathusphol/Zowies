@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/Zowies/css/style.css">
     <title>Mobiuz</title>
 </head>
 <body>
@@ -25,17 +25,17 @@
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
             </div>
             <div class="flex items-center space-x-4">
-                <a class="hidden lg:flex b-icon" href=""><img class="w-32" src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
+                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32" src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
-                    <a class="b-icon" href=""><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
+                    <a class="b-icon" href=""><img class="w-5 flex" src="/Zowies/img/heart.svg" alt=""></a>
                     <span>0</span>
                 </div>
                 <div class="flex space-x-1">
-                    <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
+                    <a class="b-icon" href=""><img class="w-5" src="/Zowies/img/cart.svg" alt=""></a>
                     <span>0</span>
                 </div>
                 <a class="b-icon" href=""><span class="iconify" data-icon="codicon:account"></span></a>
-                <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
+                <a class="b-icon" href=""><img class="w-5" src="/Zowies/img/search.svg" alt=""></a>
                 <img class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
             </div>
         </div>
@@ -63,16 +63,16 @@
             <div class="px-12 py-24 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-4 space-y-20 lg:space-y-0">
                 <div class="space-y-4 text-gray-600">
                     <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >XL Monitor</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >Gaming Mice</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >Gaming Mouse Pads</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >Accessories</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >สินค้ามือสอง</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >สินค้าราคาพิเศษ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html" >XL Monitor</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Mouse.html" >Gaming Mice</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Pad.html" >Gaming Mouse Pads</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Access.html" >Accessories</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Two.html" >สินค้ามือสอง</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Sale.html" >สินค้าราคาพิเศษ</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
                     <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer Services</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >แจ้งการโอนเงิน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payment.html" >แจ้งการโอนเงิน</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="" >ติดตามสถานะการสั่งซื้อ</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="" >ข่าวสาร & รีวิวสินค้า</a></div>
                 </div>
@@ -95,7 +95,7 @@
         </div>
     </footer>
     <script>
-        let requestURL = '/json/Mobiuz.json';
+        let requestURL = '/Zowies/json/Mobiuz.json';
         let request = new XMLHttpRequest();
         request.onreadystatechange = function () {
             if (request.readyState == 4 && request.status == 200) {

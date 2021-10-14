@@ -1,0 +1,26 @@
+[
+    {
+        "font" : "https://www.zowieshop.com/wp-content/uploads/2021/09/ex2510s-coverw.png",
+        "back" : "https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2510s1.png",
+        "name" : "BENQ MOBIUZ EX2510S 1ms IPS 165Hz Gaming Monitor",
+        "price" : "10,500.00฿"
+    },
+    {
+        "font" : "https://www.zowieshop.com/wp-content/uploads/2021/09/EX2710R-cover-w.jpg",
+        "back" : "https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2710r1.png",
+        "name" : "BENQ MOBIUZ EX2710R 2K 165Hz 1000R Curved Gaming Monitor",
+        "price" : "21,900.00฿"
+    },
+    {
+        "font" : "https://www.zowieshop.com/wp-content/uploads/2021/09/ex3210r-cover-w.jpg",
+        "back" : "https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex3210r1.jpg",
+        "name" : "BENQ MOBIUZ EX3210R 2K 165Hz 1000R Curved Gaming Monitor",
+        "price" : "24,900.00฿"
+    },
+    {
+        "font" : "https://www.zowieshop.com/wp-content/uploads/2021/09/ex3415r-cover-w.jpg",
+        "back" : "https://www.zowieshop.com/wp-content/uploads/2021/09/07-ex3415r-back.jpg",
+        "name" : "BENQ MOBIUZ EX3415R 1ms 144Hz Curved Ultrawide",
+        "price" : "35,900.00฿"
+    }
+]

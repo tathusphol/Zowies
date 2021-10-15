@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/Zowies/css/style.css">
-    <title>XL Monitor</title>
+    <link rel="stylesheet" href="/Zowies/css/animate.css">
+    <title>Two_Hand</title>
     <style>
-        .two0:hover{
-            width: 100%;
-            content: url(https://www.zowieshop.com/wp-content/uploads/2020/10/EC2-03@2x.jpg);
-        }
-        .two1:hover{
-            content: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-03@2x.jpg);
-        }
-        .two2:hover{
-            content: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-03@2x.jpg);
-        }
-        .two3:hover{
-            content: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2746S-03@2x.jpg);
-        }
+
     </style>
 </head>
+
 <body>
     <!-- navbar -->
 
-    <nav class="bg-nav blur-xl fixed w-full">
+    <nav class="bg-nav blur-xl sticky top-0 w-full z-40">
         <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
-            <a class="b-icon" href=""><img class="lg:hidden w-6" src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img class="hover:brightness-50 w-40 hidden lg:block"src="https://www.zowieshop.com/wp-content/uploads/2020/12/logo-a.png" alt=""></a>
-            <div class="space-x-4 text-gray-600 hidden lg:inline-block lg:text-md">   
+            <a class="b-icon" href=""><img class="lg:hidden w-6"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
+                    class="hover:brightness-50 w-40 hidden lg:block"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/logo-a.png" alt=""></a>
+            <div class="space-x-4 text-gray-600 hidden lg:inline-block lg:text-md">
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="index.html">Home</a>
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="XL_Monitor.html">XL Monitor</a>
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mobiuz.html">Mobiuz</a>
@@ -37,10 +31,11 @@
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="Pad.html">Gaming Mouse Pads</a>
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="Access.html">Accessories</a>
                 <a class="hover:text-gray-400 text-gray-100 duration-500" href="Two.html">สินค้ามือสอง</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="two.html">สินค้าราคาพิเศษ</a>
             </div>
             <div class="flex items-center space-x-4">
-                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32" src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
+                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32"
+                        src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
                     <a class="b-icon" href=""><img class="w-5 flex" src="/Zowies/img/heart.svg" alt=""></a>
                     <span>0</span>
@@ -62,11 +57,90 @@
     </div>
     <div class="px-12 py-10">
         <a class="text-gray-500" href="index.html">หน้าหลัก</a>
-        <span>  /  </span>
-        <span class="text-gray-600">ZOWIE MONITOR</span>
+        <span> / </span>
+        <span class="text-gray-600">ZOWIE USED</span>
     </div>
     <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-
+        <div onmouseover="two1()" onmouseout="two11()">
+            <div>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <img id="img1" src="" alt="">
+                        <div id="eye1" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
+                            <div class="flex bg-white w-16 justify-center rounded-xl">
+                                <div class="flex justify-center">
+                                    <img src="/Zowies/img/eye.svg" alt="">
+                                    <img src="/Zowies/img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="text1" class="text-sm"></p>
+                    <p id="price1" class="text-sm text-center"></p>
+                    <p id="pickcart1" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
+                </div>
+            </div>
+        </div>
+        <div onmouseover="two2()" onmouseout="two22()">
+            <div>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <img id="img2" src="" alt="">
+                        <div id="eye2" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
+                            <div class="flex bg-white w-16 justify-center rounded-xl">
+                                <div class="flex justify-center">
+                                    <img src="/Zowies/img/eye.svg" alt="">
+                                    <img src="/Zowies/img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="text2" class="text-sm"></p>
+                    <p id="price2" class="text-sm text-center"></p>
+                    <p id="pickcart2" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
+                </div>
+            </div>
+        </div>
+        <div onmouseover="two3()" onmouseout="two33()">
+            <div>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <img id="img3" src="" alt="">
+                        <div id="eye3" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
+                            <div class="flex bg-white w-16 justify-center rounded-xl">
+                                <div class="flex justify-center">
+                                    <img src="/Zowies/img/eye.svg" alt="">
+                                    <img src="/Zowies/img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="text3" class="text-sm"></p>
+                    <p id="price3" class="text-sm text-center"></p>
+                    <p id="pickcart3" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
+                </div>
+            </div>
+        </div>
+        <div onmouseover="two4()" onmouseout="two44()">
+            <div>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <img id="img4" src="" alt="">
+                        <div id="eye4" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
+                            <div class="flex bg-white w-16 justify-center rounded-xl">
+                                <div class="flex justify-center">
+                                    <img src="/Zowies/img/eye.svg" alt="">
+                                    <img src="/Zowies/img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="text4" class="text-sm"></p>
+                    <p id="price4" class="text-sm text-center"></p>
+                    <p id="pickcart4" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -78,30 +152,34 @@
             <div class="px-12 py-24 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-4 space-y-20 lg:space-y-0">
                 <div class="space-y-4 text-gray-600">
                     <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html" >XL Monitor</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="Mouse.html" >Gaming Mice</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="Pad.html" >Gaming Mouse Pads</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="Access.html" >Accessories</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="Two.html" >สินค้ามือสอง</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="Sale.html" >สินค้าราคาพิเศษ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html">XL Monitor</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Mouse.html">Gaming Mice</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Pad.html">Gaming Mouse Pads</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Access.html">Accessories</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Two.html">สินค้ามือสอง</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="two.html">สินค้าราคาพิเศษ</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
-                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer Services</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="payment.html" >แจ้งการโอนเงิน</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >ติดตามสถานะการสั่งซื้อ</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >ข่าวสาร & รีวิวสินค้า</a></div>
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer
+                            Services</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payment.html">แจ้งการโอนเงิน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">ติดตามสถานะการสั่งซื้อ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">ข่าวสาร & รีวิวสินค้า</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
                     <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Support</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >เงื่อนไขและการรับประกัน</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >การชำระเงิน & จัดส่งสินค้า</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="" >พูดคุยกับเราที่ Facebook</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">เงื่อนไขและการรับประกัน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">การชำระเงิน & จัดส่งสินค้า</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">พูดคุยกับเราที่ Facebook</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="">เกี่ยวกับ ZOWIE Shop</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
-                    <div><a href=""><img class="w-40 b-icon duration-300" src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a></div>
-                    <div><a href=""><img class="w-40 b-icon duration-300" src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a></div>
-                    <div><a href=""><img class="w-40 b-icon duration-300" src="https://www.zowieshop.com/wp-content/uploads/2020/12/jd.png" alt=""></a></div>
+                    <div><a href=""><img class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a></div>
+                    <div><a href=""><img class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a></div>
+                    <div><a href=""><img class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/jd.png" alt=""></a></div>
                 </div>
             </div>
         </div>
@@ -110,6 +188,78 @@
         </div>
     </footer>
     <script>
+        function two1() {
+            img1 = document.getElementById('img1');
+            document.getElementById('eye1').classList.toggle('hidden');
+            document.getElementById('eye1').classList.toggle('animate');
+            document.getElementById('pickcart1').classList.toggle('hidden');
+            document.getElementById('pickcart1').classList.toggle('animate');
+            document.getElementById('price1').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/EC2-03@2x.jpg";
+        }
+        function two11() {
+            img1 = document.getElementById('img1');
+            document.getElementById('eye1').classList.toggle('hidden');
+            document.getElementById('eye1').classList.toggle('animate');
+            document.getElementById('pickcart1').classList.toggle('hidden');
+            document.getElementById('pickcart1').classList.toggle('animate');
+            document.getElementById('price1').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/EC2-01@2x.jpg";
+        }
+        function two2() {
+            img1 = document.getElementById('img2');
+            document.getElementById('eye2').classList.toggle('hidden');
+            document.getElementById('eye2').classList.toggle('animate');
+            document.getElementById('pickcart2').classList.toggle('hidden');
+            document.getElementById('pickcart2').classList.toggle('animate');
+            document.getElementById('price2').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-03@2x.jpg";
+        }
+        function two22() {
+            img1 = document.getElementById('img2');
+            document.getElementById('eye2').classList.toggle('hidden');
+            document.getElementById('eye2').classList.toggle('animate');
+            document.getElementById('pickcart2').classList.toggle('hidden');
+            document.getElementById('pickcart2').classList.toggle('animate');
+            document.getElementById('price2').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-01@2x-1.jpg";
+        }
+        function two3() {
+            img1 = document.getElementById('img3');
+            document.getElementById('eye3').classList.toggle('hidden');
+            document.getElementById('eye3').classList.toggle('animate');
+            document.getElementById('pickcart3').classList.toggle('hidden');
+            document.getElementById('pickcart3').classList.toggle('animate');
+            document.getElementById('price3').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-03@2x.jpg";
+        }
+        function two33() {
+            img1 = document.getElementById('img3');
+            document.getElementById('eye3').classList.toggle('hidden');
+            document.getElementById('eye3').classList.toggle('animate');
+            document.getElementById('pickcart3').classList.toggle('hidden');
+            document.getElementById('pickcart3').classList.toggle('animate');
+            document.getElementById('price3').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-01@2x-1.jpg";
+        }
+        function two4() {
+            img1 = document.getElementById('img4');
+            document.getElementById('eye4').classList.toggle('hidden');
+            document.getElementById('eye4').classList.toggle('animate');
+            document.getElementById('pickcart4').classList.toggle('hidden');
+            document.getElementById('pickcart4').classList.toggle('animate');
+            document.getElementById('price4').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2746S-03@2x.jpg";
+        }
+        function two44() {
+            img1 = document.getElementById('img4');
+            document.getElementById('eye4').classList.toggle('hidden');
+            document.getElementById('eye4').classList.toggle('animate');
+            document.getElementById('pickcart4').classList.toggle('hidden');
+            document.getElementById('pickcart4').classList.toggle('animate');
+            document.getElementById('price4').classList.toggle('hidden');
+            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2746S-01@2x-2.jpg";
+        }
         let requestURL = '/Zowies/json/two_hand.json';
         let request = new XMLHttpRequest();
         request.onreadystatechange = function () {
@@ -119,34 +269,18 @@
         };
         request.open("GET", requestURL, true);
         request.send();
-
+        
         function dataReportStatus(data) {
-            for (let i = 0; i <data.length; i++) {
-                let parent = document.getElementById('parent');
-                let box = document.createElement('div');
-                let boxicon = document.createElement('div');
-                let eye = document.createElement('img');
-                let heat = document.createElement('img');
-                let img = document.createElement('img');
-                let text = document.createElement('p');
-                let price = document.createElement('p');
-                img.src = data[i].font;
-                img.setAttribute('class',  `two${i}`);
-
-                text.innerHTML = data[i].name;
-                price.innerHTML = data[i].price;
-
-                box.setAttribute('class', `space-y-4`);
-                text.setAttribute('class', "text-sm");
-                price.setAttribute('class', "text-center text-sm font-semibold");
-                box.appendChild(img);
-                box.appendChild(text);
-                box.appendChild(boxicon);
-                box.appendChild(price);
-                parent.appendChild(box);
+            for (let i = 0; i < data.length; i++) {
+                let num = i + 1;
+                document.getElementById(`img${num}`).src = data[i].font;
+                document.getElementById(`text${num}`).innerHTML = data[i].name;
+                document.getElementById(`price${num}`).innerHTML = data[i].price;
             }
 
         }
+        
     </script>
 </body>
+
 </html>

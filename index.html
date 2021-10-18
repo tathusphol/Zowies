@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <title>Zowie</title>
 </head>
 
-<body>
-
+<body class="relative">
+    <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40" src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png" alt=""></a>
+    <img width="40px" class="cusor-pointer fixed right-8 bottom-12 rounded-full z-40" src="https://cdn.discordapp.com/attachments/896721421621919754/899628484090007602/LINE_New_App_Icon_282020-1229.png" alt="">
     <!-- navbar -->
 
-    <nav class="bg-nav blur-xl sticky z-40 w-full">
+    <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
         <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
             <a class="b-icon" href="index.html"><img class="lg:hidden w-6"
                     src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
@@ -62,15 +64,17 @@
             <a href="Pad.html"><img src="https://www.zowieshop.com/wp-content/uploads/2020/12/mousepad.svg" alt=""></a>
             <a href="Access.html"><img src="https://www.zowieshop.com/wp-content/uploads/2020/12/accessories.svg"
                     alt=""></a>
-            <a href="kaidee.html"><img src="https://www.zowieshop.com/wp-content/uploads/2021/10/kaidee-menu.svg"
+            <a href="Mobiuz.html"><img src="https://www.zowieshop.com/wp-content/uploads/2021/10/mobiuz-menu.svg"
                     alt=""></a>
         </div>
     </div>
     <div>
         <p class="text-center font-bold text-xl md:text-2xl lg:text-4xl pt-16">สินค้า ZOWIE ขายดี</p>
         <div class="flex justify-center w-full py-16">
-            <div>
+            <div class="relative">
                 <div class="grid grid-cols-3 gap-4 max-w-4xl">
+                <img width="15px" class="absolute left-0 z-40 cursor-pointer" onclick="slideanimate1()" style="top: 11rem;" src="https://cdn.discordapp.com/attachments/896721421621919754/899622032382259230/png-clipart-shory-s-outdoors-computer-icons-arrow-arrow.png" alt="">
+                <img width="15px" class="absolute right-0 z-40 cursor-pointer" onclick="slideanimate1()" style="transform: rotate(180deg); top: 11rem;" src="https://cdn.discordapp.com/attachments/896721421621919754/899622032382259230/png-clipart-shory-s-outdoors-computer-icons-arrow-arrow.png" alt="">
                     <div id="1" onmouseover="kaidee1()" onmouseout="kaidee11()">
                         <div>
                             <div class="space-y-4">
@@ -505,6 +509,11 @@
             img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg";
         }
         let slide = 0;
+        let arrow = 0;
+        function slideanimate1() {
+            arrow = 1;
+            slideanimate();
+        }
         function slideanimate() {
             slide += 1;
             let item1 = document.getElementById('1');
@@ -552,7 +561,12 @@
             if (slide == 3){
                 slide = 0;
             }
-            setTimeout(slideanimate, 5000);
+            if(arrow == 0){
+                setTimeout(slideanimate, 5000);
+            }
+            else{
+                arrow = 0;
+            }
         }
         setTimeout(slideanimate, 10);
     </script>

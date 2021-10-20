@@ -9,6 +9,53 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/animate.css">
     <title>Mouse</title>
+    <style>
+        .fixedimg {
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 130%;
+        }
+        .changeimg1{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-01@2x.jpg);
+        }
+        .changeimg2{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-01@2x.jpg);
+        }
+        .changeimg3{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-01@2x.jpg);
+        }
+        .changeimg4{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x-1.jpg);
+        }
+        .changeimg5{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg);
+        }
+        .changeimg1:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-03@2x.jpg);
+        }
+        .changeimg2:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-03@2x.jpg);
+        }
+        .changeimg3:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-03@2x.jpg);
+        }
+        .changeimg4:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x-1.jpg);
+        }
+        .changeimg5:hover{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg);
+        }
+    </style>
 </head>
 <body class="relative">
     <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40" src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png" alt=""></a>
@@ -53,104 +100,109 @@
         <span class="text-gray-600">ZOWIE MOUSE</span>
     </div>
     <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="mouse1()" onmouseout="mouse11()">
-            <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img1" src="" alt="">
-                        <div id="eye1" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
+        <div onmouseover="openn(1)" onmouseout="closee(1)" >
+            <div id="img1" class="fixedimg changeimg1 w-full relative">
+                <div id="eye1" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <p id="text1" class="text-sm"></p>
-                    <p id="price1" class="text-sm text-center"></p>
-                    <p id="pickcart1" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
                 </div>
             </div>
-        </div>
-        <div onmouseover="mouse2()" onmouseout="mouse22()">
             <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img2" src="" alt="">
-                        <div id="eye2" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p id="text2" class="text-sm"></p>
-                    <p id="price2" class="text-sm text-center"></p>
-                    <p id="pickcart2" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
-                </div>
+                <p id="text1" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price1" class="text-center text-sm"></p>
+                <p id="pickcart1" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="mouse3()" onmouseout="mouse33()">
-            <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img3" src="" alt="">
-                        <div id="eye3" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
+        <div onmouseover="openn(2)" onmouseout="closee(2)" >
+            <div id="img2" class="fixedimg changeimg2 w-full relative">
+                <div id="eye2" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <p id="text3" class="text-sm"></p>
-                    <p id="price3" class="text-sm text-center"></p>
-                    <p id="pickcart3" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
                 </div>
             </div>
-        </div>
-        <div onmouseover="mouse4()" onmouseout="mouse44()">
             <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img4" src="" alt="">
-                        <div id="eye4" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p id="text4" class="text-sm"></p>
-                    <p id="price4" class="text-sm text-center"></p>
-                    <p id="pickcart4" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
-                </div>
+                <p id="text2" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price2" class="text-center text-sm"></p>
+                <p id="pickcart2" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="mouse5()" onmouseout="mouse55()">
-            <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img5" src="" alt="">
-                        <div id="eye5" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
+        <div onmouseover="openn(3)" onmouseout="closee(3)" >
+            <div id="img3" class="fixedimg changeimg3 w-full relative">
+                <div id="eye3" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <p id="text5" class="text-sm"></p>
-                    <p id="price5" class="text-sm text-center"></p>
-                    <p id="pickcart5" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
                 </div>
+            </div>
+            <div>
+                <p id="text3" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price3" class="text-center text-sm"></p>
+                <p id="pickcart3" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(4)" onmouseout="closee(4)" >
+            <div id="img4" class="fixedimg changeimg4 w-full relative">
+                <div id="eye4" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text4" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price4" class="text-center text-sm"></p>
+                <p id="pickcart4" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(5)" onmouseout="closee(5)" >
+            <div id="img5" class="fixedimg changeimg5 w-full relative">
+                <div id="eye5" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text5" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price5" class="text-center text-sm"></p>
+                <p id="pickcart5" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
     </div>
@@ -216,96 +268,7 @@
             }
 
         }
-        function mouse1(){
-            img1 = document.getElementById('img1');
-            document.getElementById('eye1').classList.toggle('hidden');
-            document.getElementById('eye1').classList.toggle('animate');
-            document.getElementById('pickcart1').classList.toggle('hidden');
-            document.getElementById('pickcart1').classList.toggle('animate');
-            document.getElementById('price1').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-03@2x.jpg";
-        }
-        function mouse11(){
-            img1 = document.getElementById('img1');
-            document.getElementById('eye1').classList.toggle('hidden');
-            document.getElementById('eye1').classList.toggle('animate');
-            document.getElementById('pickcart1').classList.toggle('hidden');
-            document.getElementById('pickcart1').classList.toggle('animate');
-            document.getElementById('price1').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-01@2x.jpg";
-        }
-        function mouse2(){
-            img1 = document.getElementById('img2');
-            document.getElementById('eye2').classList.toggle('hidden');
-            document.getElementById('eye2').classList.toggle('animate');
-            document.getElementById('pickcart2').classList.toggle('hidden');
-            document.getElementById('pickcart2').classList.toggle('animate');
-            document.getElementById('price2').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-03@2x.jpg";
-        }
-        function mouse22(){
-            img1 = document.getElementById('img2');
-            document.getElementById('eye2').classList.toggle('hidden');
-            document.getElementById('eye2').classList.toggle('animate');
-            document.getElementById('pickcart2').classList.toggle('hidden');
-            document.getElementById('pickcart2').classList.toggle('animate');
-            document.getElementById('price2').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-01@2x.jpg";
-        }
-        function mouse3(){
-            img1 = document.getElementById('img3');
-            document.getElementById('eye3').classList.toggle('hidden');
-            document.getElementById('eye3').classList.toggle('animate');
-            document.getElementById('pickcart3').classList.toggle('hidden');
-            document.getElementById('pickcart3').classList.toggle('animate');
-            document.getElementById('price3').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-03@2x.jpg";
-        }
-        function mouse33(){
-            img1 = document.getElementById('img3');
-            document.getElementById('eye3').classList.toggle('hidden');
-            document.getElementById('eye3').classList.toggle('animate');
-            document.getElementById('pickcart3').classList.toggle('hidden');
-            document.getElementById('pickcart3').classList.toggle('animate');
-            document.getElementById('price3').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-01@2x.jpg";
-        }
-        function mouse4(){
-            img1 = document.getElementById('img4');
-            document.getElementById('eye4').classList.toggle('hidden');
-            document.getElementById('eye4').classList.toggle('animate');
-            document.getElementById('pickcart4').classList.toggle('hidden');
-            document.getElementById('pickcart4').classList.toggle('animate');
-            document.getElementById('price4').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg";
-        }
-        function mouse44(){
-            img1 = document.getElementById('img4');
-            document.getElementById('eye4').classList.toggle('hidden');
-            document.getElementById('eye4').classList.toggle('animate');
-            document.getElementById('pickcart4').classList.toggle('hidden');
-            document.getElementById('pickcart4').classList.toggle('animate');
-            document.getElementById('price4').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg";
-        }
-        function mouse5(){
-            img1 = document.getElementById('img5');
-            document.getElementById('eye5').classList.toggle('hidden');
-            document.getElementById('eye5').classList.toggle('animate');
-            document.getElementById('pickcart5').classList.toggle('hidden');
-            document.getElementById('pickcart5').classList.toggle('animate');
-            document.getElementById('price5').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-03@2x.jpg";
-        }
-        function mouse55(){
-            img1 = document.getElementById('img5');
-            document.getElementById('eye5').classList.toggle('hidden');
-            document.getElementById('eye5').classList.toggle('animate');
-            document.getElementById('pickcart5').classList.toggle('hidden');
-            document.getElementById('pickcart5').classList.toggle('animate');
-            document.getElementById('price5').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-01@2x.jpg";
-        }
     </script>
+    <script src="/js/opco.js"></script>
 </body>
 </html>

@@ -8,6 +8,53 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <title>Accessories</title>
+    <style>
+                .fixedimg {
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 130%;
+        }
+        .changeimg1{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/04/S250@2x.jpg);
+        }
+        .changeimg2{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-za13@2x-1.jpg);
+        }
+        .changeimg3{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-za12@2x-1.jpg);
+        }
+        .changeimg4{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-01@2x-1.jpg);
+        }
+        .changeimg5{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CAMADE-II-01@2x.jpg);
+        }
+        .changeimg1:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/04/S250-2@2x.jpg);
+        }
+        .changeimg2:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-n0.jpg);
+        }
+        .changeimg3:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-n0.jpg);
+        }
+        .changeimg4:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-04@2x.jpg);
+        }
+        .changeimg5:hover{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CAMADE-II-05@2x.jpg);
+        }
+    </style>
 </head>
 <body class="relative">
     <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40" src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png" alt=""></a>
@@ -54,7 +101,111 @@
         <span class="text-gray-600">ZOWIE MONITOR</span>
     </div>
     <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-
+        <div onmouseover="openn(1)" onmouseout="closee(1)" >
+            <div id="img1" class="fixedimg changeimg1 w-full relative">
+                <div id="eye1" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text1" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price1" class="text-center text-sm"></p>
+                <p id="pickcart1" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(2)" onmouseout="closee(2)" >
+            <div id="img2" class="fixedimg changeimg2 w-full relative">
+                <div id="eye2" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text2" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price2" class="text-center text-sm"></p>
+                <p id="pickcart2" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(3)" onmouseout="closee(3)" >
+            <div id="img3" class="fixedimg changeimg3 w-full relative">
+                <div id="eye3" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text3" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price3" class="text-center text-sm"></p>
+                <p id="pickcart3" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(4)" onmouseout="closee(4)" >
+            <div id="img4" class="fixedimg changeimg4 w-full relative">
+                <div id="eye4" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text4" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price4" class="text-center text-sm"></p>
+                <p id="pickcart4" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(5)" onmouseout="closee(5)" >
+            <div id="img5" class="fixedimg changeimg5 w-full relative">
+                <div id="eye5" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text5" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price5" class="text-center text-sm"></p>
+                <p id="pickcart5" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
     </div>
 
 
@@ -111,24 +262,14 @@
 
         function dataReportStatus(data) {
             for (let i = 0; i <data.length; i++) {
-                let parent = document.getElementById('parent');
-                let box = document.createElement('div');
-                let img = document.createElement('img');
-                let text = document.createElement('p');
-                let price = document.createElement('p');
-                img.src = data[i].font;
-                text.innerHTML = data[i].name;
-                price.innerHTML = data[i].price;
-                box.setAttribute('class', "space-y-4");
-                text.setAttribute('class', "text-sm");
-                price.setAttribute('class', "text-center text-sm font-semibold");
-                box.appendChild(img);
-                box.appendChild(text);
-                box.appendChild(price);
-                parent.appendChild(box);
+                let num = i + 1;
+                document.getElementById(`img${num}`).src = data[i].font;
+                document.getElementById(`text${num}`).innerHTML = data[i].name;
+                document.getElementById(`price${num}`).innerHTML = data[i].price;
             }
 
         }
     </script>
+    <script src="/js/opco.js"></script>
 </body>
 </html>

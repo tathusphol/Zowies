@@ -10,6 +10,45 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/animate.css">
     <title>Mobiuz</title>
+    <style>
+        .fixedimg {
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 130%;
+        }
+        .changeimg1{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/ex2510s-coverw.png);
+        }
+        .changeimg2{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/EX2710R-cover-w.jpg);
+        }
+        .changeimg3{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/ex3210r-cover-w.jpg);
+        }
+        .changeimg4{
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/ex3415r-cover-w.jpg);
+        }
+        .changeimg1:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2510s1.png);
+        }
+        .changeimg2:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2710r1.png);
+        }
+        .changeimg3:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex3210r1.jpg);
+        }
+        .changeimg4:hover {
+            transition: 0.5s;
+            background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/07-ex3415r-back.jpg);
+        }
+    </style>
 </head>
 
 <body class="relative">
@@ -57,84 +96,88 @@
         <span class="text-gray-600">MOBIUZ</span>
     </div>
     <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="mobiuz1()" onmouseout="mobiuz11()">
-            <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img1" src="" alt="">
-                        <div id="eye1" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
+        <div onmouseover="openn(1)" onmouseout="closee(1)" >
+            <div id="img1" class="fixedimg changeimg1 w-full relative">
+                <div id="eye1" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <p id="text1" class="text-sm"></p>
-                    <p id="price1" class="text-sm text-center"></p>
-                    <p id="pickcart1" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
                 </div>
             </div>
-        </div>
-        <div onmouseover="mobiuz2()" onmouseout="mobiuz22()">
             <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img2" src="" alt="">
-                        <div id="eye2" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p id="text2" class="text-sm"></p>
-                    <p id="price2" class="text-sm text-center"></p>
-                    <p id="pickcart2" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
-                </div>
+                <p id="text1" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price1" class="text-center text-sm"></p>
+                <p id="pickcart1" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="mobiuz3()" onmouseout="mobiuz33()">
-            <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img3" src="" alt="">
-                        <div id="eye3" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
+        <div onmouseover="openn(2)" onmouseout="closee(2)" >
+            <div id="img2" class="fixedimg changeimg2 w-full relative">
+                <div id="eye2" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <p id="text3" class="text-sm"></p>
-                    <p id="price3" class="text-sm text-center"></p>
-                    <p id="pickcart3" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
                 </div>
             </div>
-        </div>
-        <div onmouseover="mobiuz4()" onmouseout="mobiuz44()">
             <div>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <img id="img4" src="" alt="">
-                        <div id="eye4" class="absolute hidden rounded-xl w-full justify-center bottom-4 flex space-x-2">
-                            <div class="flex bg-white w-16 justify-center rounded-xl">
-                                <div class="flex justify-center">
-                                    <img src="/img/eye.svg" alt="">
-                                    <img src="/img/heart.svg" alt="">
-                                </div>
+                <p id="text2" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price2" class="text-center text-sm"></p>
+                <p id="pickcart2" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(3)" onmouseout="closee(3)" >
+            <div id="img3" class="fixedimg changeimg3 w-full relative">
+                <div id="eye3" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <p id="text4" class="text-sm"></p>
-                    <p id="price4" class="text-sm text-center"></p>
-                    <p id="pickcart4" class="text-red-600 text-center text-sm hidden">หยิบใส่ตะกร้า</p>
                 </div>
+            </div>
+            <div>
+                <p id="text3" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price3" class="text-center text-sm"></p>
+                <p id="pickcart3" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+            </div>
+        </div>
+        <div onmouseover="openn(4)" onmouseout="closee(4)" >
+            <div id="img4" class="fixedimg changeimg4 w-full relative">
+                <div id="eye4" class="absolute bottom-3 w-full duration-400 hidden animate">
+                    <div class="flex justify-center">
+                        <div class="bg-white rounded-xl">
+                            <div class="flex space-x-1 px-2">
+                                <img width="25px" src="/img/eye.svg" alt="">
+                                <img width="25px" src="/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="text4" class="text-sm text-center"></p>
+            </div>
+            <div class="pt-4">
+                <p id="price4" class="text-center text-sm"></p>
+                <p id="pickcart4" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
     </div>
@@ -181,78 +224,6 @@
         </div>
     </footer>
     <script>
-        function mobiuz1() {
-            img1 = document.getElementById('img1');
-            document.getElementById('eye1').classList.toggle('hidden');
-            document.getElementById('eye1').classList.toggle('animate');
-            document.getElementById('pickcart1').classList.toggle('hidden');
-            document.getElementById('pickcart1').classList.toggle('animate');
-            document.getElementById('price1').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2510s1.png";
-        }
-        function mobiuz11() {
-            img1 = document.getElementById('img1');
-            document.getElementById('eye1').classList.toggle('hidden');
-            document.getElementById('eye1').classList.toggle('animate');
-            document.getElementById('pickcart1').classList.toggle('hidden');
-            document.getElementById('pickcart1').classList.toggle('animate');
-            document.getElementById('price1').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/ex2510s-coverw.png";
-        }
-        function mobiuz2() {
-            img1 = document.getElementById('img2');
-            document.getElementById('eye2').classList.toggle('hidden');
-            document.getElementById('eye2').classList.toggle('animate');
-            document.getElementById('pickcart2').classList.toggle('hidden');
-            document.getElementById('pickcart2').classList.toggle('animate');
-            document.getElementById('price2').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2710r1.png";
-        }
-        function mobiuz22() {
-            img1 = document.getElementById('img2');
-            document.getElementById('eye2').classList.toggle('hidden');
-            document.getElementById('eye2').classList.toggle('animate');
-            document.getElementById('pickcart2').classList.toggle('hidden');
-            document.getElementById('pickcart2').classList.toggle('animate');
-            document.getElementById('price2').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/EX2710R-cover-w.jpg";
-        }
-        function mobiuz3() {
-            img1 = document.getElementById('img3');
-            document.getElementById('eye3').classList.toggle('hidden');
-            document.getElementById('eye3').classList.toggle('animate');
-            document.getElementById('pickcart3').classList.toggle('hidden');
-            document.getElementById('pickcart3').classList.toggle('animate');
-            document.getElementById('price3').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex3210r1.jpg";
-        }
-        function mobiuz33() {
-            img1 = document.getElementById('img3');
-            document.getElementById('eye3').classList.toggle('hidden');
-            document.getElementById('eye3').classList.toggle('animate');
-            document.getElementById('pickcart3').classList.toggle('hidden');
-            document.getElementById('pickcart3').classList.toggle('animate');
-            document.getElementById('price3').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/ex3210r-cover-w.jpg";
-        }
-        function mobiuz4() {
-            img1 = document.getElementById('img4');
-            document.getElementById('eye4').classList.toggle('hidden');
-            document.getElementById('eye4').classList.toggle('animate');
-            document.getElementById('pickcart4').classList.toggle('hidden');
-            document.getElementById('pickcart4').classList.toggle('animate');
-            document.getElementById('price4').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/07-ex3415r-back.jpg";
-        }
-        function mobiuz44() {
-            img1 = document.getElementById('img4');
-            document.getElementById('eye4').classList.toggle('hidden');
-            document.getElementById('eye4').classList.toggle('animate');
-            document.getElementById('pickcart4').classList.toggle('hidden');
-            document.getElementById('pickcart4').classList.toggle('animate');
-            document.getElementById('price4').classList.toggle('hidden');
-            img1.src = "https://www.zowieshop.com/wp-content/uploads/2021/09/ex3415r-cover-w.jpg";
-        }
         let requestURL = '/json/Mobiuz.json';
         let request = new XMLHttpRequest();
         request.onreadystatechange = function () {
@@ -273,6 +244,7 @@
 
         }
     </script>
+    <script src="/js/opco.js"></script>
 </body>
 
 </html>

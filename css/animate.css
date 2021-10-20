@@ -4,6 +4,12 @@
 .imganimate{
     animation: animateimg 1s ease-in-out;
 }
+.animatetextcart{
+    animation:  animatetextcart 0.5s ease-in-out;
+}
+.animatetextprice{
+    animation:  animatetextprice 0.5s ease-in-out;
+}
 @keyframes animate {
     0%{
         opacity: 0;
@@ -12,11 +18,19 @@
         opacity: 1;
     }
 }
-@keyframes animateimg{
+@keyframes animatetextcart {
     0%{
-        opacity: 0.4;
+        transform: translateY(20px);
     }
     100%{
-        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes animatetextprice {
+    0%{
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(-15px);
     }
 }

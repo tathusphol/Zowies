@@ -18,3 +18,41 @@ html{
 .bg-nav{
     background: rgb(201, 200, 200);
 }
+.eye{
+    background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900257562937671690/eye.png);
+    width: 25px;
+    height: 25px;
+    transition: 0.4s;
+}
+.eye:hover{
+    background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900257561876529152/eye-red.png);
+    transition: 0.4s;
+    animation: dugdig1 0.5s infinite;
+}
+.heart{
+    background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900256845195792454/heart.png);
+    transition: 0.4s;
+    width: 25px;
+    height: 25px;
+}
+.heart:hover{
+    background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900256843945885736/heart-red.png);
+    transition: 0.4s;
+    animation: dugdig 0.5s infinite;
+}
+@keyframes dugdig {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes dugdig1 {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}

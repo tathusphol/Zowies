@@ -28,6 +28,7 @@ function wishlist(name, numberid) {
         localStorage.setItem(`id${num}`, data[numberid - 1].font);
         localStorage.setItem(`name${num}`, data[numberid - 1].name);
         localStorage.setItem(`price${num}`, data[numberid - 1].price);
+
     }
 
 }

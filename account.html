@@ -8,56 +8,12 @@
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <title>Zowie</title>
     <link rel="stylesheet" href="/css/animate.css">
-    <title>Sale</title>
-    <style>
-        .fixedimg {
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            padding-top: 130%;
-        }
-        .changeimg1{
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-01@2x-1.jpg);
-        }
-        .changeimg2{
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546K-01@2x-2.jpg);
-        }
-        .changeimg3{
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2411K-01@2x-2.jpg);
-        }
-        .changeimg4{
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/ZA12-01@2x.jpg);
-        }
-        .changeimg1:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-02@2x.jpg);
-        }
-        .changeimg2:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546K-03@2x.jpg);
-        }
-        .changeimg3:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2411K-02@2x.jpg);
-        }
-        .changeimg4:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/ZA12-02@2x.jpg);
-        }
-    </style>
 </head>
 
-<body class="relative">
-    <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40"
-            src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png"
-            alt=""></a>
-    <img width="40px" class="cusor-pointer fixed right-8 bottom-12 rounded-full z-40"
-        src="https://cdn.discordapp.com/attachments/896721421621919754/899628484090007602/LINE_New_App_Icon_282020-1229.png"
-        alt="">
+<body>
+
     <!-- navbar -->
 
     <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
@@ -93,107 +49,113 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- body -->
-    <div class="h-72 flex items-center justify-center">
-        <div class="space-y-6">
-            <p class="text-6xl lg:text-7xl font-light mt-28">Special Price</p>
-            <p class="text-sm text-gray-600 text-center">สินค้าราคาพิเศษ</p>
-        </div>
-    </div>
-    <div class="px-12 py-10">
-        <a class="text-gray-500" href="index.html">หน้าหลัก</a>
-        <span> / </span>
-        <span class="text-gray-600 font-semibold">Special Price</span>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="openn(1)" onmouseout="closee(1)" >
-            <div id="img1" class="fixedimg changeimg1 w-full relative">
-                <div id="eye1" class="absolute bottom-3 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div onclick="wishlist('sale', 1)" class="heart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p id="text1" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price1" class="text-center text-sm"></p>
-                <p id="pickcart1" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
-        <div onmouseover="openn(2)" onmouseout="closee(2)" >
-            <div id="img2" class="fixedimg changeimg2 w-full relative">
-                <div id="eye2" class="absolute bottom-3 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div onclick="wishlist('sale', 2)" class="heart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p id="text2" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price2" class="text-center text-sm"></p>
-                <p id="pickcart2" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
-        <div onmouseover="openn(3)" onmouseout="closee(3)" >
-            <div id="img3" class="fixedimg changeimg3 w-full relative">
-                <div id="eye3" class="absolute bottom-3 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div onclick="wishlist('sale', 3)" class="heart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p id="text3" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price3" class="text-center text-sm"></p>
-                <p id="pickcart3" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
-        <div onmouseover="openn(4)" onmouseout="closee(4)" >
-            <div id="img4" class="fixedimg changeimg4 w-full relative">
-                <div id="eye4" class="absolute bottom-3 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div onclick="wishlist('sale', 4)" class="heart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p id="text4" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price4" class="text-center text-sm"></p>
-                <p id="pickcart4" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
 
-    </div>
+    <div class="w-full flex justify-center items-center">
+        <div>
+            <div class="md:w-full text-center text-6xl mt-20">
+                <span id="t-login" class="font-extrabold cursor-pointer duration-500 text-black" onclick="change(1)">เข้าสู่ระบบ</span>
+                <span class="text-gray-500"> / </span>
+                <span id="t-reg" class="font-extrabold text-gray-500 cursor-pointer hover:text-gray-400 duration-500" onclick="change(2)">ลงทะเบียน</span>
+            </div>
 
+            <div class="flex justify-center ">
+                <form id="login" class="w-full mt-16 animate">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                            ชื่อผู้ใช้หรือที่อยู่อีเมล <span class="text-gray-300">*</span>
+                        </label>
+                        <input
+                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="username" type="text" placeholder="">
+                    </div>
+                    <div class="mb-6 mt-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                            รหัสผ่าน <span class="text-gray-300">*</span>
+                        </label>
+                        <input
+                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="username" type="text" placeholder="">
+                        <div class="flex -mr-px">
+                            <span
+                                class="flex items-center leading-normal bg-white rounded rounded-l-none border-0 px-3 whitespace-no-wrap text-gray-600">
+                                <i class="fas fa-eye-slash"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- button -->
+                    <div class="md:flex md:items-center">
+                        <div class="md:w-full">
+                            <button
+                                class="text-sm shadow bg-red-700 hover:bg-red-600 duration-500 focus:shadow-outline focus:outline-none text-white font-bold py-4 px-4 w-full"
+                                type="button">
+                                เข้าสู่ระบบ
+                            </button>
+                        </div>
+                    </div>
+                    <!-- select -->
+                    <div class="md:flex md:items-center mb-6 mt-6">
+                        <label class="md:w-full flex justify-between block text-gray-700 font-bold">
+                            <div>
+                                <input class="mr-2 leading-tight " type="checkbox">
+                                <span class="text-sm">
+                                    จำฉันไว้
+                                </span>
+                            </div>
+                            <div>
+                                <a href="lostpassword.html"
+                                    class="text-sm text-red-700 font-bold right-0 b-icon duration-500"><span
+                                        class="text-sm ">คุณจำรหัสผ่านไม่ได้?</span></a>
+                            </div>
+                        </label>
+                    </div>
+                </form>
+
+                <!-- ลงทะเบียน -->
+                <form id="reg" class="w-full mt-16 hidden">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                            อีเมล <span class="text-gray-300">*</span>
+                        </label>
+                        <input
+                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="username" type="text" placeholder="">
+                        <p class="text-gray-700 text-base mt-4">รายละเอียดรหัสผ่านจะถูกจัดส่งไปยังอีเมล์ของท่าน</p>
+                    </div>
+
+                    <!-- bot -->
+                    <div class="md:flex md:items-center mb-6 h-1/4 w-3/4 items-center">
+                        <label class="shadow md:w-2/3 block font-bold h-full relative p-2"
+                            style="background-color: #F9F9F9;">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <input class="mr-2 leading-tight" type="checkbox">
+                                    <span class="text-sm">
+                                        ฉันไม่ใช่โปรแกรมอัตโนมัติ
+                                    </span>
+                                </div>
+                                <img width="40px" src="/img/RecaptchaLogo.png" alt="">
+                            </div>
+                            <p class="text-gray-500 absolute bottom-1 right-2" style="font-size: 1px;">ข้อมูลส่วนบุคคล - ข้อกำหนด</p>
+                        </label>
+                    </div>
+
+                    <!-- button -->
+                    <div class="md:flex md:items-center">
+                        <div class="md:w-full">
+                            <button
+                                class="text-sm shadow bg-red-700 hover:bg-red-600 duration-500 focus:shadow-outline focus:outline-none text-white font-bold py-4 px-4 w-full"
+                                type="button">
+                                ลงทะเบียน
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
 
@@ -245,29 +207,34 @@
             <p>© 2021 <span class="border-b-2">ZOWIE Shop</span></p>
         </div>
     </footer>
-    <script>
-        let requestURL = '/json/sale.json';
-        let request = new XMLHttpRequest();
-        request.onreadystatechange = function () {
-            if (request.readyState == 4 && request.status == 200) {
-                dataReportStatus(JSON.parse(request.responseText));
-            }
-        };
-        request.open("GET", requestURL, true);
-        request.send();
 
-        function dataReportStatus(data) {
-            for (let i = 0; i < data.length; i++) {
-                let num = i + 1;
-                let img = data[i].font
-                document.getElementById(`text${num}`).innerHTML = data[i].name;
-                document.getElementById(`price${num}`).innerHTML = data[i].price;
-            }
-
-        }
-    </script>
-    <script src="/js/opco.js"></script>
-    <script src="/js/wishlist.js"></script>
 </body>
-
+<script>
+    function change(n) {
+        let login = document.getElementById('login');
+        let reg = document.getElementById('reg');
+        let t_login = document.getElementById('t-login');
+        let t_reg = document.getElementById('t-reg');
+        if (n == 1) {
+            login.classList.remove('hidden');
+            reg.classList.add('hidden');
+            t_login.classList.remove('text-gray-500');
+            t_reg.classList.add('text-gray-500');
+            t_login.classList.remove('hover:text-gray-400');
+            t_reg.classList.add('hover:text-gray-400');
+            login.classList.add('animate');
+            reg.classList.remove('animate');
+        }
+        if (n == 2) {
+            reg.classList.remove('hidden');
+            login.classList.add('hidden');
+            t_reg.classList.remove('text-gray-500');
+            t_login.classList.add('text-gray-500');
+            t_login.classList.add('hover:text-gray-400');
+            t_reg.classList.remove('hover:text-gray-400');
+            reg.classList.add('animate');
+            login.classList.remove('animate');
+        }
+    }
+</script>
 </html>

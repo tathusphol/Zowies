@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/">
     <title>payment</title>
 </head>
 
@@ -119,18 +119,27 @@
     </footer>
     <script>
         let itemjson = JSON.parse(localStorage.getItem(`data`));
-        for (var i = 1; i < itemjson.length; i++) {
+        if(itemjson == null){
+            
+        }
+        else{
+            for (var i = 1; i < itemjson.length; i++) {
             let parent = document.getElementById('parent');
             let box = document.createElement('div');
             let img = document.createElement('img');
             let text = document.createElement('p');
+            let crossx = document.createElement('span');
+            crossx.setAttribute('class', 'iconify');
+            crossx.setAttribute('data-icon', 'akar-icons:cross');
             img.src = itemjson[i].id;
             text.innerHTML = itemjson[i].name;
+            box.appendChild(crossx);
             box.appendChild(img);
             img.setAttribute('class', 'w-16');
             box.appendChild(text)
             box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2');
             parent.appendChild(box);
+        }
         }
     </script>
     <script src="/js/wishlist.js"></script>

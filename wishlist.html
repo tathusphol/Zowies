@@ -56,7 +56,7 @@
 
     <!-- body -->
 
-    <div class="h-screen">
+    <div class="">
         <div class="py-24">
             <p class="text-center text-6xl font-bold">WishList</p>
         </div>
@@ -118,20 +118,18 @@
         </div>
     </footer>
     <script>
-        for (var i = 1; i < 1000; i++) {
-            if (localStorage.getItem(`id${i}`) == null) {
-                break;
-            }
+        let itemjson = JSON.parse(localStorage.getItem(`data`));
+        for (var i = 1; i < itemjson.length; i++) {
             let parent = document.getElementById('parent');
             let box = document.createElement('div');
             let img = document.createElement('img');
             let text = document.createElement('p');
-            img.src = localStorage.getItem(`id${i}`);
-            text.innerHTML = localStorage.getItem(`name${i}`);
+            img.src = itemjson[i].id;
+            text.innerHTML = itemjson[i].name;
             box.appendChild(img);
             img.setAttribute('class', 'w-16');
             box.appendChild(text)
-            box.setAttribute('class', 'flex items-center space-x-12');
+            box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2');
             parent.appendChild(box);
         }
     </script>

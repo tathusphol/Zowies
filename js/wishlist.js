@@ -1,5 +1,3 @@
-let num = (localStorage.getItem(`number`));
-
 var dict = {
     "sale": "sale.json",
     "access": "accessory.json",
@@ -7,10 +5,6 @@ var dict = {
 };
 function wishlist(name, numberid) {
     // localStorage.removeItem();
-    if (num != null) {
-        num = parseInt(num);
-    }
-    num += 1;
     let requestURL = `/json/${dict[name]}`;
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -24,11 +18,20 @@ function wishlist(name, numberid) {
     function dataReportStatus(data) {
         // console.log(data[numberid-1].font);
         // console.log(data[numberid-1].name);
-        localStorage.setItem(`number`, num);
-        localStorage.setItem(`id${num}`, data[numberid - 1].font);
-        localStorage.setItem(`name${num}`, data[numberid - 1].name);
-        localStorage.setItem(`price${num}`, data[numberid - 1].price);
-
+        if (JSON.parse(localStorage.getItem(`data`)) == null) {
+            var listcheck = [];
+            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price };
+            listcheck.push(listitem);
+            localStorage.setItem(`data`, JSON.stringify(listcheck));
+        }
+        else {
+            var listcheck = JSON.parse(localStorage.getItem(`data`));
+            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price };
+            listcheck.push(listitem);
+            localStorage.setItem(`data`, JSON.stringify(listcheck));
+            
+        }
+        console.log(JSON.parse(localStorage.getItem(`data`))[0]);  
     }
 
 }

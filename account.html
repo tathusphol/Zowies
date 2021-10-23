@@ -67,16 +67,19 @@
                             ชื่อผู้ใช้หรือที่อยู่อีเมล <span class="text-gray-300">*</span>
                         </label>
                         <input
-                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-50"
                             id="username" type="text" placeholder="">
                     </div>
                     <div class="mb-6 mt-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                             รหัสผ่าน <span class="text-gray-300">*</span>
                         </label>
-                        <input
-                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="username" type="text" placeholder="">
+                        <div class="flex bg-white shadow items-center relative">
+                            <input
+                            class="appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-50"
+                            id="pass" type="password" placeholder="">
+                            <img width="20px" class="absolute right-2 cursor-pointer" src="/img/eyepassword.png" onclick="showpass()" alt="">
+                        </div>
                         <div class="flex -mr-px">
                             <span
                                 class="flex items-center leading-normal bg-white rounded rounded-l-none border-0 px-3 whitespace-no-wrap text-gray-600">
@@ -119,7 +122,7 @@
                             อีเมล <span class="text-gray-300">*</span>
                         </label>
                         <input
-                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:bg-gray-50"
                             id="username" type="text" placeholder="">
                         <p class="text-gray-700 text-base mt-4">รายละเอียดรหัสผ่านจะถูกจัดส่งไปยังอีเมล์ของท่าน</p>
                     </div>
@@ -234,6 +237,17 @@
             t_reg.classList.remove('hover:text-gray-400');
             reg.classList.add('animate');
             login.classList.remove('animate');
+        }
+    }
+    let num = 0;
+    function showpass() {
+        num++;
+        let pass_in = document.getElementById('pass');
+        if (num % 2 != 0) {
+            pass_in.setAttribute('type', 'text');
+        }
+        else{
+            pass_in.setAttribute('type', 'password');
         }
     }
 </script>

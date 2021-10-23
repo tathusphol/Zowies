@@ -1,7 +1,12 @@
 var dict = {
     "sale": "sale.json",
     "access": "accessory.json",
-    "mobiuz": "Mobiuz.json"
+    "mobiuz": "Mobiuz.json",
+    "kaidee": "kaidee.json",
+    "mouse": "mouse.json",
+    "mouse_pad": "mouse_pad.json",
+    "XL_Monitor": "XL_Monitor.sjon",
+    "Two":"Two.json"
 };
 function wishlist(name, numberid) {
     // localStorage.removeItem();

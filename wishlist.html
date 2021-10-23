@@ -119,27 +119,38 @@
     </footer>
     <script>
         let itemjson = JSON.parse(localStorage.getItem(`data`));
-        if(itemjson == null){
-            
+        if (itemjson == null) {
+
         }
-        else{
-            for (var i = 1; i < itemjson.length; i++) {
-            let parent = document.getElementById('parent');
-            let box = document.createElement('div');
-            let img = document.createElement('img');
-            let text = document.createElement('p');
-            let crossx = document.createElement('span');
-            crossx.setAttribute('class', 'iconify');
-            crossx.setAttribute('data-icon', 'akar-icons:cross');
-            img.src = itemjson[i].id;
-            text.innerHTML = itemjson[i].name;
-            box.appendChild(crossx);
-            box.appendChild(img);
-            img.setAttribute('class', 'w-16');
-            box.appendChild(text)
-            box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2');
-            parent.appendChild(box);
+        else {
+            for (var i = 0; i < itemjson.length; i++) {
+                if(itemjson[i] == null){
+                    continue;
+                }
+                let parent = document.getElementById('parent');
+                let box = document.createElement('div');
+                let img = document.createElement('img');
+                let text = document.createElement('p');
+                let crossx = document.createElement('span');
+                crossx.setAttribute('class', 'iconify cursor-pointer');
+                crossx.setAttribute('data-icon', 'akar-icons:cross');
+                crossx.setAttribute('onclick', `deletee(${i});`);
+                img.src = itemjson[i].id;
+                text.innerHTML = itemjson[i].name;
+                box.appendChild(crossx);
+                box.appendChild(img);
+                img.setAttribute('class', 'w-16');
+                box.appendChild(text)
+                box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2');
+                parent.appendChild(box);
+            }
         }
+        Object.prototype.deleteByIndex = function (index) {
+            delete this[Object.keys(this)[index]];
+        };
+        function deletee(index) {
+            delete itemjson[index];
+            localStorage.setItem(`data`, JSON.stringify(itemjson));
         }
     </script>
     <script src="/js/wishlist.js"></script>

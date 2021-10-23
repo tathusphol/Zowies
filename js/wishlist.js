@@ -1,11 +1,11 @@
 var dict = {
     "sale": "sale.json",
-    "access": "accessory.json",
-    "mobiuz": "Mobiuz.json",
+    "accessory": "accessory.json",
+    "Mobiuz": "Mobiuz.json",
     "kaidee": "kaidee.json",
     "mouse": "mouse.json",
     "mouse_pad": "mouse_pad.json",
-    "XL_Monitor": "XL_Monitor.sjon",
+    "XL_Monitor": "XL_Monitor.json",
     "Two":"Two.json"
 };
 function wishlist(name, numberid) {

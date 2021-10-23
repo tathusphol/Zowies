@@ -151,6 +151,7 @@
         function deletee(index) {
             delete itemjson[index];
             localStorage.setItem(`data`, JSON.stringify(itemjson));
+            location.reload();
         }
     </script>
     <script src="/js/wishlist.js"></script>

@@ -8,11 +8,8 @@ var dict = {
     "XL_Monitor": "XL_Monitor.json",
     "Two": "Two_hand.json"
 };
-function wishlist(name, numberid) {
+function pickcart(name, numberid) {
     // localStorage.removeItem();
-    let heart = document.getElementById(`heart${numberid}`);
-    heart.classList.add('heart1');
-    heart.classList.remove('heart');
     let requestURL = `/json/${dict[name]}`;
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -26,15 +23,15 @@ function wishlist(name, numberid) {
     function dataReportStatus(data) {
         // console.log(data[numberid-1].font);
         // console.log(data[numberid-1].name);
-        if (JSON.parse(localStorage.getItem(`data`)) == null) {
+        if (JSON.parse(localStorage.getItem(`datacart`)) == null) {
             var listcheck = [];
             var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , priceint:data[numberid-1].priceint, numitem: 1};
             listcheck.push(listitem);
-            localStorage.setItem(`data`, JSON.stringify(listcheck));
+            localStorage.setItem(`datacart`, JSON.stringify(listcheck));
         }
         else {
             var check = 1;
-            var listcheck = JSON.parse(localStorage.getItem(`data`));
+            var listcheck = JSON.parse(localStorage.getItem(`datacart`));
             for (var i = 0; i < listcheck.length; i++) {
                 if (listcheck[i] == null) {
                     continue;
@@ -48,7 +45,7 @@ function wishlist(name, numberid) {
             if (check) {
                 var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , priceint:data[numberid-1].priceint, numitem: 1};
                 listcheck.push(listitem);
-                localStorage.setItem(`data`, JSON.stringify(listcheck));
+                localStorage.setItem(`datacart`, JSON.stringify(listcheck));
             }
 
         }

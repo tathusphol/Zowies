@@ -1,5 +1,5 @@
 function plus(num){
-    var listitem = JSON.parse(localStorage.getItem(`data`));
+    var listitem = JSON.parse(localStorage.getItem(`datacart`));
     let number = listitem[num].numitem;
     number++;
     // localStorage.setItem(`numitem${num}`, number);
@@ -12,12 +12,12 @@ function plus(num){
         else{
             check.push(listitem[i]);
         }
-        localStorage.setItem(`data`, JSON.stringify(check));
+        localStorage.setItem(`datacart`, JSON.stringify(check));
     }
     location.reload();
 }
 function minus(num){
-    var listitem = JSON.parse(localStorage.getItem(`data`));
+    var listitem = JSON.parse(localStorage.getItem(`datacart`));
     let number = listitem[num].numitem;
     number--;
     // localStorage.setItem(`numitem${num}`, number);
@@ -30,7 +30,7 @@ function minus(num){
         else{
             check.push(listitem[i]);
         }
-        localStorage.setItem(`data`, JSON.stringify(check));
+        localStorage.setItem(`datacart`, JSON.stringify(check));
     }
     location.reload();
 }

@@ -143,10 +143,15 @@
         </div>
     </footer>
     <script>
-        var check = JSON.parse(localStorage.getItem(`data`));
+        var check = JSON.parse(localStorage.getItem(`datacart`));
+        var checkwishlist = JSON.parse(localStorage.getItem(`data`));
         var numwishlist = 0;
-        for (var j = 0; j < check.length; j++) {
-            if (check[j] == null) {
+        if(checkwishlist == null){
+            
+        }
+        else{
+            for (var j = 0; j < checkwishlist.length; j++) {
+            if (checkwishlist[j] == null) {
                 continue;
 
             }
@@ -154,13 +159,14 @@
                 numwishlist++;
             }
         }
+        }
         if (numwishlist == undefined) {
             var numheart = document.getElementById('numheart').innerHTML = 0;
         }
         else {
             var numheart = document.getElementById('numheart').innerHTML = numwishlist;
         }
-        let itemjson = JSON.parse(localStorage.getItem(`data`));
+        let itemjson = JSON.parse(localStorage.getItem(`datacart`));
         if (itemjson == null) {
 
         }
@@ -236,6 +242,7 @@
         document.getElementById(`allprice`).innerHTML = allprice;
         document.getElementById(`tran`).innerHTML = 300 * numitem;
         document.getElementById(`result_allprice`).innerHTML = allprice + (300 * numitem);
+        document.getElementById(`numcart`).innerHTML = numitem;
         Object.prototype.deleteByIndex = function (index) {
             delete this[Object.keys(this)[index]];
         };

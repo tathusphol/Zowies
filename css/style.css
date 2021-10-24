@@ -35,8 +35,19 @@ html{
     width: 25px;
     height: 25px;
 }
+.heart1{
+    background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900253941663682640/heart-red.png);
+    transition: 0.4s;
+    width: 25px;
+    height: 25px;
+}
 .heart:hover{
     background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900256843945885736/heart-red.png);
+    transition: 0.4s;
+    animation: dugdig 0.5s infinite;
+}
+.heart1:hover{
+    background-image: url(https://cdn.discordapp.com/attachments/896721421621919754/900253941663682640/heart-red.png);
     transition: 0.4s;
     animation: dugdig 0.5s infinite;
 }

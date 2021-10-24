@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/">
+    <link rel="stylesheet" href="/css/style.css">
     <title>payment</title>
 </head>
 
@@ -41,11 +41,11 @@
                         src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
-                    <span>0</span>
+                    <span id="numheart">0</span>
                 </div>
                 <div class="flex space-x-1">
                     <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
-                    <span>0</span>
+                    <span id="numcart">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
@@ -118,13 +118,25 @@
         </div>
     </footer>
     <script>
+        var check = JSON.parse(localStorage.getItem(`data`));
+        var numwishlist = 0;
+        for (var j = 0; j < check.length; j++) {
+            if (check[j] == null) {
+                continue;
+
+            }
+            else {
+                numwishlist++;
+            }
+        }
+        var numheart = document.getElementById('numheart').innerHTML = numwishlist;
         let itemjson = JSON.parse(localStorage.getItem(`data`));
         if (itemjson == null) {
 
         }
         else {
             for (var i = 0; i < itemjson.length; i++) {
-                if(itemjson[i] == null){
+                if (itemjson[i] == null) {
                     continue;
                 }
                 let parent = document.getElementById('parent');

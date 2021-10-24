@@ -6,10 +6,13 @@ var dict = {
     "mouse": "mouse.json",
     "mouse_pad": "mouse_pad.json",
     "XL_Monitor": "XL_Monitor.json",
-    "Two":"Two.json"
+    "Two": "Two_hand.json"
 };
 function wishlist(name, numberid) {
     // localStorage.removeItem();
+    let heart = document.getElementById(`heart${numberid}`);
+    heart.classList.add('heart1');
+    heart.classList.remove('heart');
     let requestURL = `/json/${dict[name]}`;
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -30,13 +33,26 @@ function wishlist(name, numberid) {
             localStorage.setItem(`data`, JSON.stringify(listcheck));
         }
         else {
+            var check = 1;
             var listcheck = JSON.parse(localStorage.getItem(`data`));
-            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price };
-            listcheck.push(listitem);
-            localStorage.setItem(`data`, JSON.stringify(listcheck));
-            
+            for (var i = 0; i < listcheck.length; i++) {
+                if (listcheck[i] == null) {
+                    continue;
+                }
+                if (data[numberid - 1].font == listcheck[i].id) {
+                    check = 0;
+                    window.location.href = 'wishlist.html';
+                    break;
+                }
+            }
+            if (check) {
+                var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price };
+                listcheck.push(listitem);
+                localStorage.setItem(`data`, JSON.stringify(listcheck));
+            }
+
         }
-        console.log(JSON.parse(localStorage.getItem(`data`))[0]);  
     }
+    location.reload();
 
 }

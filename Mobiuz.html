@@ -77,11 +77,11 @@
                         src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
-                    <span>0</span>
+                    <span id="numheart">0</span>
                 </div>
                 <div class="flex space-x-1">
                     <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
-                    <span>0</span>
+                    <span id="numcart">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
@@ -107,7 +107,7 @@
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div class="heart" onclick="wishlist('Mobiuz', 1)"></div>
+                                <div id="heart1" class="heart" onclick="wishlist('Mobiuz', 1)"></div>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div class="heart" onclick="wishlist('Mobiuz', 2)"></div>
+                                <div id="heart2" class="heart" onclick="wishlist('Mobiuz', 2)"></div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div class="heart" onclick="wishlist('Mobiuz', 3)"></div>
+                                <div id="heart3" class="heart" onclick="wishlist('Mobiuz', 3)"></div>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div class="heart" onclick="wishlist('Mobiuz', 4)"></div>
+                                <div id="heart4" class="heart" onclick="wishlist('Mobiuz', 4)"></div>
                             </div>
                         </div>
                     </div>
@@ -256,6 +256,31 @@
                 document.getElementById(`text${num}`).innerHTML = data[i].name;
                 document.getElementById(`price${num}`).innerHTML = data[i].price;
             }
+            var check = JSON.parse(localStorage.getItem(`data`));
+                for (var i = 0; i < data.length; i++) {
+                    if (check == null) {
+                        continue;
+                    }
+                    else {
+                        var numwishlist = 0;
+                        for (var j = 0; j < check.length; j++) {
+                            if (check[j] == null) {
+                                continue;
+    
+                            }
+                            else{
+                                numwishlist++;
+                            }
+                            if (data[i].font == check[j].id) {
+                                let heart = document.getElementById(`heart${i + 1}`);
+                                heart.classList.add('heart1');
+                                heart.classList.remove('heart');
+    
+                            }
+                        }
+                    }
+                }
+                var numheart = document.getElementById('numheart').innerHTML = numwishlist;
 
         }
     </script>

@@ -16,34 +16,42 @@
             background-repeat: no-repeat;
             padding-top: 130%;
         }
-        .changeimg1{
+
+        .changeimg1 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-01@2x-1.jpg);
         }
-        .changeimg2{
+
+        .changeimg2 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546K-01@2x-2.jpg);
         }
-        .changeimg3{
+
+        .changeimg3 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2411K-01@2x-2.jpg);
         }
-        .changeimg4{
+
+        .changeimg4 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/ZA12-01@2x.jpg);
         }
+
         .changeimg1:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-02@2x.jpg);
         }
+
         .changeimg2:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546K-03@2x.jpg);
         }
+
         .changeimg3:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2411K-02@2x.jpg);
         }
+
         .changeimg4:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/ZA12-02@2x.jpg);
@@ -81,11 +89,11 @@
                         src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
-                    <span>0</span>
+                    <span id="numheart">0</span>
                 </div>
                 <div class="flex space-x-1">
                     <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
-                    <span>0</span>
+                    <span id="numcart">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
@@ -93,7 +101,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- body -->
     <div class="h-72 flex items-center justify-center">
         <div class="space-y-6">
@@ -107,14 +115,14 @@
         <span class="text-gray-600 font-semibold">Special Price</span>
     </div>
     <div class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="openn(1)" onmouseout="closee(1)" >
+        <div onmouseover="openn(1)" onmouseout="closee(1)">
             <div id="img1" class="fixedimg changeimg1 w-full relative">
                 <div id="eye1" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div onclick="wishlist('sale', 1)" class="heart"></div>
+                                <div id="heart1" onclick="wishlist('sale', 1)" class="heart"></div>
                             </div>
                         </div>
                     </div>
@@ -128,14 +136,14 @@
                 <p id="pickcart1" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(2)" onmouseout="closee(2)" >
+        <div onmouseover="openn(2)" onmouseout="closee(2)">
             <div id="img2" class="fixedimg changeimg2 w-full relative">
                 <div id="eye2" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div onclick="wishlist('sale', 2)" class="heart"></div>
+                                <div id="heart2" onclick="wishlist('sale', 2)" class="heart"></div>
                             </div>
                         </div>
                     </div>
@@ -149,14 +157,14 @@
                 <p id="pickcart2" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(3)" onmouseout="closee(3)" >
+        <div onmouseover="openn(3)" onmouseout="closee(3)">
             <div id="img3" class="fixedimg changeimg3 w-full relative">
                 <div id="eye3" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div onclick="wishlist('sale', 3)" class="heart"></div>
+                                <div id="heart3" onclick="wishlist('sale', 3)" class="heart"></div>
                             </div>
                         </div>
                     </div>
@@ -170,14 +178,14 @@
                 <p id="pickcart3" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(4)" onmouseout="closee(4)" >
+        <div onmouseover="openn(4)" onmouseout="closee(4)">
             <div id="img4" class="fixedimg changeimg4 w-full relative">
                 <div id="eye4" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
                             <div class="flex space-x-1 px-2">
                                 <div class="eye"></div>
-                                <div onclick="wishlist('sale', 4)" class="heart"></div>
+                                <div id="heart4" onclick="wishlist('sale', 4)" class="heart"></div>
                             </div>
                         </div>
                     </div>
@@ -263,7 +271,32 @@
                 document.getElementById(`text${num}`).innerHTML = data[i].name;
                 document.getElementById(`price${num}`).innerHTML = data[i].price;
             }
+            var check = JSON.parse(localStorage.getItem(`data`));
+            for (var i = 0; i < data.length; i++) {
+                if (check == null) {
+                    continue;
+                }
+                else {
+                    var numwishlist = 0;
+                    for (var j = 0; j < check.length; j++) {
+                        if (check[j] == null) {
+                            console.log(2);
+                            continue;
 
+                        }
+                        else{
+                            numwishlist++;
+                        }
+                        if (data[i].font == check[j].id) {
+                            let heart = document.getElementById(`heart${i + 1}`);
+                            heart.classList.add('heart1');
+                            heart.classList.remove('heart');
+
+                        }
+                    }
+                }
+            }
+            var numheart = document.getElementById('numheart').innerHTML = numwishlist;
         }
     </script>
     <script src="/js/opco.js"></script>

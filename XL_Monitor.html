@@ -283,7 +283,7 @@
                             continue;
 
                         }
-                        else{
+                        else {
                             numwishlist++;
                         }
                         if (data[i].font == check[j].id) {
@@ -295,7 +295,12 @@
                     }
                 }
             }
-            var numheart = document.getElementById('numheart').innerHTML = numwishlist;
+            if (numwishlist == undefined) {
+                var numheart = document.getElementById('numheart').innerHTML = 0;
+            }
+            else {
+                var numheart = document.getElementById('numheart').innerHTML = numwishlist;
+            }
 
         }
     </script>

@@ -16,34 +16,42 @@
             background-repeat: no-repeat;
             padding-top: 130%;
         }
-        .changeimg1{
+
+        .changeimg1 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/ex2510s-coverw.png);
         }
-        .changeimg2{
+
+        .changeimg2 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/EX2710R-cover-w.jpg);
         }
-        .changeimg3{
+
+        .changeimg3 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/ex3210r-cover-w.jpg);
         }
-        .changeimg4{
+
+        .changeimg4 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/ex3415r-cover-w.jpg);
         }
+
         .changeimg1:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2510s1.png);
         }
+
         .changeimg2:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex2710r1.png);
         }
+
         .changeimg3:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/03-ex3210r1.jpg);
         }
+
         .changeimg4:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/09/07-ex3415r-back.jpg);
@@ -52,8 +60,12 @@
 </head>
 
 <body class="relative">
-    <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40" src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png" alt=""></a>
-    <img width="40px" class="cusor-pointer fixed right-8 bottom-12 rounded-full z-40" src="https://cdn.discordapp.com/attachments/896721421621919754/899628484090007602/LINE_New_App_Icon_282020-1229.png" alt="">
+    <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40"
+            src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png"
+            alt=""></a>
+    <img width="40px" class="cusor-pointer fixed right-8 bottom-12 rounded-full z-40"
+        src="https://cdn.discordapp.com/attachments/896721421621919754/899628484090007602/LINE_New_App_Icon_282020-1229.png"
+        alt="">
     <!-- navbar -->
 
     <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
@@ -100,7 +112,7 @@
         <span class="text-gray-600">MOBIUZ</span>
     </div>
     <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="openn(1)" onmouseout="closee(1)" >
+        <div onmouseover="openn(1)" onmouseout="closee(1)">
             <div id="img1" class="fixedimg changeimg1 w-full relative">
                 <div id="eye1" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
@@ -121,7 +133,7 @@
                 <p id="pickcart1" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(2)" onmouseout="closee(2)" >
+        <div onmouseover="openn(2)" onmouseout="closee(2)">
             <div id="img2" class="fixedimg changeimg2 w-full relative">
                 <div id="eye2" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
@@ -142,7 +154,7 @@
                 <p id="pickcart2" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(3)" onmouseout="closee(3)" >
+        <div onmouseover="openn(3)" onmouseout="closee(3)">
             <div id="img3" class="fixedimg changeimg3 w-full relative">
                 <div id="eye3" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
@@ -163,7 +175,7 @@
                 <p id="pickcart3" class="text-red-600 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(4)" onmouseout="closee(4)" >
+        <div onmouseover="openn(4)" onmouseout="closee(4)">
             <div id="img4" class="fixedimg changeimg4 w-full relative">
                 <div id="eye4" class="absolute bottom-3 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
@@ -257,30 +269,35 @@
                 document.getElementById(`price${num}`).innerHTML = data[i].price;
             }
             var check = JSON.parse(localStorage.getItem(`data`));
-                for (var i = 0; i < data.length; i++) {
-                    if (check == null) {
-                        continue;
-                    }
-                    else {
-                        var numwishlist = 0;
-                        for (var j = 0; j < check.length; j++) {
-                            if (check[j] == null) {
-                                continue;
-    
-                            }
-                            else{
-                                numwishlist++;
-                            }
-                            if (data[i].font == check[j].id) {
-                                let heart = document.getElementById(`heart${i + 1}`);
-                                heart.classList.add('heart1');
-                                heart.classList.remove('heart');
-    
-                            }
+            for (var i = 0; i < data.length; i++) {
+                if (check == null) {
+                    continue;
+                }
+                else {
+                    var numwishlist = 0;
+                    for (var j = 0; j < check.length; j++) {
+                        if (check[j] == null) {
+                            continue;
+
+                        }
+                        else {
+                            numwishlist++;
+                        }
+                        if (data[i].font == check[j].id) {
+                            let heart = document.getElementById(`heart${i + 1}`);
+                            heart.classList.add('heart1');
+                            heart.classList.remove('heart');
+
                         }
                     }
                 }
+            }
+            if (numwishlist == undefined) {
+                var numheart = document.getElementById('numheart').innerHTML = 0;
+            }
+            else {
                 var numheart = document.getElementById('numheart').innerHTML = numwishlist;
+            }
 
         }
     </script>

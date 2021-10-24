@@ -3,30 +3,35 @@
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-03@2x.jpg",
         "name": "ZOWIE EC2 WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-03@2x.jpg",
         "name": "ZOWIE EC1 WHITE Mouse for e-Sports เมาส์เล่นเกม (L)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-03@2x.jpg",
         "name": "ZOWIE FK2-B WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x-1.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x-1.jpg",
         "name": "ZOWIE FK1-B WHITE Mouse for e-Sports เมาส์เล่นเกม (L)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg",
         "name": "ZOWIE FK1+-B WHITE Mouse for e-Sports เมาส์เล่นเกม (XL)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     }
 ]

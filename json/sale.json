@@ -3,24 +3,28 @@
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-01@2x-1.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-02@2x.jpg",
         "name": "(สินค้าราคาพิเศษ) BenQ ZOWIE XL2546 240Hz DyAc จอเกม 24.5 นิ้ว Monitor for e-Sports",
-        "price": "9,990.00฿"
+        "price": "9,990.00฿",
+        "priceint" : 9990
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546K-01@2x-2.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546K-02@2x-150x150.jpg",
         "name": "(สินค้าราคาพิเศษ) BenQ ZOWIE XL2546K 240Hz DyAc+ จอเกม 24.5 นิ้ว e-Sports Monitor",
-        "price": "15,900.00฿"
+        "price": "15,900.00฿",
+        "priceint" : 15900
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2411K-01@2x-2.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/XL2411K-02@2x.jpg",
         "name": "(สินค้าราคาพิเศษ) ZOWIE XL2411K 144Hz DyAc จอเกม 24 นิ้ว e-Sports Monitor",
-        "price": "5,590.00฿"
+        "price": "5,590.00฿",
+        "priceint" : 5590
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/ZA12-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/ZA12-02@2x.jpg",
         "name": "BenQ ZOWIE ZA11 Mouse for e-Sports เมาส์เล่นเกม (L)",
-        "price": "1,290.00฿"
+        "price": "1,290.00฿",
+        "priceint" : 1290
     }
 ]

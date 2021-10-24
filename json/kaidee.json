@@ -3,54 +3,63 @@
         "font": "https://www.zowieshop.com/wp-content/uploads/2021/04/S250@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2021/04/S250-2@2x.jpg",
         "name": "BenQ ZOWIE XS250 – S-Switch for XL-K Esports Gaming Monitors",
-        "price": "1,290.00฿"
+        "price": "1,290.00฿",
+        "priceint" : 1290
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-za13@2x-1.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-n0.jpg",
         "name": "Mouse Fleet / Mouse Skates สำหรับ ZA13",
-        "price": "200.00฿"
+        "price": "200.00฿",
+        "priceint" : 200
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-za12@2x-1.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-n0.jpg",
         "name": "Mouse Fleet / Mouse Skates สำหรับ ZA12",
-        "price": "200.00฿"
+        "price": "200.00฿",
+        "priceint" : 200
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-04@2x.jpg",
         "name": "BenQ ZOWIE G-SR e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (L)",
-        "price": "1,390.00฿"
+        "price": "1,390.00฿",
+        "priceint" : 1390
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-TF-X-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-TF-X-03@2x.jpg",
         "name": "BenQ ZOWIE G TF-X e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (L)",
-        "price": "1,390.00฿"
+        "price": "1,390.00฿",
+        "priceint" : 1390
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-03@2x.jpg",
         "name": "ZOWIE P-SR e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (S)",
-        "price": "1,090.00฿"
+        "price": "1,090.00฿",
+        "priceint" : 1090
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-03@2x.jpg",
         "name": "ZOWIE FK2-B WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x-1.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x-1.jpg",
         "name": "ZOWIE FK1-B WHITE Mouse for e-Sports เมาส์เล่นเกม (L)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg",
         "name": "ZOWIE FK1+-B WHITE Mouse for e-Sports เมาส์เล่นเกม (XL)",
-        "price": "1,790.00฿"
+        "price": "1,790.00฿",
+        "priceint" : 1790
     }
 ]

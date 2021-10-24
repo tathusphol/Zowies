@@ -37,7 +37,7 @@
                     <span id="numheart">0</span>
                 </div>
                 <div class="flex space-x-1">
-                    <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
+                    <a class="b-icon" href="/cart.html"><img class="w-5" src="/img/cart.svg" alt=""></a>
                     <span id="numcart">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
@@ -62,19 +62,22 @@
                         </div>
                         <div class="py-4 grid-cols-3 grid">
                             <p class="col-span-1">มูลค่า</p>
-                            <p class="col-span-2"></p>
+                            <p id="allprice" class="col-span-2"></p>
                         </div>
                         <div class="py-4 grid-cols-3 grid border-b-2 border-gray-300">
                             <p class="col-span-1">การจัดส่ง</p>
-                            <div class="col-span-2">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                            <div class="col-span-2 space-y-2">
+                                <div class="flex space-x-2 text-sm">
+                                    <p>คิดค่าการจัดส่ง:</p>
+                                    <p id="tran"></p>
+                                </div>
+                                <p>Shipping options will be updated during checkout.</p>
+                                <p class="text-red-600 hover:text-red-300 duration-500">คำนวนค่าจัดส่ง</p>
                             </div>
                         </div>
                         <div class="py-4 grid-cols-3 grid">
                             <p class="col-span-1">รวม</p>
-                            <p class="col-span-2 text-3xl font-bold"></p>
+                            <p id="result_allprice" class="col-span-2 text-xl font-bold"></p>
                         </div>
                         <div class="w-full">
                             <div class="px-4">
@@ -162,10 +165,12 @@
 
         }
         else {
+            var numberid = -1;
             for (var i = 0; i < itemjson.length; i++) {
                 if (itemjson[i] == null) {
                     continue;
                 }
+                numberid++;
                 let parent = document.getElementById('parent');
                 let box = document.createElement('div');
                 let box_delete = document.createElement('div');
@@ -178,16 +183,19 @@
                 let boxpm = document.createElement('div');
                 let numberlist = document.createElement('p');
                 let result_price = document.createElement('p');
-                numberlist.innerHTML = "1";
+                numberlist.innerHTML = itemjson[i].numitem;
                 plus.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJazHv-XRzl20hx9LVrHZE0Ouf9HbbMKpKhVUCKl5Q_ZXB0TaELKw2aMGU38v7FmC_9E&usqp=CAU";
                 minus.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEX///8jHyD8/PxMSUodGBoAAAAfGxwZFBVQTU7Ix8fz8/PW1tZmZGQQCQu8u7sOBQgsKCmsq6uOjI3h4OBbWVqgnp8lISOPjY7X19dPdMGfAAAA40lEQVR4nO3YW27CMBBAUWhrAgnPAKX7X2lTPukX0kQeOefs4Grs2M5qBQAAAAAAAAAAAAAAAAAAAAAAAAAAAEASHxnMlzeM++1nfdv9Y5il73orh+4rg+5Qbtf4wGPp1nl05RgduCu1o16UXWxgv97UTnqx+e5DC8dT7aJ/TmNkYH/ONsJpiOfIIQ7ZduGfEnlmXPIt0mmZXgIL7ykL74GF7c+w/X3Y/re0/fNwAXea9u+lC3hbLOB9OBkeWd74P7P0PdX+RfM0Xx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA7/kF8+oWvofMQVQAAAAASUVORK5CYII=";
                 box_delete.setAttribute('class', 'flex items-center space-x-4');
                 crossx.setAttribute('class', 'iconify cursor-pointer');
                 crossx.setAttribute('data-icon', 'akar-icons:cross');
                 crossx.setAttribute('onclick', `deletee(${i});`);
-                plus.setAttribute('class', 'w-3');
-                minus.setAttribute('class', 'w-4');
-                result_price.innerHTML = itemjson[i].price;
+                plus.setAttribute('class', 'w-3 cursor-pointer');
+                plus.setAttribute('onclick', `plus(${i})`);
+                minus.setAttribute('class', 'w-4 cursor-pointer');
+                minus.setAttribute('onclick', `minus(${i})`);
+                result_price.innerHTML = `${parseInt(itemjson[i].priceint) * parseInt(itemjson[i].numitem)}`;
+                result_price.setAttribute(`id`, `numid${numberid}`);
                 boxpm.setAttribute('class', 'flex items-center space-x-4');
                 boxpm.appendChild(minus);
                 boxpm.appendChild(numberlist);
@@ -207,7 +215,27 @@
                 box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2 grid grid-cols-5');
                 parent.appendChild(box);
             }
+
         }
+        var allprice = 0;
+        if (itemjson == null) {
+
+        }
+        else {
+            var numitem = 0;
+            var numberid = -1;
+            for (var i = 0; i < itemjson.length; i++) {
+                if (itemjson[i] == null) {
+                    continue;
+                }
+                numberid++;
+                allprice += parseInt(document.getElementById(`numid${numberid}`).innerHTML);
+                numitem += parseInt(itemjson[i].numitem);
+            }
+        }
+        document.getElementById(`allprice`).innerHTML = allprice;
+        document.getElementById(`tran`).innerHTML = 300 * numitem;
+        document.getElementById(`result_allprice`).innerHTML = allprice + (300 * numitem);
         Object.prototype.deleteByIndex = function (index) {
             delete this[Object.keys(this)[index]];
         };
@@ -217,6 +245,7 @@
             location.reload();
         }
     </script>
+    <script src="/js/plusandminus.js"></script>
 </body>
 
 </html>

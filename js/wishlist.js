@@ -28,9 +28,10 @@ function wishlist(name, numberid) {
         // console.log(data[numberid-1].name);
         if (JSON.parse(localStorage.getItem(`data`)) == null) {
             var listcheck = [];
-            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , numitem: 1};
+            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , priceint:data[numberid-1].priceint, numitem: 1};
             listcheck.push(listitem);
             localStorage.setItem(`data`, JSON.stringify(listcheck));
+            localStorage.setItem(`numitem0`, 1);
         }
         else {
             var check = 1;
@@ -46,9 +47,10 @@ function wishlist(name, numberid) {
                 }
             }
             if (check) {
-                var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , numitem: 1};
+                var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , priceint:data[numberid-1].priceint, numitem: 1};
                 listcheck.push(listitem);
                 localStorage.setItem(`data`, JSON.stringify(listcheck));
+                localStorage.setItem(`numitem${JSON.parse(localStorage.getItem(`data`)).length-1}`, 1);
             }
 
         }

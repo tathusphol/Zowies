@@ -200,7 +200,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price1" class="text-center text-sm"></p>
-                            <p id="pickcart1" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart1" onclick="pickcart('kaidee', 1)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                     <div onmouseover="openn(2)" onmouseout="closee(2)">
@@ -221,7 +221,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price2" class="text-center text-sm"></p>
-                            <p id="pickcart2" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart2" onclick="pickcart('kaidee', 2)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                     <div onmouseover="openn(3)" onmouseout="closee(3)">
@@ -242,7 +242,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price3" class="text-center text-sm"></p>
-                            <p id="pickcart3" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart3" onclick="pickcart('kaidee', 3)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price4" class="text-center text-sm"></p>
-                            <p id="pickcart4" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart4" onclick="pickcart('kaidee', 4)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                     <div onmouseover="openn(5)" onmouseout="closee(5)">
@@ -287,7 +287,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price5" class="text-center text-sm"></p>
-                            <p id="pickcart5" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart5" onclick="pickcart('kaidee', 5)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                     <div onmouseover="openn(6)" onmouseout="closee(6)">
@@ -308,7 +308,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price6" class="text-center text-sm"></p>
-                            <p id="pickcart6" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart6" onclick="pickcart('kaidee', 6)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price7" class="text-center text-sm"></p>
-                            <p id="pickcart7" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart7" onclick="pickcart('kaidee', 7)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                     <div onmouseover="openn(8)" onmouseout="closee(8)">
@@ -352,7 +352,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price8" class="text-center text-sm"></p>
-                            <p id="pickcart8" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart8" onclick="pickcart('kaidee', 8)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                     <div onmouseover="openn(9)" onmouseout="closee(9)">
@@ -373,7 +373,7 @@
                         </div>
                         <div class="pt-4">
                             <p id="price9" class="text-center text-sm"></p>
-                            <p id="pickcart9" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
+                            <p id="pickcart9" onclick="pickcart('kaidee', 9)" class="text-red-600 cursor-pointer hover:text-red-300 text-center text-sm hidden textcart">หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
                 </div>
@@ -486,7 +486,20 @@
             else {
                 var numheart = document.getElementById('numheart').innerHTML = numwishlist;
             }
+            let itemjson = JSON.parse(localStorage.getItem(`datacart`));
+            if (itemjson == null) {
 
+            }
+            else {
+                var numitem = 0;
+                for (var i = 0; i < itemjson.length; i++) {
+                    if (itemjson[i] == null) {
+                        continue;
+                    }
+                    numitem += parseInt(itemjson[i].numitem);
+                }
+            }
+            document.getElementById('numcart').innerHTML = numitem;
         }
         let slide = 0;
         let arrow = 0;
@@ -525,9 +538,11 @@
             }
         }
         setTimeout(slideanimate, 10);
+        
     </script>
     <script src="/js/opco.js"></script>
     <script src="/js/wishlist.js"></script>
+    <script src="/js/pickcart.js"></script>
 </body>
 
 </html>

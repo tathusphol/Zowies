@@ -38,7 +38,7 @@ function pickcart(name, numberid) {
                 }
                 if (data[numberid - 1].font == listcheck[i].id) {
                     check = 0;
-                    window.location.href = 'wishlist.html';
+                    window.location.href = 'cart.html';
                     break;
                 }
             }

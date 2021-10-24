@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
+        <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
+            <a class="b-icon" href="index.html"><img class="lg:hidden w-6"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
+                    class="hover:brightness-50 w-40 hidden lg:block"
+                    src="https://www.zowieshop.com/wp-content/uploads/2021/10/zowieshopbylandmark_logo_png.png"
+                    alt=""></a>
+            <div class="space-x-4 text-gray-600 hidden lg:inline-block lg:text-md">
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="index.html">Home</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="XL_Monitor.html">XL Monitor</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mobiuz.html">Mobiuz</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mouse.html">Gaming Mice</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Pad.html">Gaming Mouse Pads</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Access.html">Accessories</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Two.html">สินค้ามือสอง</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32"
+                        src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
+                    <span id="numheart">0</span>
+                </div>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
+                    <span id="numcart">0</span>
+                </div>
+                <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
+                <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
+                <img class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="flex justify-center">
+        <div class="max-w-6xl">
+            <p class="text-center text-6xl font-semibold py-16">ตะกร้าสินค้า</p>
+            <div class="grid grid-cols-3 gap-8">
+                <div id="parent" class="col-span-2">
+
+                </div>
+                <div class="col-span-1">
+                    <div class="px-8 py-10  bg-gray-200">
+                        <div class="border-b-2 border-gray-300">
+                            <p>ยอดรวม</p>
+                        </div>
+                        <div class="py-4 grid-cols-3 grid">
+                            <p class="col-span-1">มูลค่า</p>
+                            <p class="col-span-2"></p>
+                        </div>
+                        <div class="py-4 grid-cols-3 grid border-b-2 border-gray-300">
+                            <p class="col-span-1">การจัดส่ง</p>
+                            <div class="col-span-2">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="py-4 grid-cols-3 grid">
+                            <p class="col-span-1">รวม</p>
+                            <p class="col-span-2 text-3xl font-bold"></p>
+                        </div>
+                        <div class="w-full">
+                            <div class="px-4">
+                                <button
+                                    class="bg-red-700 w-full h-12 text-white rounded-lg">สั่งชื่อและชำระเงิน</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="bg-gray-100 mt-20">
+        <div class="flex justify-center w-full border-b-2">
+            <div class="px-12 py-24 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-4 space-y-20 lg:space-y-0">
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html">XL Monitor</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Mouse.html">Gaming Mice</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Pad.html">Gaming Mouse Pads</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Access.html">Accessories</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Two.html">สินค้ามือสอง</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Sale.html">สินค้าราคาพิเศษ</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer
+                            Services</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payment.html">แจ้งการโอนเงิน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">ติดตามสถานะการสั่งซื้อ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">ข่าวสาร & รีวิวสินค้า</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Support</a></div>
+                    <div><a class="hover:text-gray-400 duration-300"
+                            href="https://zowie.benq.com/th-th/support/warranty/gear.html">เงื่อนไขและการรับประกัน</a>
+                    </div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payandsend.html">การชำระเงิน &
+                            จัดส่งสินค้า</a></div>
+                    <div><a class="hover:text-gray-400 duration-300"
+                            href="https://www.facebook.com/zowieesportcenter">พูดคุยกับเราที่ Facebook</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">เกี่ยวกับ ZOWIE Shop</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a target="_blank" href="https://shopee.co.th/zowie_esport"><img
+                                class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a></div>
+                    <div><a target="_blank"
+                            href="https://www.lazada.co.th/shop/zowie-esport-center/?liteShop=true&spm=a211g0.store_hp.top.share&dsource=share&laz_share_info=130360665_103_200_1569158_120215000_null&laz_token=e848bade409365eeb7187723a38da1a4&exlaz=e_78%2FCXAnZy6HGip8qo24MCSTeQCjDld4siVQ4kY1ODqrCXvTKdNAtBfrYHUpbt8xr6nejNh6YiYbO7MSdVRSDSLcazjqFN96eD3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=130360665&sub_id3=1569158&sub_id6=CPI_EXLAZ"><img
+                                class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a></div>
+                    <div><a target="_blank" href="https://www.jd.co.th/jshop/22239.html"><img
+                                class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/jd.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center py-8 text-gray-400 text-sm">
+            <p>© 2021 <span class="border-b-2">ZOWIE Shop</span></p>
+        </div>
+    </footer>
+    <script>
+        var check = JSON.parse(localStorage.getItem(`data`));
+        var numwishlist = 0;
+        for (var j = 0; j < check.length; j++) {
+            if (check[j] == null) {
+                continue;
+
+            }
+            else {
+                numwishlist++;
+            }
+        }
+        if (numwishlist == undefined) {
+            var numheart = document.getElementById('numheart').innerHTML = 0;
+        }
+        else {
+            var numheart = document.getElementById('numheart').innerHTML = numwishlist;
+        }
+        let itemjson = JSON.parse(localStorage.getItem(`data`));
+        if (itemjson == null) {
+
+        }
+        else {
+            for (var i = 0; i < itemjson.length; i++) {
+                if (itemjson[i] == null) {
+                    continue;
+                }
+                let parent = document.getElementById('parent');
+                let box = document.createElement('div');
+                let box_delete = document.createElement('div');
+                let img = document.createElement('img');
+                let text = document.createElement('p');
+                let crossx = document.createElement('span');
+                let price = document.createElement('p');
+                let plus = document.createElement('img');
+                let minus = document.createElement('img');
+                let boxpm = document.createElement('div');
+                let numberlist = document.createElement('p');
+                let result_price = document.createElement('p');
+                numberlist.innerHTML = "1";
+                plus.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJazHv-XRzl20hx9LVrHZE0Ouf9HbbMKpKhVUCKl5Q_ZXB0TaELKw2aMGU38v7FmC_9E&usqp=CAU";
+                minus.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEX///8jHyD8/PxMSUodGBoAAAAfGxwZFBVQTU7Ix8fz8/PW1tZmZGQQCQu8u7sOBQgsKCmsq6uOjI3h4OBbWVqgnp8lISOPjY7X19dPdMGfAAAA40lEQVR4nO3YW27CMBBAUWhrAgnPAKX7X2lTPukX0kQeOefs4Grs2M5qBQAAAAAAAAAAAAAAAAAAAAAAAAAAAEASHxnMlzeM++1nfdv9Y5il73orh+4rg+5Qbtf4wGPp1nl05RgduCu1o16UXWxgv97UTnqx+e5DC8dT7aJ/TmNkYH/ONsJpiOfIIQ7ZduGfEnlmXPIt0mmZXgIL7ykL74GF7c+w/X3Y/re0/fNwAXea9u+lC3hbLOB9OBkeWd74P7P0PdX+RfM0Xx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA7/kF8+oWvofMQVQAAAAASUVORK5CYII=";
+                box_delete.setAttribute('class', 'flex items-center space-x-4');
+                crossx.setAttribute('class', 'iconify cursor-pointer');
+                crossx.setAttribute('data-icon', 'akar-icons:cross');
+                crossx.setAttribute('onclick', `deletee(${i});`);
+                plus.setAttribute('class', 'w-3');
+                minus.setAttribute('class', 'w-4');
+                result_price.innerHTML = itemjson[i].price;
+                boxpm.setAttribute('class', 'flex items-center space-x-4');
+                boxpm.appendChild(minus);
+                boxpm.appendChild(numberlist);
+                boxpm.appendChild(plus);
+                price.innerHTML = itemjson[i].price;
+                box_delete.appendChild(crossx);
+                box_delete.appendChild(img);
+                img.src = itemjson[i].id;
+                text.innerHTML = itemjson[i].name;
+                text.setAttribute('class', 'text-sm');
+                box.appendChild(box_delete);
+                img.setAttribute('class', 'w-28');
+                box.appendChild(text)
+                box.appendChild(price);
+                box.appendChild(boxpm);
+                box.appendChild(result_price);
+                box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2 grid grid-cols-5');
+                parent.appendChild(box);
+            }
+        }
+        Object.prototype.deleteByIndex = function (index) {
+            delete this[Object.keys(this)[index]];
+        };
+        function deletee(index) {
+            delete itemjson[index];
+            localStorage.setItem(`data`, JSON.stringify(itemjson));
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

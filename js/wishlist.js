@@ -28,7 +28,7 @@ function wishlist(name, numberid) {
         // console.log(data[numberid-1].name);
         if (JSON.parse(localStorage.getItem(`data`)) == null) {
             var listcheck = [];
-            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price };
+            var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , numitem: 1};
             listcheck.push(listitem);
             localStorage.setItem(`data`, JSON.stringify(listcheck));
         }
@@ -46,7 +46,7 @@ function wishlist(name, numberid) {
                 }
             }
             if (check) {
-                var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price };
+                var listitem = { id: data[numberid - 1].font, name: data[numberid - 1].name, price: data[numberid - 1].price , numitem: 1};
                 listcheck.push(listitem);
                 localStorage.setItem(`data`, JSON.stringify(listcheck));
             }

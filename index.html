@@ -191,10 +191,39 @@
 </head>
 
 <body class="relative">
-    <a href="#nav"><img width="50px" class="cusor-pointer fixed right-12 bottom-24 z-40"
+    <div id="textline" class="fixed bottom-24 shadow-xl right-5 bg-white rounded-xl z-50 w-1/6 hidden">
+        <div class="w-full h-12 flex items-center text-white font-bold justify-between rounded-t-lg"
+            style="background-color: #00BE00;">
+            <div class="flex items-center">
+                <img class="ml-2" width="45px" src="/img/Line.png" alt="">
+                <p>Line</p>
+            </div>
+            <span onclick="closeline()" class="iconify mr-4 cursor-pointer" data-icon="akar-icons:cross"
+                style="color: white;" data-width="15" data-height="100" data-rotate="90deg"></span>
+        </div>
+        <div class="w-full flex justify-center mt-4">
+            <img class="border-2" src="/img/qrline.png" alt="">
+        </div>
+        <div class="text-center mt-7">
+            <h3 class="font-bold">เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</h3>
+            <div class="text-xs mt-4 text-gray-500">
+                <p>เปิดแอพ LINE > เลือกแท็บเพื่อน > แตะไอคอนเพิ่ม</p>
+                <p>เพื่อนที่มุมขวาบน</p>
+                <p>แล้วเลือก "คิวอาร์โค้ด" จากนั้นจึงสแกนคิวอาร์โค้ด</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex justify-between text-xs mb-3 mt-7" style="width: 80%;">
+                    <p class="text-blue-800">เรียนรู้เพิ่มเติมเกี่ยวกับ LINE</p>
+                    <p class="text-blue-800">ดาวน์โหลด</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#nav"><img width="50px" class="fixed right-12 bottom-24 z-10"
             src="http://seenual.com/wp-content/uploads/2016/03/1459083547_ChevronUpCircle.png" alt=""></a>
-    <img width="50px" class="cusor-pointer fixed right-12 bottom-8 rounded-full z-40 cursor-pointer" src="/img/Line.png"
-        alt="">
+    <img width="50px" class="cusor-pointer fixed right-12 bottom-8 rounded-full z-40 cursor-pointer"
+        onmouseover="openline()" src="/img/Line.png" alt="">
+        
     <!-- navbar -->
 
     <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
@@ -922,6 +951,7 @@
         <script src="/js/pickcart.js"></script>
         <script src="/js/numcart.js"></script>
         <script src="/js/numheart.js"></script>
+        <script src="/js/openline.js"></script>
 </body>
 
 </html>

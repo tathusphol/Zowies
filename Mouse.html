@@ -321,6 +321,28 @@
                     }
                 }
             }
+            var checkcart = JSON.parse(localStorage.getItem(`datacart`));
+            for (var i = 0; i < data.length; i++) {
+                console.log(1);
+                if (checkcart == null) {
+                    continue;
+                }
+                else {
+                    for (var j = 0; j < checkcart.length; j++) {
+                        if (checkcart[j] == null) {
+                            continue;
+
+                        }
+                        else {
+                            numwishlist++;
+                        }
+                        if (data[i].font == checkcart[j].id) {
+                            document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
+
+                        }
+                    }
+                }
+            }
             if (numwishlist == undefined) {
                 var numheart = document.getElementById('numheart').innerHTML = 0;
             }

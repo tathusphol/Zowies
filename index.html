@@ -61,6 +61,7 @@
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg);
         }
+
         .changeimg10 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-01@2x-1.jpg);
@@ -146,6 +147,7 @@
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg);
         }
+
         .changeimg10:hover {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-02@2x.jpg);
@@ -800,6 +802,28 @@
                                 let heart = document.getElementById(`heart${i + 10}`);
                                 heart.classList.add('heart1');
                                 heart.classList.remove('heart');
+
+                            }
+                        }
+                    }
+                }
+                var checkcart = JSON.parse(localStorage.getItem(`datacart`));
+                for (var i = 0; i < data.length; i++) {
+                    console.log(1);
+                    if (checkcart == null) {
+                        continue;
+                    }
+                    else {
+                        for (var j = 0; j < checkcart.length; j++) {
+                            if (checkcart[j] == null) {
+                                continue;
+
+                            }
+                            else {
+                                numwishlist++;
+                            }
+                            if (data[i].font == checkcart[j].id) {
+                                document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
 
                             }
                         }

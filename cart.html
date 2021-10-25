@@ -145,27 +145,6 @@
     <script>
         var check = JSON.parse(localStorage.getItem(`datacart`));
         var checkwishlist = JSON.parse(localStorage.getItem(`data`));
-        var numwishlist = 0;
-        if(checkwishlist == null){
-            
-        }
-        else{
-            for (var j = 0; j < checkwishlist.length; j++) {
-            if (checkwishlist[j] == null) {
-                continue;
-
-            }
-            else {
-                numwishlist++;
-            }
-        }
-        }
-        if (numwishlist == undefined) {
-            var numheart = document.getElementById('numheart').innerHTML = 0;
-        }
-        else {
-            var numheart = document.getElementById('numheart').innerHTML = numwishlist;
-        }
         let itemjson = JSON.parse(localStorage.getItem(`datacart`));
         if (itemjson == null) {
 
@@ -259,6 +238,8 @@
         }
     </script>
     <script src="/js/plusandminus.js"></script>
+    <script src="/js/numheart.js"></script>
+    <script src="/js/numcart.js"></script>
 </body>
 
 </html>

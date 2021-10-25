@@ -30,7 +30,12 @@ function minus(num){
         else{
             check.push(listitem[i]);
         }
-        localStorage.setItem(`datacart`, JSON.stringify(check));
+        if(number < 1){
+
+        }
+        else{
+            localStorage.setItem(`datacart`, JSON.stringify(check));
+        }
     }
     location.reload();
 }

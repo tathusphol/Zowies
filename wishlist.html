@@ -135,13 +135,13 @@
         else{
             var numheart = document.getElementById('numheart').innerHTML = numwishlist;
         }
-        let itemjson = JSON.parse(localStorage.getItem(`data`));
-        if (itemjson == null) {
+        let itemdata = JSON.parse(localStorage.getItem(`data`));
+        if (itemdata == null) {
 
         }
         else {
-            for (var i = 0; i < itemjson.length; i++) {
-                if (itemjson[i] == null) {
+            for (var i = 0; i < itemdata.length; i++) {
+                if (itemdata[i] == null) {
                     continue;
                 }
                 let parent = document.getElementById('parent');
@@ -152,8 +152,8 @@
                 crossx.setAttribute('class', 'iconify cursor-pointer');
                 crossx.setAttribute('data-icon', 'akar-icons:cross');
                 crossx.setAttribute('onclick', `deletee(${i});`);
-                img.src = itemjson[i].id;
-                text.innerHTML = itemjson[i].name;
+                img.src = itemdata[i].id;
+                text.innerHTML = itemdata[i].name;
                 box.appendChild(crossx);
                 box.appendChild(img);
                 img.setAttribute('class', 'w-16');
@@ -166,12 +166,13 @@
             delete this[Object.keys(this)[index]];
         };
         function deletee(index) {
-            delete itemjson[index];
-            localStorage.setItem(`data`, JSON.stringify(itemjson));
+            delete itemdata[index];
+            localStorage.setItem(`data`, JSON.stringify(itemdata));
             location.reload();
         }
     </script>
     <script src="/js/wishlist.js"></script>
+    <script src="/js/numcart.js"></script>
 </body>
 
 </html>

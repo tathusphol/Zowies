@@ -298,26 +298,13 @@
             else {
                 var numheart = document.getElementById('numheart').innerHTML = numwishlist;
             }
-            let itemjson = JSON.parse(localStorage.getItem(`datacart`));
-            if (itemjson == null) {
-
-            }
-            else {
-                var numitem = 0;
-                for (var i = 0; i < itemjson.length; i++) {
-                    if (itemjson[i] == null) {
-                        continue;
-                    }
-                    numitem += parseInt(itemjson[i].numitem);
-                }
-            }
-            document.getElementById('numcart').innerHTML = numitem;
         }
 
     </script>
     <script src="/js/opco.js"></script>
     <script src="/js/wishlist.js"></script>
     <script src="/js/pickcart.js"></script>
+    <script src="/js/numcart.js"></script>
 </body>
 
 </html>

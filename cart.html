@@ -189,6 +189,8 @@
                 let boxpm = document.createElement('div');
                 let numberlist = document.createElement('p');
                 let result_price = document.createElement('p');
+                let end = document.createElement('span');
+                let boxprice = document.createElement('div');
                 numberlist.innerHTML = itemjson[i].numitem;
                 plus.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJazHv-XRzl20hx9LVrHZE0Ouf9HbbMKpKhVUCKl5Q_ZXB0TaELKw2aMGU38v7FmC_9E&usqp=CAU";
                 minus.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEX///8jHyD8/PxMSUodGBoAAAAfGxwZFBVQTU7Ix8fz8/PW1tZmZGQQCQu8u7sOBQgsKCmsq6uOjI3h4OBbWVqgnp8lISOPjY7X19dPdMGfAAAA40lEQVR4nO3YW27CMBBAUWhrAgnPAKX7X2lTPukX0kQeOefs4Grs2M5qBQAAAAAAAAAAAAAAAAAAAAAAAAAAAEASHxnMlzeM++1nfdv9Y5il73orh+4rg+5Qbtf4wGPp1nl05RgduCu1o16UXWxgv97UTnqx+e5DC8dT7aJ/TmNkYH/ONsJpiOfIIQ7ZduGfEnlmXPIt0mmZXgIL7ykL74GF7c+w/X3Y/re0/fNwAXea9u+lC3hbLOB9OBkeWd74P7P0PdX+RfM0Xx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA7/kF8+oWvofMQVQAAAAASUVORK5CYII=";
@@ -201,7 +203,11 @@
                 minus.setAttribute('class', 'w-4 cursor-pointer');
                 minus.setAttribute('onclick', `minus(${i})`);
                 result_price.innerHTML = `${parseInt(itemjson[i].priceint) * parseInt(itemjson[i].numitem)}`;
+                end.innerHTML = ".00฿";
                 result_price.setAttribute(`id`, `numid${numberid}`);
+                boxprice.setAttribute('class', 'flex');
+                boxprice.appendChild(result_price);
+                boxprice.appendChild(end);
                 boxpm.setAttribute('class', 'flex items-center space-x-4');
                 boxpm.appendChild(minus);
                 boxpm.appendChild(numberlist);
@@ -217,7 +223,7 @@
                 box.appendChild(text)
                 box.appendChild(price);
                 box.appendChild(boxpm);
-                box.appendChild(result_price);
+                box.appendChild(boxprice);
                 box.setAttribute('class', 'flex items-center space-x-12 border-b-2 pb-2 grid grid-cols-5');
                 parent.appendChild(box);
             }
@@ -239,9 +245,9 @@
                 numitem += parseInt(itemjson[i].numitem);
             }
         }
-        document.getElementById(`allprice`).innerHTML = allprice;
-        document.getElementById(`tran`).innerHTML = 300 * numitem;
-        document.getElementById(`result_allprice`).innerHTML = allprice + (300 * numitem);
+        document.getElementById(`allprice`).innerHTML = `${allprice}.00฿`;
+        document.getElementById(`tran`).innerHTML = `${300 * numitem}.00฿`;
+        document.getElementById(`result_allprice`).innerHTML = `${allprice + (300 * numitem)}.00฿`;
         document.getElementById(`numcart`).innerHTML = numitem;
         Object.prototype.deleteByIndex = function (index) {
             delete this[Object.keys(this)[index]];

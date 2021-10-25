@@ -12,11 +12,9 @@
 </head>
 
 <body class="relative">
-    <a href="#nav"><img width="40px" class="cusor-pointer fixed right-8 bottom-24 z-40"
-            src="https://cdn.discordapp.com/attachments/896721421621919754/899627647112470568/img_109187.png"
-            alt=""></a>
-    <img width="40px" class="cusor-pointer fixed right-8 bottom-12 rounded-full z-40"
-        src="https://cdn.discordapp.com/attachments/896721421621919754/899628484090007602/LINE_New_App_Icon_282020-1229.png"
+    <a href="#nav"><img width="50px" class="cusor-pointer fixed right-12 bottom-24 z-40"
+            src="http://seenual.com/wp-content/uploads/2016/03/1459083547_ChevronUpCircle.png" alt=""></a>
+    <img width="50px" class="cusor-pointer fixed right-12 bottom-8 rounded-full z-40 cursor-pointer" src="/img/Line.png"
         alt="">
     <!-- navbar -->
 
@@ -129,10 +127,10 @@
                 numwishlist++;
             }
         }
-        if(numwishlist == undefined){
+        if (numwishlist == undefined) {
             var numheart = document.getElementById('numheart').innerHTML = 0;
         }
-        else{
+        else {
             var numheart = document.getElementById('numheart').innerHTML = numwishlist;
         }
         let itemdata = JSON.parse(localStorage.getItem(`data`));

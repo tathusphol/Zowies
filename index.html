@@ -802,6 +802,26 @@
                         }
                     }
                 }
+                for (var i = 0; i < data.new.length; i++) {
+                    if (check == null) {
+                        continue;
+                    }
+                    else {
+                        var numwishlist = 0;
+                        for (var j = 0; j < check.length; j++) {
+                            if (check[j] == null) {
+                                continue;
+                                
+                            }
+                            if (data.new[i].font == check[j].id) {
+                                let heart = document.getElementById(`heart${i + 14}`);
+                                heart.classList.add('heart1');
+                                heart.classList.remove('heart');
+                                
+                            }
+                        }
+                    }
+                }
                 var checkcart = JSON.parse(localStorage.getItem(`datacart`));
                 for (var i = 0; i < data.kaidee.length; i++) {
                     console.log(1);
@@ -817,7 +837,7 @@
                             else {
                                 numwishlist++;
                             }
-                            if (data[i].font == checkcart[j].id) {
+                            if (data.kaidee[i].font == checkcart[j].id) {
                                 document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
 
                             }
@@ -838,7 +858,7 @@
                             else {
                                 numwishlist++;
                             }
-                            if (data[i].font == checkcart[j].id) {
+                            if (data.new[i].font == checkcart[j].id) {
                                 document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
 
                             }
@@ -859,28 +879,8 @@
                             else {
                                 numwishlist++;
                             }
-                            if (data[i].font == checkcart[j].id) {
+                            if (data.onsale[i].font == checkcart[j].id) {
                                 document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
-
-                            }
-                        }
-                    }
-                }
-                for (var i = 0; i < data.new.length; i++) {
-                    if (check == null) {
-                        continue;
-                    }
-                    else {
-                        var numwishlist = 0;
-                        for (var j = 0; j < check.length; j++) {
-                            if (check[j] == null) {
-                                continue;
-
-                            }
-                            if (data.new[i].font == check[j].id) {
-                                let heart = document.getElementById(`heart${i + 14}`);
-                                heart.classList.add('heart1');
-                                heart.classList.remove('heart');
 
                             }
                         }

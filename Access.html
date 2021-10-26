@@ -70,13 +70,39 @@
 </head>
 
 <body class="relative">
+    <!-- ลูกตา -->
+    <div class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
+    <div class="grid grid-cols-2 fixed bg-white z-50 w-1/2 " style="top: 18%; left: 25%;">
+        <div>
+            <img src="https://www.zowieshop.com/wp-content/uploads/2021/01/fleet-za11@2x-1.jpg" alt="">
+        </div>
+        <div class="flex flex-col relative">
+            <span class="iconify absolute right-10 top-6 b-icon duration-500 cursor-pointer" data-icon="akar-icons:cross" style="color: #575757;"></span>
+            <div class="px-20 overflow-auto" style="height: 34rem;">
+                <!-- ชื่อ -->
+                <p class="text-5xl font-bold pt-16">Mouse Fleet / Mouse Skates สำหรับ ZA11</p>
+                <!-- ราคา -->
+                <p class="mt-6 text-2xl font-bold text-red-700">200.00฿</p>
+                <!-- รายละเอียด -->
+                <p class="mt-6 text-lg">2Pcs Mouse Fleet / Mouse Skates for ZOWIE gaming mouse</p>
+                <p class="mt-6 text-lg">Easy to install.<br>
+                    100% brand new and high quality.<br>
+                    Durable to use for long time.</p>
+                <p class="mt-6">- 2 +</p>
+            </div>
+            <!-- ปุ่ม -->
+            <button class="h-12 w-full absolute bottom-0 btn bg-red-700 text-sm text-white font-bold hover:bg-red-600 duration-500">หยิบใส่ตะกร้า</button>
+        </div>
+    </div>
     <div id="search" class="absolute top-0 w-full hidden z-50">
         <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
-            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
-                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4"
+                data-icon="akar-icons:cross" style="color: black;" data-width="15" data-height="100"
+                data-rotate="90deg"></span>
             <p>What are you looking for?</p>
             <div class="flex pt-12 pb-4 border-b-2">
-                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                <input
+                    class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
                     id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
                 <img class="w-10" src="/img/searchgray.svg" alt="">
             </div>

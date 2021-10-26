@@ -1,16 +1,17 @@
-var inSearch = document.querySelector('#search');
-var user = document.querySelectorAll("#user");
-var form = document.querySelectorAll("#form-user");
-inSearch.addEventListener("input", function () {
-    for (var i = 0; i < user.length; i++) {
-        txtValue = inSearch.value.toUpperCase();
-        console.log(txtValue);
-        console.log(user[i].innerHTML.toUpperCase());
-        if (((user[i].innerHTML.toUpperCase().indexOf(txtValue) > -1))) {
-            form[i].style.display = "";
+inputsearch.addEventListener("input", function () {
+    var inputsearch = document.getElementById('inputsearch');
+    var itemsearch = document.querySelectorAll("#itemsearch");
+    var text = document.querySelectorAll("#itemname");
+    for (var i = 0; i < text.length; i++) {
+        let value = inputsearch.value.toLowerCase();
+        if(text[i].innerHTML.toLowerCase().indexOf(value) == 0){
+            itemsearch[i].style.display = "none";
+        }
+        else if (((text[i].innerHTML.toLowerCase().indexOf(value) > -1))) {
+            itemsearch[i].style.display = "";
         }
         else {
-            form[i].style.display = "none";
+            itemsearch[i].style.display = "none";
         }
     }
 })

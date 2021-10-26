@@ -15,6 +15,20 @@
 <body>
 
     <!-- navbar -->
+    <div id="search" class="absolute top-0 w-full hidden z-50">
+        <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
+                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <p>What are you looking for?</p>
+            <div class="flex pt-12 pb-4 border-b-2">
+                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                    id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
+                <img class="w-10" src="/img/searchgray.svg" alt="">
+            </div>
+            <div id="parentsearch" class="grid grid-cols-6 gap-4 pt-4">
+            </div>
+        </div>
+    </div>
     <div id="textline" class="fixed bottom-24 shadow-xl right-5 bg-white rounded-xl z-50 w-1/6 hidden">
         <div class="w-full h-12 flex items-center text-white font-bold justify-between rounded-t-lg"
             style="background-color: #00BE00;">
@@ -47,8 +61,8 @@
             src="http://seenual.com/wp-content/uploads/2016/03/1459083547_ChevronUpCircle.png" alt=""></a>
     <img width="50px" class="cusor-pointer fixed right-12 bottom-8 rounded-full z-40 cursor-pointer"
         onmouseover="openline()" src="/img/Line.png" alt="">
+    <!-- navbar -->
 
-        
     <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
         <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
             <a class="b-icon" href="index.html"><img class="lg:hidden w-6"
@@ -77,7 +91,7 @@
                     <span id="numcart">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
-                <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
+                <img onclick="opensearch()" class="w-5" src="/img/search.svg" alt="">
                 <img class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
             </div>
         </div>
@@ -250,6 +264,9 @@
     <script src="/js/numcart.js"></script>
     <script src="/js/numheart.js"></script>
     <script src="/js/openline.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/datasearh.js"></script>
+    <script src="/js/opsearch.js"></script>
 </body>
 <script>
     function change(n) {

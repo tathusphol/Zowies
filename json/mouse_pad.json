@@ -3,12 +3,22 @@
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-SE-Deep-Blue-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-SE-Deep-Blue-02@2x.jpg",
         "name": "ZOWIE G-SR-SE DEEP BLUE (Limited Edition) Mouse Pad for e-Sports แผ่นรองเมาส์เล่นเกม (L)",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-SE-Deep-Blue-04@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-SE-Deep-Blue-01@2x.jpg",
+        "textdata1" : "SR-SE ออกแบบสำหรับเกมเมอร์ที่ชอบผิวสัมผัสของผ้าและฐานยาง ผิวของยางที่เนียนเรียบ 100% ช่วยให้สบายมือ รักษาความสม่ำเสมอในทุกจังหวะการลากเมาส์",
+        "textdata2" : "รุ่น SR-SE ให้ความรู้สึกและสัมผัสที่แตกต่างจากรุ่น black G-SR",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 เดือน",
         "price": "1,690.00฿",
         "priceint" : 1690
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-04@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-03@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/10/G-SR-02@2x.jpg",
+        "textdata1" : "SR Series ออกแบบมาสำหรับเกมเมอร์ที่เน้นด้านการควบคุม (Control) ชอบผิวสัมผัสของผ้า และฐานยางที่ให้ความมั่นคง SR Series มาพร้อมพื้นผิวที่เนียนเรียบ 100%",
+        "textdata2" : "สบายมือพร้อมรักษาความสม่ำเสมอในทุกการลากเมาส์ มั่นใจได้ในประสิทธิภาพชั้นเยี่ยม",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 เดือน",
         "name": "BenQ ZOWIE G-SR e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (L)",
         "price": "1,390.00฿",
         "priceint" : 1390
@@ -16,6 +26,11 @@
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-TF-X-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/G-TF-X-03@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/10/G-TF-X-02@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/10/G-TF-X-04@2x.jpg",
+        "textdata1" : "TF series ผสานคุณลักษณะของผ้าและพลาสติกอย่างลงตัว ด้านบนเป็นวัสดุพิเศษคล้ายพลาสติกช่วยลดความเสียดทานแต่ก็ยังคงความสบายมือและยืดหยุ่นแบบผ้า",
+        "textdata2" : " ด้านล่างเป็นผิวยางเรียบเพิ่มความมั่นคงยึดติดแน่นบนทุกพื้นผิว",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 เดือน",
         "name": "BenQ ZOWIE G TF-X e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (L)",
         "price": "1,390.00฿",
         "priceint" : 1390
@@ -23,6 +38,11 @@
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-03@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-04@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-02@2x.jpg",
+        "textdata1" : "SR Series ออกแบบมาสำหรับเกมเมอร์ที่เน้นด้านการควบคุม (Control) ชอบผิวสัมผัสของผ้า และฐานยางที่ให้ความมั่นคง ด้วยพื้นผิวที่เนียนเรียบ 100% ",
+        "textdata2" : "สบายมือพร้อมรักษาความสม่ำเสมอในทุกการลากเมาส์ มั่นใจในประสิทธิภาพชั้นเยี่ยม",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 เดือน",
         "name": "ZOWIE P-SR e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (S)",
         "price": "1,090.00฿",
         "priceint" : 1090
@@ -30,6 +50,11 @@
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/10/P-TF-X-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/10/P-TF-X-02@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/10/P-TF-X-03@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/10/P-TF-X-04@2x.jpg",
+        "textdata1" : "TF series ผสานคุณลักษณะของผ้าและพลาสติกอย่างลงตัว ด้านบนเป็นวัสดุพิเศษคล้ายพลาสติกช่วยลดความเสียดทานแต่ก็ยังคงความสบายมือและยืดหยุ่นแบบผ้า",
+        "textdata2" : "ด้านล่างเป็นผิวยางเรียบเพิ่มความมั่นคงยึดติดแน่นบนทุกพื้นผิว",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 เดือน",
         "name": "ZOWIE P TF-X e-Sports Gaming Mouse Pad แผ่นรองเมาส์เล่นเกม (S)",
         "price": "1,790.00฿",
         "priceint" : 1790

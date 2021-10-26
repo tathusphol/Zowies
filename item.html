@@ -9,64 +9,19 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/animate.css">
-    <title>Two_Hand</title>
-    <style>
-        .fixedimg {
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            padding-top: 130%;
-        }
-
-        .changeimg1 {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/EC2-01@2x.jpg);
-        }
-
-        .changeimg2 {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-01@2x-1.jpg);
-        }
-
-        .changeimg3 {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-01@2x-1.jpg);
-        }
-
-        .changeimg4 {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2746S-01@2x-2.jpg);
-        }
-
-        .changeimg1:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/EC2-03@2x.jpg);
-        }
-
-        .changeimg2:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/CELERITAS-II-03@2x.jpg);
-        }
-
-        .changeimg3:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2546-03@2x.jpg);
-        }
-
-        .changeimg4:hover {
-            transition: 0.5s;
-            background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/XL2746S-03@2x.jpg);
-        }
-    </style>
+    <title>item</title>
 </head>
 
-<body class="relative">
+<body>
     <div id="search" class="absolute top-0 w-full hidden z-50">
         <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
-            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
-                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4"
+                data-icon="akar-icons:cross" style="color: black;" data-width="15" data-height="100"
+                data-rotate="90deg"></span>
             <p>What are you looking for?</p>
             <div class="flex pt-12 pb-4 border-b-2">
-                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                <input
+                    class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
                     id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
                 <img class="w-10" src="/img/searchgray.svg" alt="">
             </div>
@@ -142,119 +97,47 @@
         </div>
     </nav>
 
-    <!-- body -->
-    <div class="h-72 flex items-center justify-center">
-        <p class="text-6xl lg:text-7xl font-light mt-28">ZOWIE Used</p>
-    </div>
-    <div class="px-12 py-10">
-        <a class="text-gray-500 hover:text-red-600 b-icon duration-500" href="index.html">หน้าหลัก</a>
-        <span> / </span>
-        <span class="text-gray-600">ZOWIE USED</span>
-    </div>
-    <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="openn(1)" onmouseout="closee(1)">
-            <div id="img1" onclick="item('Two', 1)" class="fixedimg changeimg1 w-full relative">
-                <div id="eye1" class="absolute bottom-4 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart1" class="heart" onclick="wishlist('Two', 1)"></div>
-                            </div>
+    <div class="flex justify-center">
+        <div class="py-12">
+            <div class="max-w-4xl grid-cols-2 grid gap-8">
+                <div class="grid grid-cols-5 gap-6">
+                    <div class="col-span-1">
+                        <div class="grid grid-col-1 gap-2">
+                            <img id="img1" src="" alt="">
+                            <img id="img2" src="" alt="">
+                            <img id="img3" src="" alt="">
+                            <img id="img4" src="" alt="">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <p id="text1" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price1" class="text-center text-sm"></p>
-                <p id="pickcart1" onclick="pickcart('Two', 1)"
-                    class="text-red-600 text-center text-sm cursor-pointer hover:text-red-300 hidden textcart">
-                    หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
-        <div onmouseover="openn(2)" onmouseout="closee(2)">
-            <div id="img2" onclick="item('Two', 2)" class="fixedimg changeimg2 w-full relative">
-                <div id="eye2" class="absolute bottom-4 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart2" class="heart" onclick="wishlist('Two', 2)"></div>
-                            </div>
-                        </div>
+                    <div class="col-span-4">
+                        <img id="img5" src="" alt="">
                     </div>
                 </div>
-            </div>
-            <div>
-                <p id="text2" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price2" class="text-center text-sm"></p>
-                <p id="pickcart2" onclick="pickcart('Two', 2)"
-                    class="text-red-600 text-center text-sm cursor-pointer hover:text-red-300 hidden textcart">
-                    หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
-        <div onmouseover="openn(3)" onmouseout="closee(3)">
-            <div id="img3" onclick="item('Two', 3)" class="fixedimg changeimg3 w-full relative">
-                <div id="eye3" class="absolute bottom-4 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart3" class="heart" onclick="wishlist('Two', 3)"></div>
-                            </div>
-                        </div>
+                <div class="space-y-4">
+                    <a class="text-xs text-gray-400" href="index.html">หน้าหลัก</a>
+                    <p id="textname" class="text-4xl font-bold"></p>
+                    <p id="textprice" class="text-red-600"></p>
+                    <p id="textdata1" class=" text-gray-400 text-sm"></p>
+                    <p id="textdata2" class=" text-gray-400 text-sm"></p>
+                    <div class="space-y-3">
+                        <p class="text-xl font-bold">การรับประกัน</p>
+                        <p id="waranty" class="text-gray-400"></p>
+                    </div>
+                    <div class="flex justify-center w-full py-4">
+                        <button class="bg-red-700 text-white w-full rounded-lg py-4" onclick="pickcartitem()">ADD CART</button>
                     </div>
                 </div>
-            </div>
-            <div>
-                <p id="text3" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price3" class="text-center text-sm"></p>
-                <p id="pickcart3" onclick="pickcart('Two', 3)"
-                    class="text-red-600 text-center text-sm cursor-pointer hover:text-red-300 hidden textcart">
-                    หยิบใส่ตะกร้า</p>
-            </div>
-        </div>
-        <div onmouseover="openn(4)" onmouseout="closee(4)">
-            <div id="img4" onclick="item('Two', 4)" class="fixedimg changeimg4 w-full relative">
-                <div id="eye4" class="absolute bottom-4 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart4" class="heart" onclick="wishlist('Two', 4)"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p id="text4" class="text-sm text-center"></p>
-            </div>
-            <div class="pt-4">
-                <p id="price4" class="text-center text-sm"></p>
-                <p id="pickcart4" onclick="pickcart('Two', 4)"
-                    class="text-red-600 text-center text-sm cursor-pointer hover:text-red-300 hidden textcart">
-                    หยิบใส่ตะกร้า</p>
             </div>
         </div>
     </div>
 
 
-
-    <!-- footer -->
-
-    <footer class="bg-gray-100 mt-20">
+    <footer class="bg-gray-100">
         <div class="flex justify-center w-full border-b-2">
             <div class="px-12 py-24 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-4 space-y-20 lg:space-y-0">
                 <div class="space-y-4 text-gray-600">
-                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a></div>
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a>
+                    </div>
                     <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html">XL Monitor</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="Mouse.html">Gaming Mice</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="Pad.html">Gaming Mouse Pads</a></div>
@@ -270,7 +153,8 @@
                     <div><a class="hover:text-gray-400 duration-300" href="">ข่าวสาร & รีวิวสินค้า</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
-                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Support</a></div>
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Support</a>
+                    </div>
                     <div><a class="hover:text-gray-400 duration-300"
                             href="https://zowie.benq.com/th-th/support/warranty/gear.html">เงื่อนไขและการรับประกัน</a>
                     </div>
@@ -283,11 +167,13 @@
                 <div class="space-y-4 text-gray-600">
                     <div><a target="_blank" href="https://shopee.co.th/zowie_esport"><img
                                 class="w-40 b-icon duration-300"
-                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a></div>
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a>
+                    </div>
                     <div><a target="_blank"
                             href="https://www.lazada.co.th/shop/zowie-esport-center/?liteShop=true&spm=a211g0.store_hp.top.share&dsource=share&laz_share_info=130360665_103_200_1569158_120215000_null&laz_token=e848bade409365eeb7187723a38da1a4&exlaz=e_78%2FCXAnZy6HGip8qo24MCSTeQCjDld4siVQ4kY1ODqrCXvTKdNAtBfrYHUpbt8xr6nejNh6YiYbO7MSdVRSDSLcazjqFN96eD3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=130360665&sub_id3=1569158&sub_id6=CPI_EXLAZ"><img
                                 class="w-40 b-icon duration-300"
-                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a></div>
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a>
+                    </div>
                     <div><a target="_blank" href="https://www.jd.co.th/jshop/22239.html"><img
                                 class="w-40 b-icon duration-300"
                                 src="https://www.zowieshop.com/wp-content/uploads/2020/12/jd.png" alt=""></a></div>
@@ -299,7 +185,21 @@
         </div>
     </footer>
     <script>
-        let requestURL = '/json/two_hand.json';
+        var dict = {
+            "sale": "sale.json",
+            "accessory": "accessory.json",
+            "Mobiuz": "Mobiuz.json",
+            "kaidee": "kaidee.json",
+            "mouse": "mouse.json",
+            "mouse_pad": "mouse_pad.json",
+            "XL_Monitor": "XL_Monitor.json",
+            "Two": "Two_hand.json",
+            "onsale": "kaidee.json",
+            "new": "kaidee.json"
+        };
+        let namejson = localStorage.getItem('namejson');
+        let numid = localStorage.getItem('numid') - 1;
+        let requestURL = `/json/${dict[namejson]}`;
         let request = new XMLHttpRequest();
         request.onreadystatechange = function () {
             if (request.readyState == 4 && request.status == 200) {
@@ -308,75 +208,137 @@
         };
         request.open("GET", requestURL, true);
         request.send();
-
+        let img1 = document.getElementById('img1');
+        let img2 = document.getElementById('img2');
+        let img3 = document.getElementById('img3');
+        let img4 = document.getElementById('img4');
+        let img5 = document.getElementById('img5');
+        let price = document.getElementById('textprice');
+        let textname = document.getElementById('textname');
+        let waranty = document.getElementById('waranty');
+        let textdata1 = document.getElementById('textdata1');
+        let textdata2 = document.getElementById('textdata2');
+        let dataimg1;
+        let dataimg2;
+        let dataimg3;
+        let dataimg4;
+        let dataprice;
+        let datatextname;
+        let datawaranty;
+        let datatextdata1;
+        let datatextdata2;
         function dataReportStatus(data) {
-            for (let i = 0; i < data.length; i++) {
-                let num = i + 1;
-                document.getElementById(`text${num}`).innerHTML = data[i].name;
-                document.getElementById(`price${num}`).innerHTML = data[i].price;
+            if (namejson == 'onsale') {
+                dataimg1 = data.onsale[numid].font;
+                dataimg2 = data.onsale[numid].back;
+                dataimg3 = data.onsale[numid].img1;
+                dataimg4 = data.onsale[numid].img2;
+                img1.src = dataimg1;
+                img2.src = dataimg2;
+                img3.src = dataimg3;
+                img4.src = dataimg4;
+                img5.src = dataimg1;
+                dataprice = data.onsale[numid].price;
+                datatextname = data.onsale[numid].name;
+                datawaranty = data.onsale[numid].waranty;
+                datatextdata1 = data.onsale[numid].textdata1;
+                datatextdata2 = data.onsale[numid].textdata2;
             }
-            var check = JSON.parse(localStorage.getItem(`data`));
-            for (var i = 0; i < data.length; i++) {
-                if (check == null) {
-                    continue;
-                }
-                else {
-                    var numwishlist = 0;
-                    for (var j = 0; j < check.length; j++) {
-                        if (check[j] == null) {
-                            console.log(2);
-                            continue;
-
-                        }
-                        else {
-                            numwishlist++;
-                        }
-                        if (data[i].font == check[j].id) {
-                            let heart = document.getElementById(`heart${i + 1}`);
-                            heart.classList.add('heart1');
-                            heart.classList.remove('heart');
-
-                        }
-                    }
-                }
+            else if (namejson == 'new') {
+                dataimg1 = data.new[numid].font;
+                dataimg2 = data.new[numid].back;
+                dataimg3 = data.new[numid].img1;
+                dataimg4 = data.new[numid].img2;
+                img1.src = dataimg1;
+                img2.src = dataimg2;
+                img3.src = dataimg3;
+                img4.src = dataimg4;
+                img5.src = dataimg1;
+                dataprice = data.new[numid].price;
+                datatextname = data.new[numid].name;
+                datawaranty = data.new[numid].waranty;
+                datatextdata1 = data.new[numid].textdata1;
+                datatextdata2 = data.new[numid].textdata2;
             }
-            var checkcart = JSON.parse(localStorage.getItem(`datacart`));
-            for (var i = 0; i < data.length; i++) {
-                console.log(1);
-                if (checkcart == null) {
-                    continue;
-                }
-                else {
-                    for (var j = 0; j < checkcart.length; j++) {
-                        if (checkcart[j] == null) {
-                            continue;
-
-                        }
-                        if (data[i].font == checkcart[j].id) {
-                            document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
-
-                        }
-                    }
-                }
-            }
-            if (numwishlist == undefined) {
-                var numheart = document.getElementById('numheart').innerHTML = 0;
+            else if (namejson == 'kaidee') {
+                dataimg1 = data.kaidee[numid].font;
+                dataimg2 = data.kaidee[numid].back;
+                dataimg3 = data.kaidee[numid].img1;
+                dataimg4 = data.kaidee[numid].img2;
+                img1.src = dataimg1;
+                img2.src = dataimg2;
+                img3.src = dataimg3;
+                img4.src = dataimg4;
+                img5.src = dataimg1;
+                dataprice = data.kaidee[numid].price;
+                datatextname = data.kaidee[numid].name;
+                datawaranty = data.kaidee[numid].waranty;
+                datatextdata1 = data.kaidee[numid].textdata1;
+                datatextdata2 = data.kaidee[numid].textdata2;
             }
             else {
-                var numheart = document.getElementById('numheart').innerHTML = numwishlist;
+                dataimg1 = data[numid].font;
+                dataimg2 = data[numid].back;
+                dataimg3 = data[numid].img1;
+                dataimg4 = data[numid].img2;
+                img1.src = dataimg1;
+                img2.src = dataimg2;
+                img3.src = dataimg3;
+                img4.src = dataimg4;
+                img5.src = dataimg1;
+                dataprice = data[numid].price;
+                datatextname = data[numid].name;
+                datawaranty = data[numid].waranty;
+                datatextdata1 = data[numid].textdata1;
+                datatextdata2 = data[numid].textdata2;
+            }
+            price.innerHTML = dataprice;
+            textname.innerHTML = datatextname;
+            waranty.innerHTML = datawaranty;
+            textdata1.innerHTML = datatextdata1;
+            textdata2.innerHTML = datatextdata1;
+            img1.setAttribute('onclick', "changeimg('font');");
+            img2.setAttribute('onclick', "changeimg('back');");
+            img3.setAttribute('onclick', "changeimg('img1');");
+            img4.setAttribute('onclick', "changeimg('img2');");
+        }
+        function changeimg(check) {
+            if (check == 'font') {
+                img5.src = dataimg1;
+                img5.classList.add('animatesearch');
+                setTimeout(() => {
+                    img5.classList.remove('animatesearch');
+                }, 350);
+            }
+            else if (check == 'back') {
+                img5.src = dataimg2;
+                img5.classList.add('animatesearch');
+                setTimeout(() => {
+                    img5.classList.remove('animatesearch');
+                }, 350);
+            }
+            else if (check == 'img1') {
+                img5.src = dataimg3;
+                img5.classList.add('animatesearch');
+                setTimeout(() => {
+                    img5.classList.remove('animatesearch');
+                }, 350);
+            }
+            else if (check == 'img2') {
+                img5.src = dataimg4;
+                img5.classList.add('animatesearch');
+                setTimeout(() => {
+                    img5.classList.remove('animatesearch');
+                }, 350);
             }
         }
-
+        function pickcartitem(){
+            pickcart(namejson, numid+1);
+        }
     </script>
-    <script src="/js/opco.js"></script>
-    <script src="/js/wishlist.js"></script>
-    <script src="/js/pickcart.js"></script>
     <script src="/js/numcart.js"></script>
-    <script src="/js/openline.js"></script>
-    <script src="/js/search.js"></script>
-    <script src="/js/datasearh.js"></script>
-    <script src="/js/opsearch.js"></script>
-    <script src="/js/item.js"></script>
+    <script src="/js/numheart.js"></script>
+    <script src="/js/pickcart.js"></script>
 </body>
 
 </html>

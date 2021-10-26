@@ -1,6 +1,9 @@
 .animate{
     animation: animate 1s ease-in-out;
 }
+.animatesearch{
+    animation: animate 0.4s ease-in-out;
+}
 .imganimate{
     animation: animateimg 1s ease-in-out;
 }

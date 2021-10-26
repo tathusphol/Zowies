@@ -9,9 +9,11 @@ inputsearch.addEventListener("input", function () {
         }
         else if (((text[i].innerHTML.toLowerCase().indexOf(value) > -1))) {
             itemsearch[i].style.display = "";
+            itemsearch[i].classList.add('animatesearch');
         }
         else {
             itemsearch[i].style.display = "none";
+            itemsearch[i].classList.remove('animatesearch');
         }
     }
 })

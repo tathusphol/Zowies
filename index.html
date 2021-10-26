@@ -16,7 +16,12 @@
             background-repeat: no-repeat;
             padding-top: 130%;
         }
-
+        .imgslide{
+            animation: imgslide 60s infinite;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 46%;
+        }
         .changeimg1 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/04/S250@2x.jpg);
@@ -187,6 +192,38 @@
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-03@2x.jpg);
         }
+        @keyframes imgslide {
+            0%{
+                background-image: url(/img/1.png);
+            }
+            11%{
+                background-image: url(/img/2.png);
+            }
+            22%{
+                background-image: url(/img/3.png);
+            }
+            33%{
+                background-image: url(/img/4.png);
+            }
+            44%{
+                background-image: url(/img/5.png);
+            }
+            55%{
+                background-image: url(/img/6.png);
+            }
+            66%{
+                background-image: url(/img/7.png);
+            }
+            77%{
+                background-image: url(/img/8.png);
+            }
+            88%{
+                background-image: url(/img/9.png);
+            }
+            100%{
+                background-image: url(/img/10.png);
+            }
+        }
     </style>
 </head>
 
@@ -275,8 +312,10 @@
 
     <!-- body -->
 
-
-    <div class="w-full flex justify-center bg-gray-200">
+    <div class="imgslide">
+            
+    </div>
+    <div class="w-full flex justify-center bg-gray-200 py-2">
         <div class="grid grid-cols-3 md:grid-cols-6 w-full gap-2 max-w-6xl">
             <a href="product.html"><img src="https://www.zowieshop.com/wp-content/uploads/2020/12/products.svg"
                     alt=""></a>

@@ -2,6 +2,11 @@
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-03@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-02@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/12/EC2-White-04@2x.jpg",
+        "textdata1" : "EC ซีรีส์ ได้รับการออกแบบตามหลักสรีรศาสตร์สำหรับผู้ใช้ที่ถนัดขวาโดยเฉพาะ มีพื้นที่กว้างขึ้นสำหรับการเคลื่อนไหวข้อมือ รูปร่างด้านขวาที่โค้งมนช่วยให้สามารถใช้ปลายนิ้วจับเคลื่อนที่ได้อย่างลื่นไหล EC ซีรีส์",
+        "textdata2" : "รุ่นปรับปรุงมาพร้อมกับเซ็นเซอร์ 3360 และขาเมาส์ 2 ชิ้นที่ถูกออกแบบมาให้มีขนาดใหญ่ขึ้น",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 ปี",
         "name": "ZOWIE EC2 WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
         "price": "1,790.00฿",
         "priceint" : 1790
@@ -9,6 +14,11 @@
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-03@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-02@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/12/EC1-White-04@2x.jpg",
+        "textdata1" : "เมาส์ถูกออกแบบมาสำหรับผู้ใช้ที่ถนัดขวาโดยเฉพาะ มีพื้นที่ใหญ่ขึ้นสำหรับการเคลื่อนไหวของข้อมือ รูปร่างด้านขวาที่โค้งมนช่วยให้สามารถใช้ปลายนิ้วจับเคลื่อนที่ไอ้อย่างลื่นไหล",
+        "textdata2" : "รุ่นเคลือบเงาถูกออกแบบมาสำหรับเกมเมอร์ที่ชอบจับและสัมผัสพื้นผิวเคลือบเงามาให้ EC ซีรีส์ รุ่นพิเศษสีขาวมาพร้อมกับเซ็นเซอร์ 3360 และมีให้เลือก 2 ขนาด",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 ปี",
         "name": "ZOWIE EC1 WHITE Mouse for e-Sports เมาส์เล่นเกม (L)",
         "price": "1,790.00฿",
         "priceint" : 1790
@@ -16,21 +26,36 @@
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-03@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-02@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/12/FK2-B-White-04@2x.jpg",
+        "textdata1" : "เมาส์รุ่น FK ได้รับการออกแบบโดยคำนึงถึงความสบายในการใช้งาน ไม่ว่าจะถนัดมือซ้ายหรือมือขวา ด้วยรูปทรงที่แบนต่ำช่วยให้จับและควบคุมเมาส์ได้ง่ายขึ้น ไม่ว่าจะเป็นการจับแบบกรงเล็บ (Claw-Grip) ซึ่งเป็นการจับเมาส์ด้วยปลายนิ้ว หรือว่าจะเป็นการจับแบบใช้ฝ่ามือ (Palm-Grip) ที่วางทั้งมือลงบนตัวเมาส์",
+        "textdata2" : "เมาส์รุ่นเคลือบเงาถูกออกแบบมาเพื่อเกมเมอร์ที่ชอบความรู้สึกเวลาจับพื้นผิวเคลือบเงา เมาส์ซีรีส์ FK-B รุ่นพิเศษสีขาว มาพร้อมกับเซ็นเซอร์ 3360 และมีให้เลือก 3 ขนาด",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 ปี",
         "name": "ZOWIE FK2-B WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
-        "price": "1,790.00฿",
-        "priceint" : 1790
-    },
-    {
-        "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x-1.jpg",
-        "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x-1.jpg",
-        "name": "ZOWIE FK1-B WHITE Mouse for e-Sports เมาส์เล่นเกม (L)",
         "price": "1,790.00฿",
         "priceint" : 1790
     },
     {
         "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg",
         "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg",
-        "name": "ZOWIE FK1+-B WHITE Mouse for e-Sports เมาส์เล่นเกม (XL)",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-02@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-04@2x.jpg",
+        "textdata1" : "เมาส์รุ่น FK ได้รับการออกแบบโดยคำนึงถึงความสบายในการใช้งาน ไม่ว่าจะถนัดมือซ้ายหรือมือขวา ด้วยรูปทรงที่แบนต่ำช่วยให้จับและควบคุมเมาส์ได้ง่ายขึ้น ไม่ว่าจะเป็นการจับแบบกรงเล็บ (Claw-Grip) ซึ่งเป็นการจับเมาส์ด้วยปลายนิ้ว หรือว่าจะเป็นการจับแบบใช้ฝ่ามือ (Palm-Grip) ที่วางทั้งมือลงบนตัวเมาส์",
+        "textdata2" : "เมาส์รุ่นเคลือบเงาถูกออกแบบมาเพื่อเกมเมอร์ที่ชอบความรู้สึกเวลาจับพื้นผิวเคลือบเงา เมาส์ซีรีส์ FK-B รุ่นพิเศษสีขาว มาพร้อมกับเซ็นเซอร์ 3360 และมีให้เลือก 3 ขนาด",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 ปี",
+        "name": "ZOWIE FK1-B WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
+        "price": "1,790.00฿",
+        "priceint" : 1790
+    },
+    {
+        "font": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-01@2x.jpg",
+        "back": "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-03@2x.jpg",
+        "img1" : "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-02@2x.jpg",
+        "img2" : "https://www.zowieshop.com/wp-content/uploads/2020/12/FK1-B-White-04@2x.jpg",
+        "textdata1" : "เมาส์รุ่น FK ได้รับการออกแบบโดยคำนึงถึงความสบายในการใช้งาน ไม่ว่าจะถนัดมือซ้ายหรือมือขวา ด้วยรูปทรงที่แบนต่ำช่วยให้จับและควบคุมเมาส์ได้ง่ายขึ้น ไม่ว่าจะเป็นการจับแบบกรงเล็บ (Claw-Grip) ซึ่งเป็นการจับเมาส์ด้วยปลายนิ้ว หรือว่าจะเป็นการจับแบบใช้ฝ่ามือ (Palm-Grip) ที่วางทั้งมือลงบนตัวเมาส์",
+        "textdata2" : "เมาส์รุ่นเคลือบเงาถูกออกแบบมาเพื่อเกมเมอร์ที่ชอบความรู้สึกเวลาจับพื้นผิวเคลือบเงา เมาส์ซีรีส์ FK-B รุ่นพิเศษสีขาว มาพร้อมกับเซ็นเซอร์ 3360 และมีให้เลือก 3 ขนาด",
+        "waranty" : "✅  สินค้ามีการรับประกัน 1 ปี",
+        "name": "ZOWIE FK1+-B WHITE Mouse for e-Sports เมาส์เล่นเกม (M)",
         "price": "1,790.00฿",
         "priceint" : 1790
     }

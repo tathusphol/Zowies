@@ -156,7 +156,7 @@
     </div>
     <div class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
         <div onmouseover="openn(1)" onmouseout="closee(1)">
-            <div id="img1" class="fixedimg changeimg1 w-full relative">
+            <div id="img1" onclick="item('sale', 1)" class="fixedimg changeimg1 w-full relative">
                 <div id="eye1" class="absolute bottom-7 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
@@ -179,7 +179,7 @@
             </div>
         </div>
         <div onmouseover="openn(2)" onmouseout="closee(2)">
-            <div id="img2" class="fixedimg changeimg2 w-full relative">
+            <div id="img2" onclick="item('sale', 2)" class="fixedimg changeimg2 w-full relative">
                 <div id="eye2" class="absolute bottom-7 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
@@ -202,7 +202,7 @@
             </div>
         </div>
         <div onmouseover="openn(3)" onmouseout="closee(3)">
-            <div id="img3" class="fixedimg changeimg3 w-full relative">
+            <div id="img3" onclick="item('sale', 3)" class="fixedimg changeimg3 w-full relative">
                 <div id="eye3" class="absolute bottom-7 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
@@ -225,7 +225,7 @@
             </div>
         </div>
         <div onmouseover="openn(4)" onmouseout="closee(4)">
-            <div id="img4" class="fixedimg changeimg4 w-full relative">
+            <div id="img4" onclick="item('sale', 4)" class="fixedimg changeimg4 w-full relative">
                 <div id="eye4" class="absolute bottom-7 w-full duration-400 hidden animate">
                     <div class="flex justify-center">
                         <div class="bg-white rounded-xl">
@@ -380,6 +380,7 @@
     <script src="/js/search.js"></script>
     <script src="/js/datasearh.js"></script>
     <script src="/js/opsearch.js"></script>
+    <script src="/js/item.js"></script>
 </body>
 
 </html>

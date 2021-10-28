@@ -60,6 +60,29 @@
 </head>
 
 <body class="relative">
+    <div id="bg-opacity" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
+    <div id="modal" class="grid grid-cols-2 fixed bg-white w-1/2 hidden" style="top: 18%; left: 25%;z-index: 999;">
+        <div>
+            <img id="imgopenmodal" src="" alt="">
+        </div>
+        <div class="flex flex-col relative">
+            <span onclick="closemodal()" class="iconify absolute right-10 top-6 b-icon duration-500 cursor-pointer"
+                data-icon="akar-icons:cross" style="color: #575757;"></span>
+            <div class="px-20 overflow-auto" style="height: 30rem;">
+                <!-- ชื่อ -->
+                <p id="namemodal" class="text-5xl font-bold pt-16"></p>
+                <!-- ราคา -->
+                <p id="pricemodal" class="mt-6 text-2xl font-bold text-red-700">200.00฿</p>
+                <!-- รายละเอียด -->
+                <p id="datamodal1" class="mt-6 text-lg"></p>
+                <p id="datamodal2" class="mt-6 text-lg"></p>
+                <p id="numitemm" class="mt-6"> - 2 + </p>
+            </div>
+            <!-- ปุ่ม -->
+            <button id="modalbutton" onclick="modalpickcart()"
+                class="h-12 w-full absolute bottom-0 btn bg-red-700 text-sm text-white font-bold hover:bg-red-600 duration-500">หยิบใส่ตะกร้า</button>
+        </div>
+    </div>
     <div id="search" class="absolute top-0 w-full hidden z-50">
         <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
             <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
@@ -152,18 +175,18 @@
         <span class="text-gray-600">ZOWIE MONITOR</span>
     </div>
     <div id="parent" class="grid grid-cols-2 md:grid-cols=4 lg:grid-cols-6 gap-4 p-12">
-        <div onmouseover="openn(1)" onmouseout="closee(1)">
-            <div id="img1" onclick="item('XL_Monitor', 1)" class="fixedimg changeimg1 w-full relative">
-                <div id="eye1" class="absolute bottom-7 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart1" class="heart" onclick="wishlist('XL_Monitor', 1)"></div>
-                            </div>
+        <div onmouseover="openn(1)" onmouseout="closee(1)" class="relative">
+            <div id="eye1" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-xl">
+                        <div class="flex space-x-1 px-2">
+                            <div class="eye" onclick="openmodal('XL_Monitor', 1)"></div>
+                            <div id="heart1" class="heart" onclick="wishlist('XL_Monitor', 1)"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="img1" onclick="item('XL_Monitor', 1)" class="fixedimg changeimg1 w-full relative">
             </div>
             <div>
                 <p id="text1" class="text-sm text-center"></p>
@@ -175,18 +198,18 @@
                     หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(2)" onmouseout="closee(2)">
-            <div id="img2" onclick="item('XL_Monitor', 2)" class="fixedimg changeimg2 w-full relative">
-                <div id="eye2" class="absolute bottom-7 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart2" class="heart" onclick="wishlist('XL_Monitor', 2)"></div>
-                            </div>
+        <div onmouseover="openn(2)" onmouseout="closee(2)" class="relative">
+            <div id="eye2" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-xl">
+                        <div class="flex space-x-1 px-2">
+                            <div class="eye" onclick="openmodal('XL_Monitor', 2)"></div>
+                            <div id="heart2" class="heart" onclick="wishlist('XL_Monitor', 2)"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="img2" onclick="item('XL_Monitor', 2)" class="fixedimg changeimg2 w-full relative">
             </div>
             <div>
                 <p id="text2" class="text-sm text-center"></p>
@@ -198,18 +221,18 @@
                     หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(3)" onmouseout="closee(3)">
-            <div id="img3" onclick="item('XL_Monitor', 3)" class="fixedimg changeimg3 w-full relative">
-                <div id="eye3" class="absolute bottom-7 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart3" class="heart" onclick="wishlist('XL_Monitor', 3)"></div>
-                            </div>
+        <div onmouseover="openn(3)" onmouseout="closee(3)" class="relative">
+            <div id="eye3" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-xl">
+                        <div class="flex space-x-1 px-2">
+                            <div class="eye" onclick="openmodal('XL_Monitor', 3)"></div>
+                            <div id="heart3" class="heart" onclick="wishlist('XL_Monitor', 3)"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="img3" onclick="item('XL_Monitor', 3)" class="fixedimg changeimg3 w-full relative">
             </div>
             <div>
                 <p id="text3" class="text-sm text-center"></p>
@@ -221,18 +244,18 @@
                     หยิบใส่ตะกร้า</p>
             </div>
         </div>
-        <div onmouseover="openn(4)" onmouseout="closee(4)">
-            <div id="img4" onclick="item('XL_Monitor', 4)" class="fixedimg changeimg4 w-full relative">
-                <div id="eye4" class="absolute bottom-7 w-full duration-400 hidden animate">
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-xl">
-                            <div class="flex space-x-1 px-2">
-                                <div class="eye"></div>
-                                <div id="heart4" class="heart" onclick="wishlist('XL_Monitor', 4)"></div>
-                            </div>
+        <div onmouseover="openn(4)" onmouseout="closee(4)" class="relative">
+            <div id="eye4" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-xl">
+                        <div class="flex space-x-1 px-2">
+                            <div class="eye" onclick="openmodal('XL_Monitor', 4)"></div>
+                            <div id="heart4" class="heart" onclick="wishlist('XL_Monitor', 4)"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="img4" onclick="item('XL_Monitor', 4)" class="fixedimg changeimg4 w-full relative">
             </div>
             <div>
                 <p id="text4" class="text-sm text-center"></p>
@@ -356,6 +379,7 @@
                         }
                         if (data[i].font == checkcart[j].id) {
                             document.getElementById(`pickcart${i + 1}`).innerHTML = "ดูตะกร้าสินค้า";
+                            document.getElementById(`modalbutton`).innerHTML = "ดูตะกร้าสินค้า";
 
                         }
                     }
@@ -379,6 +403,8 @@
     <script src="/js/datasearh.js"></script>
     <script src="/js/opsearch.js"></script>
     <script src="/js/item.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/modalpickcart.js"></script>
 </body>
 
 </html>

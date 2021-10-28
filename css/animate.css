@@ -1,6 +1,9 @@
 .animate{
     animation: animate 1s ease-in-out;
 }
+.animateclose{
+    animation: animateclose 0.4s ease-in-out;
+}
 .animatesearch{
     animation: animate 0.4s ease-in-out;
 }
@@ -31,6 +34,14 @@
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes animateclose {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
 @keyframes animatetextcart {

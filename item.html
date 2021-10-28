@@ -124,7 +124,9 @@
                         <p id="waranty" class="text-gray-400"></p>
                     </div>
                     <div class="flex justify-center w-full py-4">
-                        <button class="bg-red-700 text-white w-full rounded-lg py-4" onclick="pickcartitem()">ADD CART</button>
+                        <button class="bg-red-700 text-white w-full rounded-lg py-4" onclick="pickcartitem()">
+                            <p id="button">ADD CART</p>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -301,6 +303,26 @@
             img2.setAttribute('onclick', "changeimg('back');");
             img3.setAttribute('onclick', "changeimg('img1');");
             img4.setAttribute('onclick', "changeimg('img2');");
+            var checkcart = JSON.parse(localStorage.getItem(`datacart`));
+            for (var i = 0; i < data.length; i++) {
+                console.log(1);
+                if (checkcart == null) {
+                    continue;
+                }
+                else {
+                    for (var j = 0; j < checkcart.length; j++) {
+                        if (checkcart[j] == null) {
+                            continue;
+
+                        }
+                        if (dataimg1 == checkcart[j].id) {
+                            console.log()
+                            document.getElementById('button').innerHTML = "ดูตะกร้าสินค้า";
+
+                        }
+                    }
+                }
+            }
         }
         function changeimg(check) {
             if (check == 'font') {
@@ -332,8 +354,8 @@
                 }, 350);
             }
         }
-        function pickcartitem(){
-            pickcart(namejson, numid+1);
+        function pickcartitem() {
+            pickcart(namejson, numid + 1);
         }
     </script>
     <script src="/js/numcart.js"></script>

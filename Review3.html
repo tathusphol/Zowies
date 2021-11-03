@@ -1,0 +1,458 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Zowie</title>
+    <style>
+        .pwan {
+            background-image: url('https://www.zowieshop.com/wp-content/uploads/2021/02/nbs-xl2546k.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 40% 4%;
+            filter: blur(1px);
+            height: 500px;
+            width: 100%;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+            display: block;
+            filter: brightness(50%);
+        }
+
+        .mont {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .ibm {
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+        }
+
+        .topic {
+            color: white;
+        }
+
+        .headcon {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        a {
+            transition: 0.3s;
+        }
+
+        a:hover {
+            border-color: transparent;
+        }
+
+        form.example input[type=text] {
+            padding: 5px;
+            font-size: 17px;
+            border: 1px solid grey;
+            width: 100%;
+        }
+
+        .search {
+            background: url("https://fonts.gstatic.com/s/i/materialicons/search/v16/24px.svg");
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+        }
+
+        .sidebar {
+            width: 21%;
+        }
+
+        .content {
+            max-width: 773px;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .hovred {
+            transition: 0.3s;
+        }
+
+        .hovred:hover {
+            color: rgb(194, 4, 48);
+            border-color: transparent;
+        }
+
+        .material-icons {
+            color: rgb(194, 4, 48);
+        }
+
+        .material-icons {
+            font-size: 17px;
+        }
+
+        input {
+            outline: none;
+            padding: 5px;
+            border: 1px solid rgba(84, 84, 84, 0.1);
+        }
+
+        textarea {
+            outline: none;
+            padding: 10px;
+            border: 1px solid rgba(84, 84, 84, 0.1);
+        }
+
+        .redch {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .redch input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: white;
+        }
+
+        .redch input:checked~.checkmark {
+            background-color: rgb(194, 4, 48);
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .redch input:checked~.checkmark:after {
+            display: block;
+        }
+
+        .redch .checkmark:after {
+            left: 6px;
+            top: 3px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .comment {
+            background-color: rgb(194, 4, 48);
+            cursor: pointer;
+        }
+
+        .comment:hover{
+            background-color: rgba(194, 4, 48, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
+        <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
+            <a class="b-icon" href="index.html"><img class="lg:hidden w-6"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
+                    class="hover:brightness-50 w-40 hidden lg:block"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/logo-a.png" alt=""></a>
+            <div class="space-x-4 text-gray-600 hidden lg:inline-block lg:text-md">
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="index.html">Home</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="XL_Monitor.html">XL Monitor</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mobiuz.html">Mobiuz</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mouse.html">Gaming Mice</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Pad.html">Gaming Mouse Pads</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Access.html">Accessories</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Two.html">สินค้ามือสอง</a>
+                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32"
+                        src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
+                    <span>0</span>
+                </div>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href=""><img class="w-5" src="/img/cart.svg" alt=""></a>
+                    <span>0</span>
+                </div>
+                <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
+                <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
+                <img class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+
+    <div class="mx-auto text-center bg-black topic relative">
+        <div class="pwan"></div>
+        <div class="container mx-auto max-w-screen-md absolute headcon">
+            <div class="header">
+                <h1 class="text-5xl">รีวิวจอเกม BenQ ZOWIE XL2546K หน้าจอเกมมิ่ง 24.5″ 240Hz ระดับ e-Sports ตัวจริง ฟีเจอร์ DyAc+ ครบสุดๆ โดย NotebookSPEC
+                </h1>
+            </div>
+            <div class="line mt-5">
+                <span>──────────</span>
+            </div>
+            <div class="credit mt-5">
+                <span class="mr-3">by</span>
+                <a href="" class="mont font-bold mr-3 border-b border-white p-1">ZOWIESHOP.COM</a>
+                <span class="mr-3">on</span>
+                <a href="" class="mont font-bold mr-3 border-b border-white p-1">4 กุมภาพันธ์ 2021</a>
+                <span class="mr-3">in</span>
+                <a href="./Review_review.html" class="mont font-bold border-b border-white p-1">REVIEW</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mx-auto flex mt-28 max-w-screen-xl">
+        <div class="content container">
+            <p class="text-lg">วันนี้เรามาดูรีวิวจอเกม ZOWIE XL2546K โดย NotebookSPEC กันครับ</p>
+            <br>
+            <p class="text-lg">BenQ Zowie XL2546K เป็นหน้าจอเกมมิ่ง (Gaming Monitor) อีกรุ่นหนึ่งที่พัฒนาขึ้นมาจาก XL2546 รุ่นก่อนหน้าในหลายๆ ส่วน โดยผู้เชี่ยวชาญเกม FPS ที่เน้นการสร้างประสบการณ์ที่ดีให้กับผู้เล่นเป็นหลัก XL2546K เป็นจอเกมขนาด 24.5” รุ่นที่แนะนำของ ZOWIE ที่นำเทคโนโลยีพาเนลใหม่ล่าสุดอย่าง “Fast Liquid Crystal” มาใช้ในการนำเสนอภาพที่ลื่นไหลและคมชัดพร้อมจาก DyAc+ เรียกได้ว่าตอบโจทย์คนใช้งานระดับ e-Sports ตัวจริง</p>
+            <iframe class="mt-6" width="773px" height="435px" src="https://www.youtube.com/embed/k4ie3BO9L4M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="sidebar container ml-24">
+            <form class="example">
+                <input type="text" placeholder="" name="search2" class="search">
+            </form>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h3 class="ibm font-bold">เรื่องล่าสุด</h3>
+            <br>
+            <div>
+                <a href="./Review1.html">
+                    <span class="material-icons">description</span>
+                    <span class="hovred">รีวิว: จอเล่นเกม BenQ ZOWIE XL2546K ตัวท็อปแห่งวงการอีสปอร์ต โดยพี่แว่น
+                        FPSThailand</span>
+                </a>
+            </div>
+            <br>
+            <div>
+                <a href="./Review2.html">
+                    <span class="material-icons">description</span>
+                    <span class="hovred">รีวิว BenQ Zowie XL2546K เกมมิ่งมอนิเตอร์ จอ 240Hz แท้ เพื่อเกมเมอร์ตัวจริง โดย
+                        Thisisgame</span>
+                </a>
+            </div>
+            <br>
+            <div>
+                <a href="./Review3.html">
+                    <span class="material-icons">description</span>
+                    <span class="hovred">รีวิวจอเกม BenQ ZOWIE XL2546K หน้าจอเกมมิ่ง 24.5″ 240Hz ระดับ e-Sports ตัวจริง
+                        ฟีเจอร์ DyAc+ ครบสุดๆ โดย NotebookSPEC</span>
+                </a>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h3 class="ibm font-bold">ความเห็นล่าสุด</h3>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h3 class="ibm font-bold">หมวดหมู่</h3>
+            <br>
+            <div><a href="./Review_News.html" class="hovred">News</a></div>
+            <div><a href="./Review_review.html" class="hovred">Review</a></div>
+        </div>
+    </div>
+    <div class="container mx-auto flex mt-28 max-w-screen-xl justify-end">
+        <div class="next">
+            <a href="">
+                <div class="mont font-bold grey">
+                     Next Reading ></div>
+                        <br>
+                        <p class="ibm text-2xl max-w-md font-bold grey hovred"><a href="./Review2.html"> รีวิว BenQ Zowie XL2546K เกมมิ่งมอนิเตอร์ จอ 240Hz แท้ เพื่อเกมเมอร์ตัวจริง โดย Thisisgame </a></p>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="mx-auto bg-gray-50 mt-10">
+        <div class="container mx-auto p-20 px-72">
+            <h1 class="font-black mont text-3xl">Leave a reply</h1>
+            <p class="mt-1 text-gray-400">อีเมลของคุณจะไม่แสดงให้คนอื่นเห็น ช่องข้อมูลจำเป็นถูกทำเครื่องหมาย *</p>
+            <div class="form">
+                <label for="" class="font-bold mont text-lg">Message</label>
+                <span class="text-gray-400">*</span>
+                <br>
+                <textarea name="" id="" cols="100" rows="10" class="mt-3"></textarea>
+                <div class="flex mt-4">
+                    <div class="name">
+                        <label for="" class="font-bold mont text-md">Name</label>
+                        <span class="text-gray-400">*</span>
+                        <br>
+                        <input type="text" size="45" class="mt-1">
+                    </div>
+                    <div class="email ml-12">
+                        <label for="" class="font-bold mont text-md">Email</label>
+                        <span class="text-gray-400">*</span>
+                        <br>
+                        <input type="text" size="45" class="mt-1">
+                    </div>
+                </div>
+                <div class="website mt-5">
+                    <label for="" class="font-bold mont text-md">Website</label>
+                    <span class="text-gray-400">*</span>
+                    <br>
+                    <input type="text" size="100" class="mt-1">
+                </div>
+                <div class="mt-6">
+                    <label class="redch">
+                        <input type="checkbox">
+                        <span class="checkmark" style="border: 1px solid black;"></span>
+                    </label>
+                    <span class="ml-7 font-bold text-gray-600">บันทึกชื่อ, อีเมล และชื่อเว็บไซต์ของฉันบนเบราว์เซอร์นี้ สำหรับการแสดงความเห็นครั้งถัดไป</span>
+                </div>
+                <div class="submit">
+                    <a href="">
+                        <input name="submit" type="submit" id="submit" class="comment p-2 px-12 text-white mt-7" value="แสดงความเห็น">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="bg-gray-100">
+        <div class="flex justify-center w-full border-b-2">
+            <div class="px-12 py-24 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-4 space-y-20 lg:space-y-0">
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Products</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="XL_Monitor.html">XL Monitor</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Mouse.html">Gaming Mice</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Pad.html">Gaming Mouse Pads</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Access.html">Accessories</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Two.html">สินค้ามือสอง</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="Sale.html">สินค้าราคาพิเศษ</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer
+                            Services</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payment.html">แจ้งการโอนเงิน</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">ติดตามสถานะการสั่งซื้อ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">ข่าวสาร & รีวิวสินค้า</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Support</a></div>
+                    <div><a class="hover:text-gray-400 duration-300"
+                            href="https://zowie.benq.com/th-th/support/warranty/gear.html">เงื่อนไขและการรับประกัน</a>
+                    </div>
+                    <div><a class="hover:text-gray-400 duration-300" href="payandsend.html">การชำระเงิน &
+                            จัดส่งสินค้า</a></div>
+                    <div><a class="hover:text-gray-400 duration-300"
+                            href="https://www.facebook.com/zowieesportcenter">พูดคุยกับเราที่ Facebook</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="">เกี่ยวกับ ZOWIE Shop</a></div>
+                </div>
+                <div class="space-y-4 text-gray-600">
+                    <div><a target="_blank" href="https://shopee.co.th/zowie_esport"><img
+                                class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/shopee.png" alt=""></a></div>
+                    <div><a target="_blank"
+                            href="https://www.lazada.co.th/shop/zowie-esport-center/?liteShop=true&spm=a211g0.store_hp.top.share&dsource=share&laz_share_info=130360665_103_200_1569158_120215000_null&laz_token=e848bade409365eeb7187723a38da1a4&exlaz=e_78%2FCXAnZy6HGip8qo24MCSTeQCjDld4siVQ4kY1ODqrCXvTKdNAtBfrYHUpbt8xr6nejNh6YiYbO7MSdVRSDSLcazjqFN96eD3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=130360665&sub_id3=1569158&sub_id6=CPI_EXLAZ"><img
+                                class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/lazada.png" alt=""></a></div>
+                    <div><a target="_blank" href="https://www.jd.co.th/jshop/22239.html"><img
+                                class="w-40 b-icon duration-300"
+                                src="https://www.zowieshop.com/wp-content/uploads/2020/12/jd.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center py-8 text-gray-400 text-sm">
+            <p>© 2021 <span class="border-b-2">ZOWIE Shop</span></p>
+        </div>
+    </footer>
+    <script src="/js/numcart.js"></script>
+    <script src="/js/numheart.js"></script>
+</body>
+<script>
+    function change(n) {
+        let login = document.getElementById('login');
+        let reg = document.getElementById('reg');
+        let t_login = document.getElementById('t-login');
+        let t_reg = document.getElementById('t-reg');
+        if (n == 1) {
+            login.classList.remove('hidden');
+            reg.classList.add('hidden');
+            t_login.classList.remove('text-gray-500');
+            t_reg.classList.add('text-gray-500');
+            t_login.classList.remove('hover:text-gray-400');
+            t_reg.classList.add('hover:text-gray-400');
+            login.classList.add('animate');
+            reg.classList.remove('animate');
+        }
+        if (n == 2) {
+            reg.classList.remove('hidden');
+            login.classList.add('hidden');
+            t_reg.classList.remove('text-gray-500');
+            t_login.classList.add('text-gray-500');
+            t_login.classList.add('hover:text-gray-400');
+            t_reg.classList.remove('hover:text-gray-400');
+            reg.classList.add('animate');
+            login.classList.remove('animate');
+        }
+    }
+    let num = 0;
+    function showpass() {
+        num++;
+        let pass_in = document.getElementById('pass');
+        if (num % 2 != 0) {
+            pass_in.setAttribute('type', 'text');
+        }
+        else {
+            pass_in.setAttribute('type', 'password');
+        }
+    }
+</script>
+
+</body>
+
+</html>

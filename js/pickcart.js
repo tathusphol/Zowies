@@ -206,5 +206,5 @@ function pickcart(name, numberid) {
         // console.log(data[numberid-1].name);
 
     }
-    // location.reload();
+    location.reload();
 }

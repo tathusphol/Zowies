@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <!--  Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <title>Zowie</title>
     <style>
@@ -16,12 +18,12 @@
             background-repeat: no-repeat;
             padding-top: 130%;
         }
-        .imgslide{
-            animation: imgslide 60s infinite;
+
+        .imgslide {
             background-size: 100% auto;
             background-repeat: no-repeat;
-            padding-top: 46%;
         }
+
         .changeimg1 {
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2021/04/S250@2x.jpg);
@@ -192,42 +194,35 @@
             transition: 0.5s;
             background-image: url(https://www.zowieshop.com/wp-content/uploads/2020/10/P-SR-03@2x.jpg);
         }
-        @keyframes imgslide {
-            0%{
-                background-image: url(/img/1.png);
-            }
-            11%{
-                background-image: url(/img/2.png);
-            }
-            22%{
-                background-image: url(/img/3.png);
-            }
-            33%{
-                background-image: url(/img/4.png);
-            }
-            44%{
-                background-image: url(/img/5.png);
-            }
-            55%{
-                background-image: url(/img/6.png);
-            }
-            66%{
-                background-image: url(/img/7.png);
-            }
-            77%{
-                background-image: url(/img/8.png);
-            }
-            88%{
-                background-image: url(/img/9.png);
-            }
-            100%{
-                background-image: url(/img/10.png);
-            }
-        }
     </style>
 </head>
 
 <body class="relative">
+    <div id="bg-sidebar" onclick="" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
+    <div id="sidebar" class="w-3/4 h-full fixed bg-white hidebar z-50 md:hidden">
+        <img id="button1" class="w-5 md:hidden absolute right-6 top-4" style="z-index: 999;"
+            src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+        <div class="py-4 px-4 text-xl">
+            <nav class="py-6 w-full mt-10">
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="index.html">Home</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="XL_Monitor.html">XL Monitor</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Mobiuz.html">Mobiuz</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Mouse.html">Gaming Mice</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Pad.html">Gaming Mouse Pads</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Access.html">Accessories</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Two.html">สินค้ามือสอง</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Sale.html">สินค้าราคาพิเศษ</a>
+            </nav>
+        </div>
+    </div>
     <div id="bg-opacity" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
     <div id="modal" class="grid grid-cols-2 fixed bg-white w-1/2 hidden" style="top: 18%; left: 25%;z-index: 999;">
         <div>
@@ -253,11 +248,13 @@
     </div>
     <div id="search" class="absolute top-0 w-full hidden z-50">
         <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
-            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
-                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4"
+                data-icon="akar-icons:cross" style="color: black;" data-width="15" data-height="100"
+                data-rotate="90deg"></span>
             <p>What are you looking for?</p>
             <div class="flex pt-12 pb-4 border-b-2">
-                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                <input
+                    class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
                     id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
                 <img class="w-10" src="/img/searchgray.svg" alt="">
             </div>
@@ -328,15 +325,51 @@
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <img onclick="opensearch()" class="w-5" src="/img/search.svg" alt="">
-                <img class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+                <img id="button" class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png"
+                    alt="">
             </div>
         </div>
     </nav>
 
     <!-- body -->
 
-    <div class="imgslide">
-            
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/1.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/2.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/3.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/4.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/5.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/6.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/7.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/8.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/9.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+                <img class="object-cover w-full" src="/img/10.png" alt="image" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
     </div>
     <div class="w-full flex justify-center bg-gray-200 py-2">
         <div class="grid grid-cols-3 md:grid-cols-6 w-full gap-2 max-w-6xl">
@@ -362,7 +395,7 @@
                     data-icon="akar-icons:chevron-up" style="top: 10.75rem; color: white;" data-width="25"
                     data-rotate="90deg"></span>
                 <div id="loop1" class="grid grid-cols-3 gap-4 max-w-4xl">
-                    <div onmouseover="openn(1)" class="relative" onmouseout="closee(1)"> 
+                    <div onmouseover="openn(1)" class="relative" onmouseout="closee(1)">
                         <div id="eye1" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -385,7 +418,7 @@
                                 หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
-                    <div onmouseover="openn(2)" class="relative" onmouseout="closee(2)"> 
+                    <div onmouseover="openn(2)" class="relative" onmouseout="closee(2)">
                         <div id="eye2" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -408,7 +441,7 @@
                                 หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
-                    <div onmouseover="openn(3)" class="relative" onmouseout="closee(3)"> 
+                    <div onmouseover="openn(3)" class="relative" onmouseout="closee(3)">
                         <div id="eye3" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -434,7 +467,7 @@
                 </div>
 
                 <div id="loop2" class="grid grid-cols-3 gap-4 max-w-4xl">
-                    <div onmouseover="openn(4)" onmouseout="closee(4)" class="relative"> 
+                    <div onmouseover="openn(4)" onmouseout="closee(4)" class="relative">
                         <div id="eye4" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -457,7 +490,7 @@
                                 หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
-                    <div onmouseover="openn(5)" onmouseout="closee(5)" class="relative"> 
+                    <div onmouseover="openn(5)" onmouseout="closee(5)" class="relative">
                         <div id="eye5" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -480,7 +513,7 @@
                                 หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
-                    <div onmouseover="openn(6)" onmouseout="closee(6)" class="relative"> 
+                    <div onmouseover="openn(6)" onmouseout="closee(6)" class="relative">
                         <div id="eye6" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -505,7 +538,7 @@
                     </div>
                 </div>
                 <div id="loop3" class="grid grid-cols-3 gap-4 max-w-4xl">
-                    <div onmouseover="openn(7)" onmouseout="closee(7)" class="relative"> 
+                    <div onmouseover="openn(7)" onmouseout="closee(7)" class="relative">
                         <div id="eye7" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -528,7 +561,7 @@
                                 หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
-                    <div onmouseover="openn(8)" onmouseout="closee(8)" class="relative"> 
+                    <div onmouseover="openn(8)" onmouseout="closee(8)" class="relative">
                         <div id="eye8" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -551,7 +584,7 @@
                                 หยิบใส่ตะกร้า</p>
                         </div>
                     </div>
-                    <div onmouseover="openn(9)" onmouseout="closee(9)" class="relative"> 
+                    <div onmouseover="openn(9)" onmouseout="closee(9)" class="relative">
                         <div id="eye9" class="absolute bottom-28 z-50 w-full duration-400 hidden animate">
                             <div class="flex justify-center">
                                 <div class="bg-white rounded-xl">
@@ -915,13 +948,13 @@
                         for (var j = 0; j < check.length; j++) {
                             if (check[j] == null) {
                                 continue;
-                                
+
                             }
                             if (data.new[i].font == check[j].id) {
                                 let heart = document.getElementById(`heart${i + 14}`);
                                 heart.classList.add('heart1');
                                 heart.classList.remove('heart');
-                                
+
                             }
                         }
                     }
@@ -1023,6 +1056,15 @@
             }
             setTimeout(slideanimate, 10);
 
+        </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
         </script>
         <script src="/js/opco.js"></script>
         <script src="/js/wishlist.js"></script>

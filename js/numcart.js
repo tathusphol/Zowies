@@ -42,3 +42,23 @@ document.getElementById('button1').onclick = function () {
     }
     check += 1;
 }
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    console.log(prevScrollpos);
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > 100) {
+        document.getElementById("nav2").classList.remove('hidden');
+        document.getElementById("nav2").classList.add('animatesearchopen');
+    } else {
+        document.getElementById("nav2").classList.add('hidden');
+        document.getElementById("nav2").classList.remove('animatesearchopen');
+    }
+    if (prevScrollpos > 300) {
+        document.getElementById("scrollup").classList.remove('hidden');
+        document.getElementById("scrollup").classList.add('animate');
+    } else {
+        document.getElementById("scrollup").classList.add('hidden');
+        document.getElementById("scrollup").classList.remove('animate');
+    }
+    prevScrollpos = currentScrollPos;
+}

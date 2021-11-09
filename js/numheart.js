@@ -1,13 +1,13 @@
 var check = JSON.parse(localStorage.getItem(`data`));
 var numwishlist = 0;
-if(check == null){
+if (check == null) {
 
 }
-else{
+else {
     for (var j = 0; j < check.length; j++) {
         if (check[j] == null) {
             continue;
-    
+
         }
         else {
             numwishlist++;

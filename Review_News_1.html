@@ -178,6 +178,40 @@
 </head>
 
 <body>
+    <nav id="nav2" class="bg-nav blur-xl fixed z-40 w-full top-0 hidden">
+        <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
+            <a class="b-icon" href="index.html"><img class="lg:hidden w-6"
+                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
+                    class="hover:brightness-50 w-60 hidden lg:block"
+                    src="https://www.zowieshop.com/wp-content/uploads/2021/10/zowie-store-linear.png" alt=""></a>
+            <div class="space-x-4 text-gray-900 hidden lg:inline-block lg:text-md">
+                <a class="hover:text-gray-400 duration-500" href="index.html">Home</a>
+                <a class="hover:text-gray-400 duration-500" href="XL_Monitor.html">XL Monitor</a>
+                <a class="hover:text-gray-400 duration-500" href="Mobiuz.html">Mobiuz</a>
+                <a class="hover:text-gray-400 duration-500" href="Mouse.html">Gaming Mice</a>
+                <a class="hover:text-gray-400 duration-500" href="Pad.html">Gaming Mouse Pads</a>
+                <a class="hover:text-gray-400 duration-500" href="Access.html">Accessories</a>
+                <a class="hover:text-gray-400 duration-500" href="Two.html">สินค้ามือสอง</a>
+                <a class="hover:text-gray-400 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32"
+                        src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
+                    <span id="numheart">0</span>
+                </div>
+                <div class="flex space-x-1">
+                    <a class="b-icon" href="/cart.html"><img class="w-5" src="/img/cart.svg" alt=""></a>
+                    <span id="numcart">0</span>
+                </div>
+                <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
+                <img onclick="opensearch()" class="w-5" src="/img/search.svg" alt="">
+                <img id="button" id="button" class="w-5 md:hidden" style="z-index: 999;"
+                    src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+            </div>
+        </div>
+    </nav>
     <!-- navbar -->
     <div id="bg-sidebar" onclick="" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
     <div id="sidebar" class="w-3/4 h-full fixed bg-white hidebar z-50 md:hidden">
@@ -196,21 +230,67 @@
             </nav>
         </div>
     </div>
+    <div id="search" class="fixed top-0 w-full hidden z-50">
+        <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
+                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <p>What are you looking for?</p>
+            <div class="flex pt-12 pb-4 border-b-2">
+                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                    id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
+                <img class="w-10" src="/img/searchgray.svg" alt="">
+            </div>
+            <div id="parentsearch" class="grid grid-cols-6 gap-4 pt-4">
+            </div>
+        </div>
+    </div>
+    <div id="textline" class="fixed bottom-24 shadow-xl right-5 bg-white rounded-xl z-50 w-1/6 hidden">
+        <div class="w-full h-12 flex items-center text-white font-bold justify-between rounded-t-lg"
+            style="background-color: #00BE00;">
+            <div class="flex items-center">
+                <img class="ml-2" width="45px" src="/img/Line.png" alt="">
+                <p>Line</p>
+            </div>
+            <span onclick="closeline()" class="iconify mr-4 cursor-pointer" data-icon="akar-icons:cross"
+                style="color: white;" data-width="15" data-height="100" data-rotate="90deg"></span>
+        </div>
+        <div class="w-full flex justify-center mt-4">
+            <img class="border-2" src="/img/qrline.png" alt="">
+        </div>
+        <div class="text-center mt-7">
+            <h3 class="font-bold">เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</h3>
+            <div class="text-xs mt-4 text-gray-500">
+                <p>เปิดแอพ LINE > เลือกแท็บเพื่อน > แตะไอคอนเพิ่ม</p>
+                <p>เพื่อนที่มุมขวาบน</p>
+                <p>แล้วเลือก "คิวอาร์โค้ด" จากนั้นจึงสแกนคิวอาร์โค้ด</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex justify-between text-xs mb-3 mt-7" style="width: 80%;">
+                    <p class="text-blue-800 cursor-pointer">เรียนรู้เพิ่มเติมเกี่ยวกับ LINE</p>
+                    <p class="text-blue-800 cursor-pointer">ดาวน์โหลด</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="scrollup" class="hidden" href="#nav"><img width="50px" class="fixed right-12 bottom-24 z-10"
+            src="http://seenual.com/wp-content/uploads/2016/03/1459083547_ChevronUpCircle.png" alt=""></a>
+    <img width="50px" class="cusor-pointer fixed right-12 bottom-8 rounded-full z-40 cursor-pointer"
+        onmouseover="openline()" src="/img/Line.png" alt="">
     <nav id="nav" class="bg-nav blur-xl sticky z-40 w-full">
         <div class="flex justify-between lg:justify-evenly space-x-4 items-center px-6 py-4">
             <a class="b-icon" href="index.html"><img class="lg:hidden w-6"
                     src="https://www.zowieshop.com/wp-content/uploads/2020/12/zowie-shop-bag-logo.png" alt=""><img
-                    class="hover:brightness-50 w-40 hidden lg:block"
-                    src="https://www.zowieshop.com/wp-content/uploads/2020/12/logo-a.png" alt=""></a>
-            <div class="space-x-4 text-gray-600 hidden lg:inline-block lg:text-md">
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="index.html">Home</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="XL_Monitor.html">XL Monitor</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mobiuz.html">Mobiuz</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Mouse.html">Gaming Mice</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Pad.html">Gaming Mouse Pads</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Access.html">Accessories</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Two.html">สินค้ามือสอง</a>
-                <a class="hover:text-gray-400 text-gray-100 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
+                    class="hover:brightness-50 w-60 hidden lg:block"
+                    src="https://www.zowieshop.com/wp-content/uploads/2021/10/zowie-store-linear.png" alt=""></a>
+            <div class="space-x-4 text-gray-900 hidden lg:inline-block lg:text-md">
+                <a class="hover:text-gray-400 duration-500" href="index.html">Home</a>
+                <a class="hover:text-gray-400 duration-500" href="XL_Monitor.html">XL Monitor</a>
+                <a class="hover:text-gray-400 duration-500" href="Mobiuz.html">Mobiuz</a>
+                <a class="hover:text-gray-400 duration-500" href="Mouse.html">Gaming Mice</a>
+                <a class="hover:text-gray-400 duration-500" href="Pad.html">Gaming Mouse Pads</a>
+                <a class="hover:text-gray-400 duration-500" href="Access.html">Accessories</a>
+                <a class="hover:text-gray-400 duration-500" href="Two.html">สินค้ามือสอง</a>
+                <a class="hover:text-gray-400 duration-500" href="Sale.html">สินค้าราคาพิเศษ</a>
             </div>
             <div class="flex items-center space-x-4">
                 <a class="hidden lg:flex b-icon" href="payment.html"><img class="w-32"

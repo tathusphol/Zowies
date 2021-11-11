@@ -29,6 +29,17 @@ document.getElementById('button').onclick = function () {
     }
     check += 1;
 }
+document.getElementById('button2').onclick = function () {
+    document.getElementById("sidebar").classList.toggle("animate-open");
+    document.getElementById("sidebar").classList.toggle("right-0");
+    document.getElementById("sidebar").classList.toggle("hidebar");
+    document.body.classList.toggle('overflow-hidden');
+    document.getElementById('bg-sidebar').classList.toggle('hidden');
+    if (check % 2 == 0) {
+        document.getElementById("sidebar").classList.toggle("animate-close");
+    }
+    check += 1;
+}
 document.getElementById('button1').onclick = function () {
     document.getElementById("sidebar").classList.toggle("animate-open");
     document.getElementById("sidebar").classList.toggle("right-0");

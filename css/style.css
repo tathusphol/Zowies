@@ -12,8 +12,12 @@ html{
     user-select: none;
     -o-user-select: none;
 }
+.b-icon{
+    transition: 0.5s;
+}
 .b-icon:hover{
     opacity: 0.5;
+    transition: 0.5s;
 }
 .bg-nav{
     background: rgb(250, 250, 250);

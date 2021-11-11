@@ -7,8 +7,10 @@ function closemodal(){
     console.log(1);
     setTimeout(() => {
         document.getElementById('modal').classList.add('hidden');
-        document.getElementById('bg-sidebar').classList.add('hidden');
     }, 350);
+    setTimeout(() => {
+        document.getElementById('bg-sidebar').classList.add('hidden');
+    }, 400);
     document.getElementById('modal').classList.remove('animatesearch');
     document.getElementById('modal').classList.add('animateclose');
     

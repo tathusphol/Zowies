@@ -7,12 +7,14 @@ function closemodal(){
     console.log(1);
     setTimeout(() => {
         document.getElementById('modal').classList.add('hidden');
+        document.getElementById('bg-sidebar').classList.add('hidden');
     }, 350);
     document.getElementById('modal').classList.remove('animatesearch');
     document.getElementById('modal').classList.add('animateclose');
     
 }
 function openmodalinhtml() {
+    document.getElementById('bg-sidebar').classList.remove('hidden');
     document.getElementById('modal').classList.remove('hidden');
     document.getElementById('modal').classList.add('animatesearch');
     document.getElementById('modal').classList.remove('animateclose');

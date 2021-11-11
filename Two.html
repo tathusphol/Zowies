@@ -81,11 +81,11 @@
                         src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
-                    <span id="numheart">0</span>
+                    <span id="numheart1">0</span>
                 </div>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="/cart.html"><img class="w-5" src="/img/cart.svg" alt=""></a>
-                    <span id="numcart">0</span>
+                    <span id="numcart1">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <img onclick="opensearch()" class="w-5" src="/img/search.svg" alt="">
@@ -97,18 +97,26 @@
     <div id="bg-opacity" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
     <div id="bg-sidebar" onclick="" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
     <div id="sidebar" class="w-3/4 h-full fixed bg-white hidebar z-50 md:hidden">
-        <img id="button1" class="w-5 md:hidden absolute right-6 top-4" style="z-index: 999;" src="https://cdn-icons-png.flaticon.com/128/130/130918.png"
-        alt="">
+        <img id="button1" class="w-5 md:hidden absolute right-6 top-4" style="z-index: 999;"
+            src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
         <div class="py-4 px-4 text-xl">
             <nav class="py-6 w-full mt-10">
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="index.html">Home</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="XL_Monitor.html">XL Monitor</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Mobiuz.html">Mobiuz</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Mouse.html">Gaming Mice</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Pad.html">Gaming Mouse Pads</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Access.html">Accessories</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Two.html">สินค้ามือสอง</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Sale.html">สินค้าราคาพิเศษ</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="index.html">Home</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="XL_Monitor.html">XL Monitor</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Mobiuz.html">Mobiuz</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Mouse.html">Gaming Mice</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Pad.html">Gaming Mouse Pads</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Access.html">Accessories</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Two.html">สินค้ามือสอง</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Sale.html">สินค้าราคาพิเศษ</a>
             </nav>
         </div>
     </div>
@@ -135,11 +143,13 @@
     </div>
     <div id="search" class="fixed top-0 w-full hidden z-50">
         <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
-            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
-                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4"
+                data-icon="akar-icons:cross" style="color: black;" data-width="15" data-height="100"
+                data-rotate="90deg"></span>
             <p>What are you looking for?</p>
             <div class="flex pt-12 pb-4 border-b-2">
-                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                <input
+                    class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
                     id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
                 <img class="w-10" src="/img/searchgray.svg" alt="">
             </div>
@@ -210,7 +220,8 @@
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <img onclick="opensearch()" class="w-5" src="/img/search.svg" alt="">
-                <img id="button" class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+                <img id="button" class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png"
+                    alt="">
             </div>
         </div>
     </nav>
@@ -339,7 +350,8 @@
                     <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer
                             Services</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="payment.html">แจ้งการโอนเงิน</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="contact.html">ติดตามสถานะการสั่งซื้อ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="contact.html">ติดตามสถานะการสั่งซื้อ</a>
+                    </div>
                     <div><a class="hover:text-gray-400 duration-300" href="Review.html">ข่าวสาร & รีวิวสินค้า</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
@@ -371,7 +383,6 @@
             <p>© 2021 <span class="border-b-2">ZOWIE Shop</span></p>
         </div>
     </footer>
-    
     <script>
         let requestURL = '/json/two_hand.json';
         let request = new XMLHttpRequest();

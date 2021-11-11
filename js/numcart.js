@@ -42,6 +42,11 @@ document.getElementById('button1').onclick = function () {
     }
     check += 1;
 }
+console.log(document.getElementById('numheart').innerHTML);
+document.getElementById('numcart1').innerHTML = document.getElementById('numcart').innerHTML;
+setTimeout(() => {
+    document.getElementById('numheart1').innerHTML = document.getElementById('numheart').innerHTML;
+}, 500);
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     console.log(prevScrollpos);

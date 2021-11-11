@@ -171,7 +171,7 @@
             cursor: pointer;
         }
 
-        .comment:hover{
+        .comment:hover {
             background-color: rgba(194, 4, 48, 0.75);
         }
     </style>
@@ -199,11 +199,11 @@
                         src="https://www.zowieshop.com/wp-content/uploads/2020/12/receipt_pay.png" alt=""></a>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="wishlist.html"><img class="w-5 flex" src="/img/heart.svg" alt=""></a>
-                    <span id="numheart">0</span>
+                    <span id="numheart1">0</span>
                 </div>
                 <div class="flex space-x-1">
                     <a class="b-icon" href="/cart.html"><img class="w-5" src="/img/cart.svg" alt=""></a>
-                    <span id="numcart">0</span>
+                    <span id="numcart1">0</span>
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <img onclick="opensearch()" class="w-5" src="/img/search.svg" alt="">
@@ -215,28 +215,38 @@
     <!-- navbar -->
     <div id="bg-sidebar" onclick="" class="w-full h-screen opacity-30 bg-black fixed top-0 z-40 hidden"></div>
     <div id="sidebar" class="w-3/4 h-full fixed bg-white hidebar z-50 md:hidden">
-        <img id="button1" class="w-5 md:hidden absolute right-6 top-4" style="z-index: 999;" src="https://cdn-icons-png.flaticon.com/128/130/130918.png"
-        alt="">
+        <img id="button1" class="w-5 md:hidden absolute right-6 top-4" style="z-index: 999;"
+            src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
         <div class="py-4 px-4 text-xl">
             <nav class="py-6 w-full mt-10">
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="index.html">Home</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="XL_Monitor.html">XL Monitor</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Mobiuz.html">Mobiuz</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Mouse.html">Gaming Mice</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Pad.html">Gaming Mouse Pads</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Access.html">Accessories</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Two.html">สินค้ามือสอง</a>
-                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center" href="Sale.html">สินค้าราคาพิเศษ</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="index.html">Home</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="XL_Monitor.html">XL Monitor</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Mobiuz.html">Mobiuz</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Mouse.html">Gaming Mice</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Pad.html">Gaming Mouse Pads</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Access.html">Accessories</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Two.html">สินค้ามือสอง</a>
+                <a class="block py-2.5 px-4 flex justify-center items-center nav-text text-gray-400 cursor-pointer select-none text-center"
+                    href="Sale.html">สินค้าราคาพิเศษ</a>
             </nav>
         </div>
     </div>
     <div id="search" class="fixed top-0 w-full hidden z-50">
         <div class="bg-white py-24 px-12 text-xs text-gray-300 font-bold relative">
-            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4" data-icon="akar-icons:cross" style="color: black;"
-                data-width="15" data-height="100" data-rotate="90deg"></span>
+            <span onclick="closesearch()" class="iconify cursor-pointer absolute right-16 top-4"
+                data-icon="akar-icons:cross" style="color: black;" data-width="15" data-height="100"
+                data-rotate="90deg"></span>
             <p>What are you looking for?</p>
             <div class="flex pt-12 pb-4 border-b-2">
-                <input class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
+                <input
+                    class="appearance-none rounded-lg w-full text-4xl font-bold text-gray-700 leading-tight outline-none"
                     id="inputsearch" type="text" placeholder="ค้นหาสินค้า...">
                 <img class="w-10" src="/img/searchgray.svg" alt="">
             </div>
@@ -305,7 +315,8 @@
                 </div>
                 <a class="b-icon" href="account.html"><span class="iconify" data-icon="codicon:account"></span></a>
                 <a class="b-icon" href=""><img class="w-5" src="/img/search.svg" alt=""></a>
-                <img id="button" class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png" alt="">
+                <img id="button" class="w-5 md:hidden" src="https://cdn-icons-png.flaticon.com/128/130/130918.png"
+                    alt="">
             </div>
         </div>
     </nav>
@@ -316,7 +327,8 @@
         <div class="pwan"></div>
         <div class="container mx-auto max-w-screen-md absolute headcon">
             <div class="header">
-                <h1 class="text-5xl">รีวิวจอเกม BenQ ZOWIE XL2546K หน้าจอเกมมิ่ง 24.5″ 240Hz ระดับ e-Sports ตัวจริง ฟีเจอร์ DyAc+ ครบสุดๆ โดย NotebookSPEC
+                <h1 class="text-5xl">รีวิวจอเกม BenQ ZOWIE XL2546K หน้าจอเกมมิ่ง 24.5″ 240Hz ระดับ e-Sports ตัวจริง
+                    ฟีเจอร์ DyAc+ ครบสุดๆ โดย NotebookSPEC
                 </h1>
             </div>
             <div class="line mt-5">
@@ -339,7 +351,11 @@
         <div class="content container">
             <p class="text-lg">วันนี้เรามาดูรีวิวจอเกม ZOWIE XL2546K โดย NotebookSPEC กันครับ</p>
             <br>
-            <p class="text-lg">BenQ Zowie XL2546K เป็นหน้าจอเกมมิ่ง (Gaming Monitor) อีกรุ่นหนึ่งที่พัฒนาขึ้นมาจาก XL2546 รุ่นก่อนหน้าในหลายๆ ส่วน โดยผู้เชี่ยวชาญเกม FPS ที่เน้นการสร้างประสบการณ์ที่ดีให้กับผู้เล่นเป็นหลัก XL2546K เป็นจอเกมขนาด 24.5” รุ่นที่แนะนำของ ZOWIE ที่นำเทคโนโลยีพาเนลใหม่ล่าสุดอย่าง “Fast Liquid Crystal” มาใช้ในการนำเสนอภาพที่ลื่นไหลและคมชัดพร้อมจาก DyAc+ เรียกได้ว่าตอบโจทย์คนใช้งานระดับ e-Sports ตัวจริง</p>
+            <p class="text-lg">BenQ Zowie XL2546K เป็นหน้าจอเกมมิ่ง (Gaming Monitor) อีกรุ่นหนึ่งที่พัฒนาขึ้นมาจาก
+                XL2546 รุ่นก่อนหน้าในหลายๆ ส่วน โดยผู้เชี่ยวชาญเกม FPS
+                ที่เน้นการสร้างประสบการณ์ที่ดีให้กับผู้เล่นเป็นหลัก XL2546K เป็นจอเกมขนาด 24.5” รุ่นที่แนะนำของ ZOWIE
+                ที่นำเทคโนโลยีพาเนลใหม่ล่าสุดอย่าง “Fast Liquid Crystal” มาใช้ในการนำเสนอภาพที่ลื่นไหลและคมชัดพร้อมจาก
+                DyAc+ เรียกได้ว่าตอบโจทย์คนใช้งานระดับ e-Sports ตัวจริง</p>
             <iframe class="mt-6" width="773px" height="435px" src="https://www.youtube.com/embed/k4ie3BO9L4M"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -403,9 +419,10 @@
         <div class="next">
             <a href="">
                 <div class="mont font-bold grey">
-                     Next Reading ></div>
-                        <br>
-                        <p class="ibm text-2xl max-w-md font-bold grey hovred"><a href="./Review2.html"> รีวิว BenQ Zowie XL2546K เกมมิ่งมอนิเตอร์ จอ 240Hz แท้ เพื่อเกมเมอร์ตัวจริง โดย Thisisgame </a></p>
+                    Next Reading ></div>
+                <br>
+                <p class="ibm text-2xl max-w-md font-bold grey hovred"><a href="./Review2.html"> รีวิว BenQ Zowie
+                        XL2546K เกมมิ่งมอนิเตอร์ จอ 240Hz แท้ เพื่อเกมเมอร์ตัวจริง โดย Thisisgame </a></p>
             </a>
         </div>
     </div>
@@ -445,11 +462,13 @@
                         <input type="checkbox">
                         <span class="checkmark" style="border: 1px solid black;"></span>
                     </label>
-                    <span class="ml-7 font-bold text-gray-600">บันทึกชื่อ, อีเมล และชื่อเว็บไซต์ของฉันบนเบราว์เซอร์นี้ สำหรับการแสดงความเห็นครั้งถัดไป</span>
+                    <span class="ml-7 font-bold text-gray-600">บันทึกชื่อ, อีเมล และชื่อเว็บไซต์ของฉันบนเบราว์เซอร์นี้
+                        สำหรับการแสดงความเห็นครั้งถัดไป</span>
                 </div>
                 <div class="submit">
                     <a href="">
-                        <input name="submit" type="submit" id="submit" class="comment p-2 px-12 text-white mt-7" value="แสดงความเห็น">
+                        <input name="submit" type="submit" id="submit" class="comment p-2 px-12 text-white mt-7"
+                            value="แสดงความเห็น">
                     </a>
                 </div>
             </div>
@@ -474,7 +493,8 @@
                     <div><a href="" class="font-bold text-gray-700 hover:text-gray-400 duration-300">Customer
                             Services</a></div>
                     <div><a class="hover:text-gray-400 duration-300" href="payment.html">แจ้งการโอนเงิน</a></div>
-                    <div><a class="hover:text-gray-400 duration-300" href="contact.html">ติดตามสถานะการสั่งซื้อ</a></div>
+                    <div><a class="hover:text-gray-400 duration-300" href="contact.html">ติดตามสถานะการสั่งซื้อ</a>
+                    </div>
                     <div><a class="hover:text-gray-400 duration-300" href="Review.html">ข่าวสาร & รีวิวสินค้า</a></div>
                 </div>
                 <div class="space-y-4 text-gray-600">
@@ -506,7 +526,6 @@
             <p>© 2021 <span class="border-b-2">ZOWIE Shop</span></p>
         </div>
     </footer>
-    
     <script src="/js/numcart.js"></script>
     <script src="/js/numheart.js"></script>
 </body>

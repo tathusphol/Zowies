@@ -3,7 +3,7 @@ function openmodal(jsonname, idnum) {
     localStorage.setItem('idnum', idnum);
     openmodalinhtml();
 }
-function closemodal(){
+function closemodal() {
     console.log(1);
     setTimeout(() => {
         document.getElementById('modal').classList.add('hidden');
@@ -13,7 +13,7 @@ function closemodal(){
     }, 400);
     document.getElementById('modal').classList.remove('animatesearch');
     document.getElementById('modal').classList.add('animateclose');
-    
+
 }
 function openmodalinhtml() {
     document.getElementById('bg-sidebar').classList.remove('hidden');
@@ -33,7 +33,7 @@ function openmodalinhtml() {
         "new": "kaidee.json"
     };
     let namejson = localStorage.getItem('jsonname');
-    let numid = localStorage.getItem('idnum')-1;
+    let numid = localStorage.getItem('idnum') - 1;
     let requestURL = `/json/${dict[namejson]}`;
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -81,6 +81,27 @@ function openmodalinhtml() {
             datatextnamemodal = data[numid].name;
             datatextdata1modal = data[numid].textdata1;
             datatextdata2modal = data[numid].textdata2;
+        }
+        var checkcartmodal = JSON.parse(localStorage.getItem(`datacart`));
+        for (var i = 0; i < data.length; i++) {
+            if (checkcartmodal == null) {
+                continue;
+            }
+            else {
+                for (var j = 0; j < checkcartmodal.length; j++) {
+                    if (checkcartmodal[j] == null) {
+                        continue;
+    
+                    }
+                    if (dataimgmodal == checkcartmodal[j].id) {
+                        document.getElementById(`modalbutton`).innerHTML = "ดูตะกร้าสินค้า";
+                        break;
+                    }
+                    else{
+                        document.getElementById(`modalbutton`).innerHTML = "หยิบใส่ตะกร้า";
+                    }
+                }
+            }
         }
         imgmodal.src = dataimgmodal;
         pricemodal.innerHTML = datapricemodal;

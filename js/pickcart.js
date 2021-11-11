@@ -10,7 +10,15 @@ var dict = {
     "onsale": "kaidee.json",
     "new": "kaidee.json"
 };
+var checknumcart = 1;
 function pickcart(name, numberid) {
+    numberidcart = numberid;
+    if (name == "onsale") {
+        numberidcart = numberid +9
+    }
+    else if (name == "new") {
+        numberidcart = numberid+13
+    }
     // localStorage.removeItem();
     let requestURL = `/json/${dict[name]}`;
     let request = new XMLHttpRequest();
@@ -23,12 +31,12 @@ function pickcart(name, numberid) {
     request.send();
 
     function dataReportStatus(data) {
-        console.log(dict[name])
-        console.log(name)
         if (dict[name] == 'kaidee.json') {
             if (name == "onsale") {
-                console.log(data.onsale[numberid - 1].font);
                 if (JSON.parse(localStorage.getItem(`datacart`)) == null) {
+                    document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                    document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                    document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                     var listcheck = [];
                     var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
                     listcheck.push(listitem);
@@ -48,6 +56,10 @@ function pickcart(name, numberid) {
                         }
                     }
                     if (check) {
+                        document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                        document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                        document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
+                        console.log(numberidcart);
                         var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
                         listcheck.push(listitem);
                         localStorage.setItem(`datacart`, JSON.stringify(listcheck));
@@ -57,6 +69,9 @@ function pickcart(name, numberid) {
             }
             else if (name == "new") {
                 if (JSON.parse(localStorage.getItem(`datacart`)) == null) {
+                    document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                    document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                    document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                     var listcheck = [];
                     var listitem = { id: data.new[numberid - 1].font, name: data.new[numberid - 1].name, price: data.new[numberid - 1].price, priceint: data.new[numberid - 1].priceint, numitem: 1 };
                     listcheck.push(listitem);
@@ -76,6 +91,9 @@ function pickcart(name, numberid) {
                         }
                     }
                     if (check) {
+                        document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                        document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                        document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                         var listitem = { id: data.new[numberid - 1].font, name: data.new[numberid - 1].name, price: data.new[numberid - 1].price, priceint: data.new[numberid - 1].priceint, numitem: 1 };
                         listcheck.push(listitem);
                         localStorage.setItem(`datacart`, JSON.stringify(listcheck));
@@ -85,6 +103,9 @@ function pickcart(name, numberid) {
             }
             else {
                 if (JSON.parse(localStorage.getItem(`datacart`)) == null) {
+                    document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                    document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                    document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                     var listcheck = [];
                     var listitem = { id: data.kaidee[numberid - 1].font, name: data.kaidee[numberid - 1].name, price: data.kaidee[numberid - 1].price, priceint: data.kaidee[numberid - 1].priceint, numitem: 1 };
                     listcheck.push(listitem);
@@ -104,6 +125,9 @@ function pickcart(name, numberid) {
                         }
                     }
                     if (check) {
+                        document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                        document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                        document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                         var listitem = { id: data.kaidee[numberid - 1].font, name: data.kaidee[numberid - 1].name, price: data.kaidee[numberid - 1].price, priceint: data.kaidee[numberid - 1].priceint, numitem: 1 };
                         listcheck.push(listitem);
                         localStorage.setItem(`datacart`, JSON.stringify(listcheck));
@@ -114,6 +138,9 @@ function pickcart(name, numberid) {
         }
         else {
             if (JSON.parse(localStorage.getItem(`datacart`)) == null) {
+                document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                 if(name == "onsale"){
                     var listcheck = [];
                     var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
@@ -176,7 +203,9 @@ function pickcart(name, numberid) {
                     }
                 }
                 if (check) {
-                    
+                    document.getElementById('numcart1').innerHTML = parseInt(document.getElementById('numcart1').innerHTML)+checknumcart;
+                    document.getElementById('numcart').innerHTML = parseInt(document.getElementById('numcart').innerHTML)+checknumcart;
+                    document.getElementById(`pickcart${numberidcart}`).innerHTML = "ดูตะกร้าสินค้า";
                     if (name == "onsale") {
                         console.log(1);
                         var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
@@ -206,5 +235,5 @@ function pickcart(name, numberid) {
         // console.log(data[numberid-1].name);
 
     }
-    location.reload();
+    // location.reload();
 }

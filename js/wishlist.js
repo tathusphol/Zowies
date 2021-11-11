@@ -10,11 +10,12 @@ var dict = {
     "onsale": "kaidee.json",
     "new": "kaidee.json"
 };
+var checknumheart = 1;
 function wishlist(name, numberid) {
     // localStorage.removeItem();
     numberidheart = numberid
     if (name == "onsale") {
-        numberidheart = numberid + 10
+        numberidheart = numberid +9
         let heart = document.getElementById(`heart${numberidheart}`);
         heart.classList.add('heart1');
         heart.classList.remove('heart');
@@ -47,6 +48,8 @@ function wishlist(name, numberid) {
             if (name == "onsale") {
                 console.log(data.onsale[numberid - 1].font);
                 if (JSON.parse(localStorage.getItem(`data`)) == null) {
+                    document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                    document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                     var listcheck = [];
                     var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
                     listcheck.push(listitem);
@@ -66,6 +69,8 @@ function wishlist(name, numberid) {
                         }
                     }
                     if (check) {
+                        document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                        document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                         var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
                         listcheck.push(listitem);
                         localStorage.setItem(`data`, JSON.stringify(listcheck));
@@ -75,6 +80,8 @@ function wishlist(name, numberid) {
             }
             else if (name == "new") {
                 if (JSON.parse(localStorage.getItem(`data`)) == null) {
+                    document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                    document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                     var listcheck = [];
                     var listitem = { id: data.new[numberid - 1].font, name: data.new[numberid - 1].name, price: data.new[numberid - 1].price, priceint: data.new[numberid - 1].priceint, numitem: 1 };
                     listcheck.push(listitem);
@@ -94,6 +101,8 @@ function wishlist(name, numberid) {
                         }
                     }
                     if (check) {
+                        document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                        document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                         var listitem = { id: data.new[numberid - 1].font, name: data.new[numberid - 1].name, price: data.new[numberid - 1].price, priceint: data.new[numberid - 1].priceint, numitem: 1 };
                         listcheck.push(listitem);
                         localStorage.setItem(`data`, JSON.stringify(listcheck));
@@ -103,6 +112,8 @@ function wishlist(name, numberid) {
             }
             else {
                 if (JSON.parse(localStorage.getItem(`data`)) == null) {
+                    document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                    document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                     var listcheck = [];
                     var listitem = { id: data.kaidee[numberid - 1].font, name: data.kaidee[numberid - 1].name, price: data.kaidee[numberid - 1].price, priceint: data.kaidee[numberid - 1].priceint, numitem: 1 };
                     listcheck.push(listitem);
@@ -122,6 +133,8 @@ function wishlist(name, numberid) {
                         }
                     }
                     if (check) {
+                        document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                        document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                         var listitem = { id: data.kaidee[numberid - 1].font, name: data.kaidee[numberid - 1].name, price: data.kaidee[numberid - 1].price, priceint: data.kaidee[numberid - 1].priceint, numitem: 1 };
                         listcheck.push(listitem);
                         localStorage.setItem(`data`, JSON.stringify(listcheck));
@@ -132,6 +145,8 @@ function wishlist(name, numberid) {
         }
         else {
             if (JSON.parse(localStorage.getItem(`data`)) == null) {
+                document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                 if(name == "onsale"){
                     var listcheck = [];
                     var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
@@ -194,7 +209,8 @@ function wishlist(name, numberid) {
                     }
                 }
                 if (check) {
-                    
+                    document.getElementById('numheart1').innerHTML = parseInt(document.getElementById('numheart1').innerHTML)+checknumheart;
+                    document.getElementById('numheart').innerHTML = parseInt(document.getElementById('numheart').innerHTML)+checknumheart;
                     if (name == "onsale") {
                         console.log(1);
                         var listitem = { id: data.onsale[numberid - 1].font, name: data.onsale[numberid - 1].name, price: data.onsale[numberid - 1].price, priceint: data.onsale[numberid - 1].priceint, numitem: 1 };
@@ -224,6 +240,6 @@ function wishlist(name, numberid) {
         // console.log(data[numberid-1].name);
 
     }
-    location.reload();
+
 }
 
